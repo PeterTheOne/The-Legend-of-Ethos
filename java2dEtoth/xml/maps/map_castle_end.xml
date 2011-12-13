@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<map>
+	<player startX="16" startY="3" />
+	<background path="fight_bg_bad.jpg" />
+	<enterMapSound path="laughKing.wav" />
+	<doors>
+		<door id="0" x="19" y="3" direction="left" target="map_cave_end.xml" targetId="2" />
+		
+		<door id="1" x="7" y="10" direction="down" target="enteredcastle_bad.xml" targetId="1" />
+	</doors>
+	<matrix>
+		<row><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /></row>
+		<row><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /></row>
+		<row><b id="214" /><b id="216" /><b id="216" /><b id="216" /><b id="117" /><b id="118" /><b id="119" /><b id="120" /><b id="121" /><b id="122" /><b id="123" /><b id="124" /><b id="125" /><b id="215" /><b id="215" /><b id="215" /><b id="215" /><b id="215" /><b id="215" /><b id="215" /></row>
+		<row><b id="214" /><b id="216" /><b id="126" /><b id="127" /><b id="128" /><b id="129" /><b id="130" /><b id="131" /><b id="132" /><b id="133" /><b id="134" /><b id="135" /><b id="136" /><b id="215" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /></row>
+		<row><b id="214" /><b id="216" /><b id="137" /><b id="138" /><b id="139" /><b id="140" /><b id="141" /><b id="142" /><b id="143" /><b id="144" /><b id="145" /><b id="146" /><b id="147" /><b id="215" /><b id="216" /><b id="215" /><b id="215" /><b id="215" /><b id="215" /><b id="215" /></row>
+		<row><b id="214" /><b id="216" /><b id="148" /><b id="149" /><b id="150" /><b id="151" /><b id="152" /><b id="153" /><b id="154" /><b id="155" /><b id="156" /><b id="157" /><b id="158" /><b id="215" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /></row>
+		<row><b id="214" /><b id="216" /><b id="159" /><b id="160" /><b id="161" /><b id="162" /><b id="163" /><b id="164" /><b id="165" /><b id="166" /><b id="167" /><b id="168" /><b id="169" /><b id="215" /><b id="215" /><b id="215" /><b id="215" /><b id="215" /><b id="215" /><b id="216" /></row>
+		<row><b id="214" /><b id="216" /><b id="170" /><b id="171" /><b id="172" /><b id="173" /><b id="174" /><b id="175" /><b id="176" /><b id="177" /><b id="178" /><b id="179" /><b id="180" /><b id="215" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /></row>
+		<row><b id="214" /><b id="216" /><b id="181" /><b id="182" /><b id="183" /><b id="184" /><b id="185" /><b id="186" /><b id="187" /><b id="188" /><b id="189" /><b id="190" /><b id="191" /><b id="215" /><b id="216" /><b id="215" /><b id="215" /><b id="215" /><b id="215" /><b id="215" /></row>
+		<row><b id="214" /><b id="216" /><b id="192" /><b id="193" /><b id="194" /><b id="195" /><b id="196" /><b id="197" /><b id="198" /><b id="199" /><b id="200" /><b id="201" /><b id="202" /><b id="215" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /></row>
+		<row><b id="214" /><b id="216" /><b id="203" /><b id="204" /><b id="205" /><b id="206" /><b id="207" /><b id="208" /><b id="209" /><b id="210" /><b id="211" /><b id="212" /><b id="213" /><b id="215" /><b id="215" /><b id="215" /><b id="215" /><b id="215" /><b id="215" /><b id="216" /></row>
+		<row><b id="214" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /></row>
+		<row><b id="214" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /><b id="216" /></row>
+		<row><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /></row>
+		<row><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /><b id="214" /></row>
+	</matrix>
+	
+	<items>
+		<item type="0" x="4" y="12" />
+	</items>
+	<npcs>
+		<npc type="6" x="8" y="10" direction="down" dialogPath="qE_opp.xml"  attacks="true" maxJumps="3" damage="1" enableUltraAI="false" shootFreq="10" jumpFreq="17" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="6" x="5" y="12" direction="right" dialogPath="qE_opp.xml"  attacks="true" maxJumps="3" damage="1" enableUltraAI="false" shootFreq="10" jumpFreq="17" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="6" x="15" y="3" direction="right" dialogPath="qE_opp.xml"  attacks="true" maxJumps="3" damage="1" enableUltraAI="false" shootFreq="10" jumpFreq="17" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="6" x="18" y="5" direction="left" dialogPath="qE_opp.xml"  attacks="true" maxJumps="3" damage="1" enableUltraAI="false" shootFreq="10" jumpFreq="17" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="6" x="15" y="7" direction="right" dialogPath="qE_opp.xml"  attacks="true" maxJumps="3" damage="1" enableUltraAI="false" shootFreq="10" jumpFreq="17" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="6" x="18" y="9" direction="left" dialogPath="qE_opp.xml"  attacks="true" maxJumps="3" damage="1" enableUltraAI="false" shootFreq="10" jumpFreq="17" /><!-- default: 2, 1, false, 3, 30 -->
+	
+	</npcs>
+	
+</map>

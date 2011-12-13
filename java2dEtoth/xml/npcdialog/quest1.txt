@@ -1,0 +1,81 @@
+++++++++++++++++++++ STARTPUNKT ++++++++++++++++++++++++
+
+POP-UP:
+=======
+Besuche den Zauberer in seinem Turm
+
+
+
+
+++++++++++++++++++++ ZAUBERTURM ++++++++++++++++++++++++
+
+WIZZARD: 
+========
+Gott lob, Ihr habt den Weg zu mir gefunden. Schon lange sehnte ich Eurer Ankunft entgegen. Ich spüre eine Kraft 
+in Euch, wie sie so in diesem Lande kein zweiter in sich trägt. Ihr habt die Gabe, Eure Gestalt zu verändern, 
+was Euch ungeahnte Fähigkeiten gibt. Alles, was ihr dazu braucht, sind Tränke, die Eure Kraft erwecken.
+Ich besaß vor einiger Zeit besagte Tränke, doch die Zerstörung, die dieses Land heimsucht, hat auch vor mein zu 
+Hause keinen Halt gemacht.
+Doch ich weiß, dass hier im ganzen Reich noch einige wenige Zauberelexiere versteckt sind, bewacht von jenen 
+Wächtern, die einst mein Urgroßvater auserkoren hat. Leider vermochten sie es, ihre wahre Identität zu 
+verbergen, weshalb ich nicht weiß, wer sie sind.
+Doch ich bin alt und schwach. Meine Zauberkräfte sind am Ende. Es ist Eure Aufgabe, die Tränke zu finden und so 
+die nötige Kraft zu erlangen, um dem bösen König entgegentreten zu können.
+Doch halt, bevor Ihr auszieht, um Euer Schicksal zu erfüllen...
+Ich habe noch eine einzige Rezeptur, um einen Zaubertrank zu brauen. 
+Doch dafür bedarf es einiger Zutaten: 3 Kräuter um genau zu sein, derer Ihr im angrenzenden Wald habhaft werden 
+solltet. Birngt sie zu mir und eilet Euch, die Zeit drängt...
+
+POP-UP:
+=======
+1. Quest: Finde die 3 Zauberkräuter im angrenzenden Wald und bringe sie dem Zauberer. 
+
+
+
+
+++++++++++++++++++++ WALD ++++++++++++++++++++++++
+
+STANDARD-GEGNER(stellt sich dem Player in den Weg, wenn dieser das 3. Kraut aufheben will)
+===============
+Mir wurde zugetragen, dass ein Tunichtgut der magischen Kräuter habhaft werden will. Das kann ich nicht 
+
+zulassen, also kehret um oder seid gewillt mit den Konsequenzen Eures törrichten Handelns zu leben.
+(danach folgt Kampf
+
+
+
+++++++++++++++++++++ ZAUBERTURM ++++++++++++++++++++++++
+
+WIZZARD (wenn Quest erledigt):
+=======
+Oh, ich sehe, Ihr habt alle Zutaten beisammen... Wartet kurz, sodass ich den Zaubertrank brauen kann.
+...
+Bitte nehmt diesen Trank. Er wird Euch Kraft geben und Euren Körper für die Dauer eines Kampfes in den eines 
+mächtigeren Wesens verwandeln. Probiert es einfach bei Eurem nächsten Kampf aus.
+
+POP-UP:
+=======
+1. Quest erfolgreich abgeschlossen
+
+
+WIZZARD (Wenn Player den Zauberturm verlassen hat, kommt Zauberer ihm nachgeeilt):
+=======
+Haltet ein, teurer Freund!
+Beinah hätt ich's vergessen. Man munkelt, dass die Wahrsagerin im Dorf eine Prophezeihung für Euch hat. Besucht sie doch und findet heraus, ob etwas wahres an der Geschichte ist..
+
+POP-UP:
+======
+Sprich mit der Wahrsagerin
+
+
+
+
+++++++++++++++++++++ WALD ++++++++++++++++++++++++
+
+***ZUSATZ***
+============
+
+JÄGER: (versperrt den Weg in den dunklen Wald bis Player die 2. Quest erhalten hat)
+======
+Seid nicht törricht, junger Freund. Man munkelt, dass in diesem Wald Diebe und Halunken ihr Unwese treiben.
+

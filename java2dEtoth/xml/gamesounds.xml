@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sounds>
+	<sound name="info">wizzardtafeln.wav</sound>
+	<sound name="findItem">wizzardtafeln.wav</sound>
+	<sound name="npcTalk">murmur.wav</sound>
+	<sound name="walkGras">grasboden.wav</sound>
+	<sound name="gameWin">crowd.wav</sound>
+	<sound name="change">verwandlung.wav</sound>
+</sounds>

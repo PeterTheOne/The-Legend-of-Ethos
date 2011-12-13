@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<map>
+	<player startX="16" startY="3" />
+	<background path="fight_bg_midbad.jpg" />
+	<doors>
+		<!-- TODO: sollen doors auch immer eine info haben? -->
+		<door id="0" x="9" y="2" direction="down" target="map_cave_inside_three.xml" targetId="0" />
+		<door id="1" x="16" y="6" direction="down" target="enteredhouse_caveend.xml" targetId="0" />
+		<door id="2" x="0" y="3" direction="right" target="map_castle_end.xml" targetId="0" />
+	</doors>
+	<matrix>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="256" /><b id="257" /><b id="258" /><b id="259" /><b id="260" /><b id="261" /><b id="262" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="263" /><b id="264" /><b id="265" /><b id="266" /><b id="267" /><b id="268" /><b id="269" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="270" /><b id="271" /><b id="272" /><b id="273" /><b id="274" /><b id="275" /><b id="276" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /></row>
+		<row><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="277" /><b id="278" /><b id="242" /><b id="241" /></row>
+		<row><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="279" /><b id="280" /><b id="242" /><b id="241" /></row>
+		<row><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /></row>
+		<row><b id="241" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		</matrix>
+	
+	
+	
+	<items>
+	</items>
+	
+	
+	
+	
+</map>

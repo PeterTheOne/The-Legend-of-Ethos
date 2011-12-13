@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<texts>
+	<text name="continue">Drücke Enter um fortzufahren...</text>
+	<text name="itemfound">Du hast ein Item gefunden: </text>
+	<text name="seesomething">Du siehst: </text>
+	<text name="fightwin">Du hast den Kampf gewonnen!</text>
+	<text name="fightloose">Du hast den Kampf leider verloren, versuche es doch nochmal..</text>
+	
+	<text name="invhead">INVENTAR</text>
+	<text name="invexit">Schließen</text>
+	<text name="invexitinfo">Schließt hier Euer Inventar.</text>
+	<text name="invemptyinfo">Leider noch keine Items im Inventar.</text>
+	
+	<text name="choosemonsterhead">MONSTER AUSWÄHLEN</text>
+	<text name="choosemonsterexit">Schließen</text>
+	<text name="choosemonsterexitinfo">Zurück zum Spiel..</text>
+	<text name="choosemonsternomonster">Du hast kein Monstertrank, du kannst nicht kämpfen.</text>
+	
+	<text name="choosechar">Wähle deinen Avatar aus!</text>
+	<text name="exitgame">Das Abenteuer in Ethos wirklich beenden?</text>
+	<text name="finished">Herzlichen Glückwunsch! Ihr habt das Land Ethos von der Herrschaft des bösen Königs befreit! Doch der Friede wird nicht von langer Dauer sein... Wenn Ihr noch weitere Abenteuer in Ethos bestreiten wollt, könnt ihr Euch die Vollversion herunterladen! Viele neue Quests, neue Gegner, neue Monster und Spielspaß garantiert!</text>
+	<text name="loading">Ethos wird geladen...</text>
+</texts>

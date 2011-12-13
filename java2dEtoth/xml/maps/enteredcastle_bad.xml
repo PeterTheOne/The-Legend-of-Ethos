@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<map>
+	<player startX="3" startY="3" />
+	<enterMapSound path="laughKing.wav" />
+	<background path="fight_bg_schloss_new.jpg" />
+	<doors>
+		<!-- TODO: sollen doors auch immer eine info haben? -->
+		<door id="0" x="8" y="14" direction="UP" target="map_castle_end.xml" targetId="1" />
+		<door id="1" x="9" y="14" direction="UP" target="map_castle_end.xml" targetId="1" />
+		<door id="2" x="10" y="14" direction="UP" target="map_castle_end.xml" targetId="1" />
+		<door id="3" x="11" y="14" direction="UP" target="map_castle_end.xml" targetId="1" />
+		
+	</doors>
+	<matrix>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="240" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="239" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="240" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		</matrix>
+	<items>
+		<item type="0" x="7" y="1" />
+	</items>
+	
+	<npcs>
+		<npc type="3" x="9" y="5" direction="down" dialogPath="badking.xml" maxJumps="7" damage="2" enableUltraAI="true" shootFreq="5" jumpFreq="10" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="6" x="8" y="7" direction="down" dialogPath="qE_opp.xml"  attacks="true" maxJumps="3" damage="1" enableUltraAI="false" shootFreq="10" jumpFreq="17" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="6" x="10" y="7" direction="down" dialogPath="qE_opp.xml"  attacks="true" maxJumps="3" damage="1" enableUltraAI="false" shootFreq="10" jumpFreq="17" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="6" x="10" y="10" direction="left" dialogPath="qE_opp.xml"  attacks="true" maxJumps="3" damage="1" enableUltraAI="false" shootFreq="10" jumpFreq="17" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="6" x="8" y="11" direction="right" dialogPath="qE_opp.xml"  attacks="true" maxJumps="3" damage="1" enableUltraAI="false" shootFreq="10" jumpFreq="17" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="6" x="10" y="12" direction="left" dialogPath="qE_opp.xml"  attacks="true" maxJumps="3" damage="1" enableUltraAI="false" shootFreq="10" jumpFreq="17" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="6" x="8" y="13" direction="right" dialogPath="qE_opp.xml"  attacks="true" maxJumps="3" damage="1" enableUltraAI="false" shootFreq="10" jumpFreq="17" /><!-- default: 2, 1, false, 3, 30 -->
+	</npcs>
+	
+</map>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<map>
+	<player startX="16" startY="3" />
+	<doors>
+		<!-- TODO: sollen doors auch immer eine info haben? -->
+		<door id="0" x="0" y="3" direction="right" target="map_town2.xml" targetId="1" />
+		<door id="1" x="19" y="3" direction="left" target="map_wood1.xml" targetId="0" />
+	</doors>
+	<matrix>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		</matrix>
+	
+	<npcs>
+		<npc type="1" x="3" y="2" direction="down" dialogPath="q2_thief6.xml" attacks="true" maxJumps="4" damage="1" enableUltraAI="true" shootFreq="9" jumpFreq="15" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="1" x="10" y="4" direction="up" dialogPath="q2_thief2.xml" attacks="true" maxJumps="3" damage="1" enableUltraAI="false" shootFreq="13" jumpFreq="25" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="1" x="16" y="2" direction="down" dialogPath="q2_thief1.xml" attacks="true" maxJumps="3" damage="1" enableUltraAI="false" shootFreq="13" jumpFreq="25" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="1" x="15" y="5" direction="up" dialogPath="q2_thief4.xml" attacks="true" maxJumps="3" damage="1" enableUltraAI="false" shootFreq="13" jumpFreq="25" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="1" x="9" y="2" direction="down" dialogPath="q2_thief3.xml" attacks="true" walks="true" maxJumps="3" damage="1" enableUltraAI="false" shootFreq="13" jumpFreq="25" /><!-- default: 2, 1, false, 3, 30 -->
+	</npcs>
+	
+</map>

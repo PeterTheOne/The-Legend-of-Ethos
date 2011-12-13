@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<map>
+	<player startX="16" startY="3" />
+	<caveMode on="true" />
+	<background path="fight_bg_cave.jpg" />
+	<doors>
+		<!-- TODO: sollen doors auch immer eine info haben? -->
+		<door id="0" x="9" y="14" direction="up" target="map_cave_start.xml" targetId="1" />
+		<door id="1" x="0" y="7" direction="right" target="map_cave_inside_two.xml" targetId="0" />
+	
+	</doors>
+	<matrix>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /></row>
+		<row><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="219" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="219" /></row>
+		<row><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+	</matrix>
+	
+	<information>
+		<info x="8" y="11" img="cave_fackel" solid="false" light="true"></info>
+		<info x="18" y="1" img="cave_fackel" solid="false" light="true"></info>
+		<info x="4" y="7" img="cave_fackel" solid="false" light="true"></info>
+	</information>
+	
+	<npcs>
+		<npc type="10" x="9" y="11" direction="down" attacks="true" walks="true" dialogPath="q4_cavemonster.xml" maxJumps="7" damage="1" enableUltraAI="false" shootFreq="5" jumpFreq="10" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="10" x="15" y="1" direction="right" attacks="true" walks="true" dialogPath="q4_cavemonster.xml" maxJumps="7" damage="1" enableUltraAI="false" shootFreq="5" jumpFreq="10" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="10" x="1" y="1" direction="right" attacks="true" walks="true" dialogPath="q4_cavemonster.xml" maxJumps="7" damage="1" enableUltraAI="false" shootFreq="5" jumpFreq="10" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="10" x="8" y="5" direction="left" attacks="true" walks="true" dialogPath="q4_cavemonster.xml" maxJumps="7" damage="1" enableUltraAI="false" shootFreq="5" jumpFreq="10" /><!-- default: 2, 1, false, 3, 30 -->
+	</npcs>
+	
+</map>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<map>
+	<player startX="3" startY="3" />
+	<doors>
+		<!-- TODO: sollen doors auch immer eine info haben? -->
+		<door id="0" x="8" y="14" direction="UP" target="map_castle_start.xml" targetId="6" />
+		<door id="1" x="9" y="14" direction="UP" target="map_castle_start.xml" targetId="6" />
+		<door id="2" x="10" y="14" direction="UP" target="map_castle_start.xml" targetId="6" />
+		<door id="3" x="11" y="14" direction="UP" target="map_castle_start.xml" targetId="6" />
+		
+	</doors>
+	<matrix>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="239" /><b id="239" /><b id="239" /><b id="239" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		</matrix>
+	<items>
+		
+	</items>
+	
+	<npcs>
+		<npc type="0" x="9" y="6" direction="down" dialogPath="q1_wiz_part1.xml" />
+	
+	</npcs>
+	
+</map>

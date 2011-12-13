@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<map>
+	<player startX="16" startY="11" />
+	<background path="fight_bg_midbad.jpg" />
+	<doors>
+		<!-- TODO: sollen doors auch immer eine info haben? -->
+		<door id="0" x="19" y="11" direction="left" target="map_darkerwood1.xml" targetId="0" />
+		<door id="1" x="9" y="2" direction="down" target="map_cave_inside_one.xml" targetId="0" />
+	</doors>
+	<matrix>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="256" /><b id="257" /><b id="258" /><b id="259" /><b id="260" /><b id="261" /><b id="262" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="263" /><b id="264" /><b id="265" /><b id="266" /><b id="267" /><b id="268" /><b id="269" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="270" /><b id="271" /><b id="272" /><b id="273" /><b id="274" /><b id="275" /><b id="276" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="252" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="253" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="254" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		</matrix>
+	
+	<information>
+		<info x="8" y="3" img="wegweiser.png" solid="true"> DUNKLE HÖHLE - danach wartet nur mehr das Reich des Dunklen Königs - Im Inneren der Höhle ist es so finster, dass man nicht besonders weit sehen kann - und Vorsicht vor den Monstern, die sich im Schutz der Dunkelheit verborgen halten!</info>
+	</information>
+	
+	<items>
+		<item type="0" x="18" y="1" />
+	</items>
+	
+	
+	
+	
+</map>

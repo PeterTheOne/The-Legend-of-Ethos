@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<map>
+	<player startX="3" startY="3" />
+	<doors>
+		<door id="0" x="0" y="3" direction="right" target="map_darkerwood1.xml" targetId="1" />
+		<door id="1" x="19" y="3" direction="left" target="map_darkwood.xml" targetId="0" />
+		<door id="2" x="11" y="10" direction="down" target="enteredhouse_t2.xml" targetId="1" />
+		
+	</doors>
+	<matrix>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="218" /><b id="220" /><b id="221" /><b id="218" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="2" /><b id="2" /></row>
+		<row><b id="218" /><b id="218" /><b id="218" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="218" /><b id="218" /><b id="222" /><b id="223" /><b id="218" /><b id="218" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="218" /><b id="218" /><b id="218" /></row>
+		<row><b id="2" /><b id="2" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="218" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="218" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="218" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="218" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="218" /><b id="0" /><b id="1" /><b id="0" /><b id="1" /><b id="0" /><b id="1" /><b id="0" /><b id="1" /><b id="0" /><b id="1" /><b id="0" /><b id="1" /><b id="0" /><b id="1" /><b id="218" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="218" /><b id="220" /><b id="221" /><b id="218" /><b id="218" /><b id="220" /><b id="221" /><b id="218" /><b id="218" /><b id="224" /><b id="225" /><b id="218" /><b id="218" /><b id="220" /><b id="221" /><b id="218" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="218" /><b id="222" /><b id="223" /><b id="218" /><b id="218" /><b id="222" /><b id="223" /><b id="218" /><b id="218" /><b id="226" /><b id="227" /><b id="218" /><b id="218" /><b id="222" /><b id="223" /><b id="218" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		</matrix>
+	<information>
+		<info x="0" y="3" img="fallentree.png" solid="true"> Oh nein, ein umgefallener Baum versperrt den Weg</info>
+		<info x="11" y="10" img="haus_rot_03.png" solid="true"> Schade, diese Tür ist derzeit verschlossen...</info>
+		
+	</information>
+	
+	<items>
+		<item type="0" x="9" y="8" />
+	</items>
+	<npcs>
+		<npc type="4" x="11" y="3" direction="down" dialogPath="q2_monk.xml" />
+	</npcs>
+	
+</map>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<map>
+	<player startX="3" startY="3" />
+	<doors>
+		<!-- TODO: sollen doors auch immer eine info haben? -->
+		<door id="0" x="9" y="0" direction="down" target="map_castle_start.xml" targetId="4" />
+		<door id="1" x="10" y="0" direction="down" target="map_castle_start.xml" targetId="4" />
+		<door id="2" x="11" y="0" direction="down" target="map_castle_start.xml" targetId="4" />
+		<door id="3" x="16" y="11" direction="down" target="enteredhouse.xml" targetId="1" />
+		
+		
+	</doors>
+	<matrix>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="218" /><b id="218" /><b id="218" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="0" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="220" /><b id="221" /><b id="218" /><b id="218" /><b id="220" /><b id="221" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="220" /><b id="221" /><b id="218" /><b id="218" /><b id="220" /><b id="221" /><b id="0" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="222" /><b id="223" /><b id="218" /><b id="218" /><b id="222" /><b id="223" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="222" /><b id="223" /><b id="218" /><b id="218" /><b id="222" /><b id="223" /><b id="0" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="0" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="229" /><b id="230" /><b id="231" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="0" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="220" /><b id="221" /><b id="218" /><b id="220" /><b id="221" /><b id="218" /><b id="218" /><b id="232" /><b id="233" /><b id="234" /><b id="218" /><b id="220" /><b id="221" /><b id="218" /><b id="220" /><b id="221" /><b id="0" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="222" /><b id="223" /><b id="218" /><b id="222" /><b id="223" /><b id="218" /><b id="218" /><b id="235" /><b id="236" /><b id="237" /><b id="218" /><b id="222" /><b id="223" /><b id="218" /><b id="222" /><b id="223" /><b id="0" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="0" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="0" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="220" /><b id="221" /><b id="218" /><b id="218" /><b id="220" /><b id="221" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="220" /><b id="221" /><b id="218" /><b id="218" /><b id="224" /><b id="225" /><b id="0" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="222" /><b id="223" /><b id="218" /><b id="218" /><b id="222" /><b id="223" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="222" /><b id="223" /><b id="218" /><b id="218" /><b id="226" /><b id="227" /><b id="0" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="218" /><b id="0" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		</matrix>
+	
+	<npcs>
+		<npc type="7" x="11" y="3" direction="down" dialogPath="q2_townman.xml" walks="true" />
+		<npc type="7" x="8" y="9" direction="down" dialogPath="q2_townman1.xml" walks="true" />
+		
+	</npcs>
+	
+</map>

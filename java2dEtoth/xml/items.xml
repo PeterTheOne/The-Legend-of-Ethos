@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<items>
+	<!-- Items können Ordner und Bilder als img haben -->
+	<item type="0" img="heiltrank" name="Heiltrank">
+		Dieser Heiltrank bringt volle Lebensenergie
+	</item>
+	<item type="1" img="kraut01" name="Zauberkraut 1">
+		Grünes Zauberkraut
+	</item>
+	<item type="2" img="kraut02" name="Zauberkraut 2">
+		Rotes Zauberkraut
+	</item>
+	<item type="3" img="kraut03" name="Zauberkraut 3">
+		Blaues Zauberkraut
+	</item>
+	<!--
+		maxJumps-default: 2 (= einmal vom boden einmal luft)
+		damage-default: 1 sind die herzen die abgezogen werden
+		jumpHeight-default: 120 mehr ist höher
+		shootFreezeTime-default: 500 länger ist weniger oft schießen
+		resistance-default: 1.0 wird mit damage vom gegner multipliziert (0.5 ist bei damage 1 -> 0.5)
+	-->
+	<item
+		type="4" 
+		img="zt1" 
+		name="Windmonstertrank" 
+		monster="true" 
+		fightName="wind" 
+		fightImgPath="wind_200" 
+		fightProjPath="wirbelsturm_200.gif"
+		hitSound="treffersound.wav"
+		projectileSound="wind.wav"
+		maxJumps="2" 		
+		damage="1" 		
+		jumpHeight="120"	
+		shootFreezeTime="500"
+		resistance = "1.0"
+	>
+		Mit diesem Trank könnt Ihr Euch in das Windmonster verwandeln! Es bewegt sich schnell, wie der Wind, hat jedoch nicht sehr viel Feuerkraft!
+	</item>
+	<item
+		type="5" 
+		img="zt2" 
+		name="Feuermonstertrank" 
+		monster="true" 
+		fightName="feuer" 
+		fightImgPath="feuer_200" 
+		fightProjPath="feuerball_200.gif"
+		hitSound="treffersound.wav"
+		projectileSound="fireball.wav"
+		maxJumps="3" 		
+		damage="1" 		
+		jumpHeight="130"	
+		shootFreezeTime="400"
+		resistance = "1.0"
+	>
+		Mit diesem Trank könnt Ihr Euch in das Feuermonster verwandeln! Es ist besonders agil und kann seine Feuerbälle schnell hintereinander abfeuern!
+	</item>
+	<item
+		type="6" 
+		img="zt3" 
+		name="Erdmonstertrank" 
+		monster="true" 
+		fightName="erd" 
+		fightImgPath="stein_200" 
+		fightProjPath="steinangriff_200.gif"
+		hitSound="treffersound.wav"
+		projectileSound="stone.wav"
+		maxJumps="2" 		
+		damage="1" 		
+		jumpHeight="100"	
+		shootFreezeTime="500"
+		resistance = "2.0"
+	>
+		Mit diesem Trank könnt Ihr Euch in das Erd- und Gesteinsmonster verwandeln! Sein steinerner  Körper erschwert ihm die Bewegung, doch defensiv ist es stark!
+	</item>
+	<item type="7" img="halskette" name="Medaillon">
+		Dieses magische Medaillon ist ein Geschenk für den Mönch - Bringt es zu Ihm und erhaltet dafür einen Trank
+	</item>
+	<item
+		type="8" 
+		img="zt4" 
+		name="Pflanzenmonstertrank" 
+		monster="true" 
+		fightName="pflanze" 
+		fightImgPath="pflanze_200" 
+		fightProjPath="blaetter_200.gif"
+		hitSound="treffersound.wav"
+		projectileSound="stone.wav"
+		maxJumps="-1" 		
+		damage="1" 		
+		jumpHeight="120"	
+		shootFreezeTime="500"
+		resistance = "1.0"
+	>
+		Hier muss ne beschreibung hin..
+	</item>
+</items>

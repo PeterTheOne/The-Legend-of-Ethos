@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<map>
+	<player startX="3" startY="3" />
+	<doors>
+		<!-- TODO: sollen doors auch immer eine info haben? -->
+		<door id="1" x="11" y="0" direction="down" target="map_wood1.xml" targetId="3" />
+		
+	</doors>
+	<matrix>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="1" /><b id="1" /><b id="1" /><b id="0" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="2" /><b id="0" /><b id="2" /><b id="0" /><b id="1" /><b id="1" /><b id="0" /><b id="1" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="1" /><b id="0" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="0" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="0" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="0" /><b id="1" /><b id="1" /><b id="1" /><b id="0" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="0" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="0" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="1" /><b id="1" /><b id="0" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="0" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="0" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="0" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="1" /><b id="1" /><b id="1" /><b id="0" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="0" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="0" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="0" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="1" /><b id="1" /><b id="1" /><b id="0" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="1" /><b id="0" /><b id="1" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="0" /><b id="1" /><b id="1" /><b id="0" /><b id="1" /><b id="1" /><b id="0" /><b id="1" /><b id="0" /><b id="0" /><b id="1" /><b id="1" /><b id="1" /><b id="0" /><b id="1" /><b id="1" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		</matrix>
+	
+	
+	<items>
+		<!-- TODO: sollen items auch immer eine info haben? -->
+		<item type="3" x="5" y="9" />
+	</items>
+	
+</map>

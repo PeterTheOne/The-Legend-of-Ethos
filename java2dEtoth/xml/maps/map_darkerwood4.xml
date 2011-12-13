@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<map>
+	<player startX="5" startY="2" />
+	<background path="fight_bg_midbad.jpg" />
+	<doors>
+		<!-- TODO: sollen doors auch immer eine info haben? -->
+		<door id="0" x="5" y="0" direction="down" target="map_darkerwood3.xml" targetId="1" />
+		<door id="1" x="5" y="14" direction="up" target="map_darkerwood1.xml" targetId="3" />
+	</doors>
+	<matrix>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+		<row><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="242" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /><b id="241" /></row>
+	</matrix>
+	
+
+	
+	<npcs>
+		<npc type="6" x="5" y="3" direction="up" attacks="true" dialogPath="q3_darkknight1.xml" maxJumps="5" damage="1" enableUltraAI="true" shootFreq="7" jumpFreq="10" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="6" x="9" y="5" direction="up" attacks="true" dialogPath="q3_darkknight1.xml" maxJumps="5" damage="1" enableUltraAI="true" shootFreq="7" jumpFreq="10" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="6" x="5" y="10" direction="right" attacks="true" dialogPath="q3_darkknight1.xml" maxJumps="5" damage="2" enableUltraAI="true" shootFreq="7" jumpFreq="10" /><!-- default: 2, 1, false, 3, 30 -->
+	</npcs>
+	
+	<items>
+		
+	</items>
+	
+</map>

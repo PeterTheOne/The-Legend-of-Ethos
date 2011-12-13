@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<map>
+	<player startX="16" startY="3" />
+	<caveMode on="true" />
+	<background path="fight_bg_cave.jpg" />
+	<doors>
+		<!-- TODO: sollen doors auch immer eine info haben? -->
+		<door id="0" x="9" y="14" direction="up" target="map_cave_inside_two.xml" targetId="1" />
+	
+	</doors>
+	<matrix>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+		<row><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="255" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /><b id="219" /></row>
+	</matrix>	
+	
+	<information>
+		<info x="8" y="3" img="cave_fackel" solid="true" light="true"></info>
+		<info x="8" y="7" img="cave_fackel" solid="true" light="true"></info>
+		<info x="12" y="3" img="cave_fackel" solid="true" light="true"></info>
+		<info x="12" y="7" img="cave_fackel" solid="true" light="true"></info>
+	</information>
+	
+	<items>
+		<item type="0" x="9" y="4" />
+		<item type="0" x="9" y="6" />
+		<item type="0" x="11" y="4" />		
+		<item type="0" x="11" y="6" />
+	</items>
+	
+</map>

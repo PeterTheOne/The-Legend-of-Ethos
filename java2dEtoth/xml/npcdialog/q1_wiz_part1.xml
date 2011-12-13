@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dialog>
+	<line img="eron01.png">WIZZARD: Gott lob, Ihr habt den Weg zu mir gefunden. Schon lange sehnte ich Eurer Ankunft entgegen. Ich spüre eine Kraft in Euch, wie sie so in diesem Lande kein zweiter in sich trägt. </line>
+	<line img="eron01.png">Ihr habt die Gabe, Eure Gestalt zu verändern, was Euch ungeahnte Fähigkeiten gibt. Alles, was ihr dazu braucht, sind Tränke, die Eure Kraft erwecken. </line>
+	<line img="eron01.png">Ich besaß vor einiger Zeit besagte Tränke, doch die Zerstörung, die dieses Land heimsucht, hat auch vor mein zu Hause keinen Halt gemacht.</line>
+	<line img="eron01.png">Nur einen Trank konnte ich vor dem Feind verbergen, doch er verleiht bei Weitem nicht genug Macht, um dem Gegner Einhalt gebieten zu können...</line>
+	<line img="eron01.png">Doch fürchtet Euch nicht! An einigen geheimen Orten sind  noch Elixiere versteckt und es ist Eure Aufgabe, diese zu finden!</line>
+	<line img="eron01.png">Außerdem gelang es mir vor Langem, einen eigenen Trank zu brauen. Die Rezeptur ist fest in meinem Kopfe, doch fehlt es mir an Zutaten... </line>
+	<line img="eron01.png">3 Kräuter brauche ich, um den Trank zu vollenden und ich bitte Euch, mir diese zu bringen. Ihr findet sie im umliegenden Zauberwald!</line>
+	<line img="eron01.png">Doch habt Acht! Die Gefolgschaft des dunklen Lords treibt noch immer sein Unwesen hier in Ethos! </line>
+	<line img="eron01.png">Sollte Euch der Feind entgegentreten, nehmt den Zaubertrank ein. Er wird Euch vorerst helfen, Euch zu verteidigen!</line>
+	<line img="eron01.png">Aber nun verliert keine Zeit! Bringt mir die Zutaten so schnell es geht!  </line>
+	<line img="eron01.png">ZAUBERTRANK ERHALTEN</line>
+</dialog>

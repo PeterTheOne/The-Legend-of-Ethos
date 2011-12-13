@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<map>
+	<player startX="3" startY="3" />
+	<doors>
+		<!-- TODO: sollen doors auch immer eine info haben? -->
+		<door id="0" x="0" y="3" direction="right" target="map_darkwood.xml" targetId="1" />
+		<door id="1" x="19" y="3" direction="left" target="map_castle_start.xml" targetId="1" />
+		<door id="2" x="16" y="0" direction="down" target="map_wood2.xml" targetId="1" />
+		<door id="3" x="11" y="14" direction="up" target="map_wood3.xml" targetId="1" />
+		<door id="4" x="19" y="2" direction="left" target="map_castle_start.xml" targetId="1" />
+		<door id="5" x="19" y="4" direction="left" target="map_castle_start.xml" targetId="1" />
+		
+	</doors>
+	<matrix>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="0" /><b id="0" /><b id="1" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="2" /><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="0" /><b id="1" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="1" /><b id="0" /><b id="0" /><b id="0" /><b id="2" /><b id="0" /><b id="0" /><b id="1" /><b id="0" /></row>
+		<row><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="10" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="10" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /></row>
+		<row><b id="2" /><b id="2" /><b id="0" /><b id="0" /><b id="8" /><b id="0" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="8" /><b id="0" /><b id="0" /><b id="1" /><b id="0" /><b id="0" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="8" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="1" /><b id="1" /><b id="2" /><b id="2" /><b id="2" /><b id="8" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="8" /><b id="0" /><b id="2" /><b id="2" /><b id="1" /><b id="0" /><b id="1" /><b id="2" /><b id="2" /><b id="2" /><b id="8" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="8" /><b id="2" /><b id="2" /><b id="2" /><b id="1" /><b id="1" /><b id="2" /><b id="2" /><b id="2" /><b id="4" /><b id="3" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="8" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="8" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="8" /><b id="0" /><b id="0" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="8" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="0" /><b id="0" /><b id="6" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="7" /><b id="3" /><b id="0" /><b id="0" /><b id="0" /><b id="1" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="1" /><b id="0" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="0" /><b id="0" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="2" /><b id="1" /><b id="0" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="0" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="0" /><b id="0" /><b id="0" /><b id="2" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="1" /><b id="0" /><b id="0" /><b id="0" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
+	</matrix>
+	
+	<information>
+		<info x="2" y="2" img="wegweiser.png" solid="true"> Hier gehts in den dunklen Wald</info>
+	</information>
+	
+	<items>
+		<item type="1" x="15" y="11" />
+		<item type="0" x="17" y="12" />
+	</items>
+	<npcs>
+		<npc type="6" x="14" y="10" direction="left" dialogPath="q1_opp1.xml" maxJumps="2" damage="1" enableUltraAI="false" shootFreq="20" jumpFreq="60" /><!-- default: 2, 1, false, 3, 30 -->
+		<npc type="7" x="0" y="3" direction="right" dialogPath="q1_hunter.xml" />
+	</npcs>
+	
+</map>

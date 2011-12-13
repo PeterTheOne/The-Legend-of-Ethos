@@ -1,0 +1,100 @@
++++++++++++++++ IM DORF +++++++++++++
+
+1. BÜRGER (Standardcharakter):
+=======
+Oh, Ihr seid die Person von der schon im ganzen Dorf gesprochen wird?
+Die Wahrsagerin gab an, eine Botschaft aus der anderen Welt für Euch zu haben...
+
+
+2. BÜRGER (Standardcharakter):
+=======
+Wo die Wahrsagerin ist? Das rote Haus da vorne, Ihr könnt es nicht verfehlen!
+
+
+3. BÜRGER (Standardcharakter):
+=======
+Wahrsagerin - ha, ich glaube nicht an so einen Hokus-Pokus...
+
+
+++++++++++++++++ IM HAUS DER WAHRSAGERIN +++++++++++++++++
+
+WAHRSAGERIN:
+============
+Die Geister brachten mir schon vor Langem die Kunde Eurer Ankunft.
+Ich sehe... ich sehe, dass die Zukunft von Ethos am seidenen Faden hängt.
+Die alles entscheidende Schlacht rückt unaufhaltsam näher...
+Und ich sehe... Euch... wie Ihr versucht, dem dunklen König Einhalt zu gebieten doch...
+das Ende ist verschwommen... hinter einem... einem dunklen Schleier verborgen...
+Wartet... die Verbindung zur anderen Seite wird schwächer... ich sehe... einen Mönch in einem anderen Dorf... er weiß mehr... Ihr müsst ihn finden, so schnell es Euch nur irgend möglich ist...
+Oh nein, die Verbindung ist abgebrochen...
+Ich bin erschöpft.
+Findet den Mönch, er wird euch Antwort geben können.
+Doch überreicht ihm dieses Present, es wird ihm zeigen, dass er Euch vertrauen kann.
+Doch nun geht... geht!!!!
+
+
+POP-UP:
+=======
+Goldenes Medaillon erhalten
+
+POP-UP:
+=======
+2. Quest: Kämpfe dich durch den dunklen Wald und überbringe dem Mönch das Medaillon
+
+
+
+++++++++++++++++ IM DUNKLEN WALD +++++++++++++++++
+
+
+2. DIEB:
+========
+Halt! Keinen Schritt weiter. Übergebt mir sofort Euer ganzes Hab und Gut!
+
+
+3. DIEB:
+========
+Mein Kumpane war schwach... doch bei an mir werdet Ihr nicht vorbeikommen.
+
+
+4. DIEB:
+========
+Die anderen beide Waren schwächlinge. Ich bin der Anführer, mit mir werdet Ihr kein so leichtes Spiel haben!
+Das Medaillon wird sich gut an meinem Hals machen.
+
+
+++++++++++++++++ IM 2. DORF+++++++++++++++++
+
+
+MÖNCH:
+======
+Was wollt Ihr?
+Die Vergangenheit lehrte mich, keiner Menschenseele zu vertrauen...
+Aber was ist das, ein Geschenk?
+
+POP-UP:
+=======
+Das goldene Medaillon an den Mönch übergeben.
+
+MÖNCH:
+======
+Ihr seid der Auserwählte?
+Nun gut, ich werde dem Urteil der Wahrsagerin trauen, sie irrt selten in solchen Dingen.
+Dann kann ich es Euch ja verraten: Ich bin einer der Vertrauensträger des einstigen Zaubermeisters, BLABLA!
+Er übergab mir einen Trank mit dem Auftrag, ihm denjenigen zu übereignen, der die Gabe in sich trägt...
+Ihr seid jene Person, also überreiche ich Euch diesen Trank.
+
+
+POP-UP:
+=======
+Zaubertrank erhalten
+
+POP-UP:
+=======
+2. Quest erfolgreich abgeschlossen
+
+
+
+
+
+
+

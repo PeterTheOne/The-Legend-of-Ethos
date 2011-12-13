@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quests>
+	<quest startText="Gehe zum Zauberer" endText="">
+	<!--Switch to start somewhere else-->
+		<startObjective objType="null" />
+		<!--<startObjective objType="npcInteract" mapName="enteredcastle.xml" npcId="0" />-->
+		<startRewards>
+		</startRewards>
+		<endObjective objType="npcInteract" mapName="enteredcastle.xml" npcId="0" />
+		<beforeEndRewards>
+		</beforeEndRewards>
+		<objectives>
+		</objectives>
+		<rewards>
+				<reward rewType="getItem" itemType="4" />
+		</rewards>
+	</quest>
+	<quest startText="" endText="">
+		<startObjective objType="npcInteract" mapName="enteredcastle.xml" npcId="0" />
+		<startRewards>
+		</startRewards>
+		<objectives>
+			<objective objType="findItem" itemType="1" />
+			<objective objType="findItem" itemType="2" />
+			<objective objType="findItem" itemType="3" />
+		</objectives>
+		<beforeEndRewards>
+			<beforeEndReward rewType="changeDialog" mapName="enteredcastle.xml" npcId="0" dialogPath="q1_wiz_part2.xml" />
+			<beforeEndReward rewType="msg" text="Du hast alle Zauberkräuter gefunden, gehe zurück zum Zauberer" />
+		</beforeEndRewards>
+		<endObjective objType="npcInteract" mapName="enteredcastle.xml" npcId="0" />
+		<rewards>
+			<reward rewType="getItem" itemType="5" />
+			<reward rewType="removeNpc" mapName="map_castle_start.xml" npcId="0" />
+			<reward rewType="removeItem" itemType="1" />
+			<reward rewType="removeItem" itemType="2" />
+			<reward rewType="removeItem" itemType="3" />
+		</rewards>
+	</quest>
+	<quest startText="" endText="QUEST ERFOLGREICH BEENDET">
+		<startObjective objType="npcInteract" mapName="enteredhouse.xml" npcId="0" />
+		<startRewards>
+			<startReward rewType="getItem" itemType="7" />
+			<startReward rewType="removeNpc" mapName="map_wood1.xml" npcId="1"/>
+		</startRewards>
+		<beforeEndRewards>
+		</beforeEndRewards>
+		<endObjective objType="npcInteract" mapName="map_town2.xml" npcId="0" />
+		<objectives>
+		</objectives>
+		<rewards>
+			<reward rewType="getItem" itemType="6" />
+			<reward rewType="removeItem" itemType="7" />
+			<reward rewType="removeInfo" mapName="map_town2.xml" x="11" y="10" />
+		</rewards>
+	</quest>
+	<quest startText="" endText="">
+		<startObjective objType="npcInteract" mapName="enteredhouse_t2.xml" npcId="0" />
+		<startRewards>
+			<startReward rewType="removeInfo" mapName="map_town2.xml" x="0" y="3" />
+		</startRewards>
+		<beforeEndRewards>
+			<beforeEndReward rewType="msg" text="Hurra, das kleine Mädchen wurde befreit, bringt sie gesund zurück zu ihrem Großvater" />
+			<beforeEndReward rewType="removeInfo" mapName="map_darkerwood3.xml" x="17" y="7" />
+			<beforeEndReward rewType="removeInfo" mapName="map_darkerwood1.xml" x="12" y="1" />
+			<beforeEndReward rewType="createInfo" mapName="map_darkerwood3.xml" x="6" y="7" solid="true" img="fence.png" infoStr="Oh nein, der Durchgang ist nun versperrt... Es muss einen anderen Weg geben" />
+		</beforeEndRewards>
+		<endObjective objType="haveFollowing" mapName="enteredhouse_t2.xml" npcType="8" />
+		<objectives>
+			<objective objType="npcInteract" mapName="map_darkerwood3.xml" npcId="0" />
+		</objectives>
+		<rewards>
+			<reward rewType="changeDialog" mapName="enteredhouse_t2.xml" npcId="0" dialogPath="q3_oldman1.xml" />
+		</rewards>
+	</quest>
+	<quest startText="" endText="">
+		<startObjective objType="haveFollowing" mapName="enteredhouse_t2.xml" npcType="8" />
+		<startRewards>
+		</startRewards>
+		<beforeEndRewards>
+		</beforeEndRewards>
+		<endObjective objType="npcInteract" mapName="enteredhouse_t2.xml" npcId="0" />
+		<objectives>
+		</objectives>
+		<rewards>
+			<reward rewType="getItem" itemType="8" />
+			<reward rewType="stopFollowing" />
+			<reward rewType="removeInfo" mapName="map_darkerwood1.xml" x="0" y="3" />
+			
+			<reward rewType="changeDialog" mapName="enteredhouse_t2.xml" npcId="1" dialogPath="q3_littlegirl1.xml" />
+		</rewards>
+	</quest>
+	<quest startText="Sucht den Bösen König und bringt ihn zur Strecke" endText="Bösen König erfolgreich bezwungen">
+		<startObjective objType="npcInteract" mapName="enteredhouse_caveend.xml" npcId="0" />
+		<startRewards>
+		</startRewards>
+		<beforeEndRewards>
+		</beforeEndRewards>
+		<endObjective objType="npcWin" mapName="enteredcastle_bad.xml" npcId="0" />
+		<objectives>
+		</objectives>
+		<rewards>
+			<reward rewType="gameOutro" />
+		</rewards>
+	</quest>
+</quests>
+
+
+<!-- this is only a template to createNpcs...
+##############################################
+
+<reward rewType="createNpc" mapName="map_castle_start.xml" type="4" x="3" y="3" direction="down" dialogPath="q2_monk.xml" attacks="false" />
+
+-->
+			
+			
