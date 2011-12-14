@@ -5,7 +5,7 @@ The Legend of Ethos is a 2D RPG. This game was developed in the course of the st
 Project-Site:	http://petergrassberger.com/portfolio/ethos/
 
 Warning:
-This game was created before I had any knowledge of game engines and their architecture or writing clean and structured code. Also no Model View Controller (MVC) pattern was used, because GTGE does not encurage this.
+This game was created before I had any knowledge of game engines and their architecture or writing clean and structured code. Also no Model View Controller (MVC) pattern was used, because GTGE does not encourage this.
 
 Install:
 1. Download Golden T Game Engine (GTGE):
