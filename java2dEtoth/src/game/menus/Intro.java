@@ -20,9 +20,9 @@ public class Intro {
 		this.game = game;
 		
 		this.img = game.getImage(
-				new File(game.IMGPATH + File.separator + "inventory" + 
-						File.separator + "logoEND.gif")
-				.getPath()
+				game.fileToURL(
+					game.IMGPATH + File.separator + "inventory" + File.separator + "logoEND.gif"
+				)
 		);
 		
 		this.text = game.gameTexts.getText("continue");

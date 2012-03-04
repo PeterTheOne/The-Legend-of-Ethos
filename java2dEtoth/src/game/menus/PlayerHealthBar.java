@@ -27,17 +27,17 @@ public class PlayerHealthBar {
 
 		this.bg = game.getImage(
 				new File (
-					game.FIGHTIMGPATH + 
+					game.fileToURL(game.FIGHTIMGPATH + 
 					File.separator + 
-					"health_bg.png"
+					"health_bg.png")
 				)
 				.getAbsolutePath()
 		);
 		this.heart = game.getImage(
 				new File (
-					game.FIGHTIMGPATH + 
+					game.fileToURL(game.FIGHTIMGPATH + 
 					File.separator + 
-					"herz.png"
+					"herz.png")
 				)
 				.getAbsolutePath()
 		);

@@ -44,7 +44,7 @@ public class GameSounds {
 		sounds = new ArrayList<SoundFile>();		
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
-		Document doc = db.parse(game.GAMESOUNDSSFILEPATH);
+		Document doc = db.parse(game.getResourceURL(game.GAMESOUNDSSFILEPATH).openStream());
 		doc.getDocumentElement().normalize();
 		NodeList nodeLst = doc.getElementsByTagName("sound");
 		for (int i = 0; i < nodeLst.getLength(); i++) {
@@ -60,7 +60,7 @@ public class GameSounds {
 					new SoundFile(
 							name,
 							new File(
-									game.SOUNDPATH + 
+									game.getResourceFile(game.SOUNDPATH) + 
 									File.separator + 
 									soundPath
 							)

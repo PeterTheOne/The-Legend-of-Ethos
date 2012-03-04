@@ -108,7 +108,7 @@ public class Map {
 		nodeLst = doc.getElementsByTagName("enterMapSound");
 		fstElmnt = (Element) nodeLst.item(0);
 		if (fstElmnt != null) {
-			this.enterMapSound = new File(game.SOUNDPATH + 
+			this.enterMapSound = new File(game.getResourceFile(game.SOUNDPATH) + 
 					File.separator + 
 					fstElmnt.getAttribute("path") 
 			);
@@ -135,7 +135,7 @@ public class Map {
 		}
 		if (caveMode) {
 			//TODO...
-			File fogPath = new File(game.IMGPATH + 
+			File fogPath = new File(game.getResourceFile(game.IMGPATH) + 
 				File.separator + 
 				"fogofwar" + 
 				File.separator + 
@@ -147,9 +147,9 @@ public class Map {
 		
 		fightBgSpr = new Sprite(
 				game.getImage(
-						game.FIGHTIMGPATH + 
+						game.fileToURL(game.FIGHTIMGPATH + 
 						File.separator + 
-						path
+						path)
 				)
 		);
 
@@ -188,7 +188,7 @@ public class Map {
 			Vector2d tilePos = new Vector2d(x, y); 
 			String info = fstElmnt.getTextContent();
 			Boolean solid = Boolean.parseBoolean((String) fstElmnt.getAttribute("solid"));
-			File imgFile = new File(game.INOFSIMGPATH + File.separator +(String) fstElmnt.getAttribute("img"));
+			File imgFile = new File(game.fileToURL(game.INOFSIMGPATH + File.separator +(String) fstElmnt.getAttribute("img")));
 			BufferedImage imgArray[] = IOHelper.getImages(game, imgFile);
 			boolean light = IOHelper.XMLreadBooleanSafe(fstElmnt, "light");
 

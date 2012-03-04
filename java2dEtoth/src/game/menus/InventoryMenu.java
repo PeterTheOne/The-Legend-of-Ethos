@@ -38,13 +38,11 @@ public class InventoryMenu {
 		
 
 		bg = game.getImage(
-				new File(game.CHARMENUIMGPATH + File.separator + "menu_gross_transp.gif")
-				.getPath()
+				game.fileToURL(game.CHARMENUIMGPATH + File.separator + "menu_gross_transp.gif")
 		);
 
 		paper = game.getImage(
-				new File(game.INVENTORYIMGPATH + File.separator + "pergament.png")
-				.getPath()
+				game.fileToURL(game.INVENTORYIMGPATH + File.separator + "pergament.png")
 		);
 		
 		bgPos = new Vector2d(0, 0);
@@ -175,7 +173,7 @@ public class InventoryMenu {
 			if (game.player.getHealth() >= 10) {
 				break;
 			}
-			File walkSound = new File(game.SOUNDPATH + File.separator + "heilung.wav");
+			File walkSound = new File(game.getResourceFile(game.SOUNDPATH) + File.separator + "heilung.wav");
 			game.bsSound.play(walkSound.getAbsolutePath());
 			game.player.heal(10);
 			if (game.gameStateMachine.getPrevState() == GameState.FIGHT) {

@@ -62,30 +62,30 @@ public class MonsterTransformation {
 		
 		File path;
 		if (playerName.equals("player")) {
-			path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "char_player1.gif");
+			path = new File(game.getResourceFile(game.FIGHTCHANGEIMGPATH) + File.separator + "char_player1.gif");
 		} else {
-			path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "char_player_f.png");
+			path = new File(game.getResourceFile(game.FIGHTCHANGEIMGPATH) + File.separator + "char_player_f.png");
 		}
 		playerSpr = new AnimatedSprite(IOHelper.getImages(game, path));
 		
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "cloud.png");
+		path = new File(game.getResourceFile(game.FIGHTCHANGEIMGPATH) + File.separator + "cloud.png");
 		cloudImg = game.getImage(path.getAbsolutePath());
 
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "windmonster.png");
+		path = new File(game.getResourceFile(game.FIGHTCHANGEIMGPATH) + File.separator + "windmonster.png");
 		windMSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "zaubertrank_wind.png");
+		path = new File(game.getResourceFile(game.FIGHTCHANGEIMGPATH) + File.separator + "zaubertrank_wind.png");
 		windTSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "feuermonster.png");
+		path = new File(game.getResourceFile(game.FIGHTCHANGEIMGPATH) + File.separator + "feuermonster.png");
 		feuerMSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "zaubertrank_feuer.png");
+		path = new File(game.getResourceFile(game.FIGHTCHANGEIMGPATH) + File.separator + "zaubertrank_feuer.png");
 		feuerTSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "steinmonster.png");
+		path = new File(game.getResourceFile(game.FIGHTCHANGEIMGPATH) + File.separator + "steinmonster.png");
 		steinMSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "zaubertrank_stein.png");
+		path = new File(game.getResourceFile(game.FIGHTCHANGEIMGPATH) + File.separator + "zaubertrank_stein.png");
 		steinTSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "pflanze_200.gif");
+		path = new File(game.getResourceFile(game.FIGHTCHANGEIMGPATH) + File.separator + "pflanze_200.gif");
 		pflanzeMSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "zaubertrank_pflanze.png");
+		path = new File(game.getResourceFile(game.FIGHTCHANGEIMGPATH) + File.separator + "zaubertrank_pflanze.png");
 		pflanzeTSpr = new AnimatedSprite(IOHelper.getImages(game, path));
 		
 	}

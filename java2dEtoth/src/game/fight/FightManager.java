@@ -34,10 +34,11 @@ public class FightManager {
 		this.game = game;
 		bgSpr = new Sprite(
 				game.getImage(
-						game.FIGHTIMGPATH + 
+						game.fileToURL(game.FIGHTIMGPATH + 
 						File.separator + 
 						"fight_bg.jpg"
 						)
+				)
 		);
 		active = false;
 		projectiles = new ArrayList<FightProjectileSprite>();

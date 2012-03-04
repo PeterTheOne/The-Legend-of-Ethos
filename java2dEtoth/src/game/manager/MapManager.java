@@ -36,7 +36,7 @@ public class MapManager {
 			SAXException, IOException, CanNotReadFileException, 
 			IsNoDirectoryException, FolderContainsNoFilesException, 
 			NotFoundException {
-		File mapsPathAbs = game.MAPPATH.getAbsoluteFile();
+		File mapsPathAbs = game.getResourceFile(game.MAPPATH).getAbsoluteFile();
 		if (!mapsPathAbs.isDirectory()) {
 			throw new IsNoDirectoryException();
 		}

@@ -33,11 +33,11 @@ public class Tile extends TileObject {
 			//rescaleOp.filter(newImages[i], newImages[i]);
 			//TODO: change Image!
 			newImages[i] = game.getImage(
-					game.IMGPATH + 
+					game.fileToURL(game.IMGPATH + 
 					File.separator + 
 					"fogofwar" + 
 					File.separator + 
-					"fogofwar1.png"
+					"fogofwar1.png")
 			);
 		}
 		this.sprHidden = new AnimatedSprite(newImages);

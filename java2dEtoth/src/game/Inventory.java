@@ -99,7 +99,7 @@ public class Inventory {
 			}
 			game.mapMana.getCurrentMap().removeItem(item);
 			
-			File itemFoundSound = new File(game.SOUNDPATH + File.separator + "item_found.wav");
+			File itemFoundSound = new File(game.getResourceFile(game.SOUNDPATH) + File.separator + "item_found.wav");
 			game.bsSound.play(itemFoundSound.getAbsolutePath());
 			
 			for (ArrayList<Item> arrayListOfItems : items) {

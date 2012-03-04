@@ -25,6 +25,8 @@ import game.tileObjects.Item;
 
 import java.awt.*;
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import com.golden.gamedev.*;
 import com.golden.gamedev.object.GameFont;
@@ -34,14 +36,14 @@ public class EtothGame extends Game {
 	//Constants:
 	public final int TILESIZE = 40;
 	private static final Dimension DIMENSION = new Dimension(800, 600);
-	private static final boolean FULLSCREEN = true;
+	private static final boolean FULLSCREEN = false;
 	public final double CHARSPEED = 0.2;
 	public final double CHARANIMSPEED = 20 / CHARSPEED;
 	public final double VISIBLEDIS = 4.5;
 	public final double VISIBLEDISCAVE = 2.5;
 
 	//Paths:
-	public final File IMGPATH = new File("img");
+	public final File IMGPATH = new File("assets\\img");
 	public final File TILESIMGPATH = new File(IMGPATH + File.separator + "tiles");
 	public final File CHARIMGPATH = new File(IMGPATH + File.separator + "characters");
 	public final File CHARDIAIMGPATH = new File(IMGPATH + File.separator + "charactersdialog");
@@ -53,7 +55,7 @@ public class EtothGame extends Game {
 	public final File CHARMENUIMGPATH = new File(IMGPATH + File.separator + "charmenu");
 	public final File EXITMENUIMGPATH = new File(IMGPATH + File.separator + "exitmenu");
 	public final File INVENTORYIMGPATH = new File(IMGPATH + File.separator + "inventory");
-	public final File XMLPATH = new File("xml");
+	public final File XMLPATH = new File("game\\assets\\xml");
 	public final File MAPPATH = new File(XMLPATH + File.separator + "maps");
 	public final File TILEFILEPATH = new File(XMLPATH + File.separator + "tiles.xml");
 	public final File ITEMFILEPATH = new File(XMLPATH + File.separator + "items.xml");
@@ -61,8 +63,8 @@ public class EtothGame extends Game {
 	public final File NPCDIALOGPATH = new File(XMLPATH + File.separator + "npcdialog");
 	public final File GAMETEXTSFILEPATH = new File(XMLPATH + File.separator + "gametexts.xml");
 	public final File GAMESOUNDSSFILEPATH = new File(XMLPATH + File.separator + "gamesounds.xml");
-	public final File SOUNDPATH = new File("sound");
-	public final File FONTPATH = new File("font");
+	public final File SOUNDPATH = new File("game\\assets\\sound");
+	public final File FONTPATH = new File("game\\assets\\font");
 	public final String STARTMAPFILENAME = "map_castle_start.xml";
 
 	//Options:
@@ -106,6 +108,55 @@ public class EtothGame extends Game {
 	public GameSounds gameSounds;
 	public QuestManager questMana;
 
+	private URL codebase;
+	
+	public EtothGame(URL codebase) {
+		super();
+		this.codebase = codebase;
+		
+		//System.out.println("lol: " + this.codebase.getPath() + " - " + getResourceURL(ITEMFILEPATH));
+	}
+	
+	public String fileToURL(String filename) {
+		return filename.replace("\\", "/");
+	}
+	
+	public URL getResourceURL(File filename) {
+		//System.out.println("filename: " + filename);
+		
+		String filenameURLString = fileToURL( filename.toString() );
+		
+		//System.out.println("filenamerepl: " + filenameURLString);
+		
+		URL resource = null;
+
+			resource = getClass().getResource(
+				"/" + filenameURLString
+			);
+			
+			if(resource != null)
+			{
+				System.out.println("Resource loaded! " + resource);
+			}
+			else
+			{
+				System.out.println("Resource not found: " + "/" + filenameURLString);				
+			}
+		//File newFilename = new File(resource.getFile());
+			
+			return resource;
+				
+		
+		//System.out.println("final:" + newFilename);
+		
+		//return newFilename;
+		//return new File(this.codebase.getPath() + /*".." + */File.separator + filename);
+	}
+	
+	public File getResourceFile(File filename) {
+		return new File(getResourceURL(filename).getFile());
+	}
+	
 	public void initResources() {
 		super.hideCursor();
 		gameStateMachine = new GameStateMachine(this);
@@ -143,7 +194,7 @@ public class EtothGame extends Game {
 		//TODO: fix font..
 		String fName = "Andyb.ttf";
 		try {
-			andyFont = Font.createFont(Font.TRUETYPE_FONT, new File(FONTPATH + File.separator + fName));
+			andyFont = Font.createFont(Font.TRUETYPE_FONT, new File(getResourceURL(FONTPATH) + File.separator + fName));
 			font = andyFont.deriveFont(26f);
 		} catch (Exception ex) {
 			ex.printStackTrace();
@@ -223,9 +274,9 @@ public class EtothGame extends Game {
 	}
 
 	public static void main(String[] args) {
-		GameLoader game = new GameLoader();
+		/*GameLoader game = new GameLoader();
 		game.setup(new EtothGame(), DIMENSION, FULLSCREEN);
-		game.start();
+		game.start();*/
 		
 	}
 	

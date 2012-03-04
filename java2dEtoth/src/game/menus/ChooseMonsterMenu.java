@@ -52,20 +52,15 @@ public class ChooseMonsterMenu {
 		this.textSpacing = new Vector2d(0, 30);
 		
 		this.bg = game.getImage(
-				new File(
-						game.CHARMENUIMGPATH + 
+				
+						game.fileToURL(game.CHARMENUIMGPATH + 
 						File.separator + 
-						"menu_gross_transp.gif"
-				)
-				.getPath()
+						"menu_gross_transp.gif")
 		);
 		this.paper = game.getImage(
-				new File(
-						game.INVENTORYIMGPATH + 
+						game.fileToURL(game.INVENTORYIMGPATH + 
 						File.separator + 
-						"pergament.png"
-				)
-				.getPath()
+						"pergament.png")
 		);
 	}
 
@@ -131,7 +126,7 @@ public class ChooseMonsterMenu {
 					IOHelper.getImages(
 						game, 
 						new File(
-							game.FIGHTIMGPATH + 
+							game.getResourceFile(game.FIGHTIMGPATH) + 
 							File.separator + "change" + File.separator + 
 							path
 						)

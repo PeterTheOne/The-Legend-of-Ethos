@@ -52,7 +52,7 @@ public abstract class Character {
 
 	protected CharacterSprite loadSprite(String imgPath) 
 			throws FolderContainsNoFilesException {
-		File basePath = new File(game.CHARIMGPATH + File.separator + imgPath);
+		File basePath = new File(game.fileToURL(game.CHARIMGPATH + File.separator + imgPath));
 		File direPaths[] = new File[4];
 		direPaths[0] = new File(basePath + File.separator + "up");
 		direPaths[1] = new File(basePath + File.separator + "down");

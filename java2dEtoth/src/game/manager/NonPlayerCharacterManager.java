@@ -49,7 +49,7 @@ public class NonPlayerCharacterManager {
 
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
-		Document doc = db.parse(game.NPCFILEPATH);
+		Document doc = db.parse(game.getResourceURL(game.NPCFILEPATH).openStream());
 		doc.getDocumentElement().normalize();
 		NodeList nodeLst = doc.getElementsByTagName("npc");
 		for (int i = 0; i < nodeLst.getLength(); i++) {
@@ -109,20 +109,20 @@ public class NonPlayerCharacterManager {
 				if (evil) {
 					String fightName = fstElmnt.getAttribute("fightName");
 					File imagesPath = IOHelper.XMLreadPath(
-							fstElmnt, game.FIGHTCHARSIDEIMGPATH, 
+							fstElmnt, game.getResourceFile(game.FIGHTCHARSIDEIMGPATH), 
 							"fightImgPath");
 					BufferedImage[] images = IOHelper.getImages(
 							game, imagesPath);	
 					File projImgsPath = IOHelper.XMLreadPath(
-							fstElmnt, game.FIGHTIMGPATH, 
+							fstElmnt, game.getResourceFile(game.FIGHTIMGPATH), 
 							"fightProjPath");			
 					BufferedImage[] projImgs = IOHelper.getImages(
 							game, projImgsPath);
 					Direction direction = Direction.LEFT;
 					File hitSound = IOHelper.XMLreadPath(
-							fstElmnt, game.SOUNDPATH, "hitSound");
+							fstElmnt, game.getResourceFile(game.SOUNDPATH), "hitSound");
 					File projectileSound = IOHelper.XMLreadPath(
-							fstElmnt, game.SOUNDPATH, "projectileSound");
+							fstElmnt, game.getResourceFile(game.SOUNDPATH), "projectileSound");
 					
 					NpcFightSprite fightSpr = new NpcFightSprite(game, fightName, images, 
 							projImgs, direction, hitSound, projectileSound);

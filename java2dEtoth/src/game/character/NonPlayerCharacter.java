@@ -4,6 +4,7 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -78,12 +79,12 @@ public abstract class NonPlayerCharacter extends Character {
 			throws CanNotReadFileException, SAXException, IOException, 
 			ParserConfigurationException {
 		
-		File xmlfile = new File(game.NPCDIALOGPATH + File.separator + dialogPath);
+		File xmlfile = new File(game.getResourceFile(game.NPCDIALOGPATH) + File.separator + dialogPath);
 		if (!xmlfile.canRead())	throw new CanNotReadFileException();
 
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
-		Document doc = db.parse(xmlfile);
+		Document doc = db.parse(game.getResourceURL(new File(game.NPCDIALOGPATH + File.separator + dialogPath)).openStream());
 
 		doc.getDocumentElement().normalize();
 		NodeList nodeLst = doc.getElementsByTagName("line");
@@ -104,9 +105,9 @@ public abstract class NonPlayerCharacter extends Character {
 		if (dialogImgPath == null || dialogImgPath == "") {
 			return null;
 		}
-		File path = new File(
-				game.CHARDIAIMGPATH + File.separator + dialogImgPath);
-		return game.getImage(path.getPath());
+		String path = new String(
+				game.fileToURL(game.CHARDIAIMGPATH + File.separator + dialogImgPath));
+		return game.getImage(path);
 	}
 	
 	public void interact(Vector2d playerPos) throws Exception {		

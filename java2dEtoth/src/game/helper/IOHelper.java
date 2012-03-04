@@ -14,11 +14,12 @@ public class IOHelper {
 	
 	public static BufferedImage[] getImages(EtothGame game, File path) 
 			throws FolderContainsNoFilesException {
+		
 		//TODO: Exception?
 		BufferedImage imgArray[];
 		if (path.isFile()) {
 			imgArray = new BufferedImage[1];
-			imgArray[0] = game.getImage(path.getPath());
+			imgArray[0] = game.getImage( path.toString().replace(path.separator + "game", "") );
 		} else {
 			File imgList[] = path.listFiles(new ImageFileFilter());
 			if (imgList == null) {
@@ -28,7 +29,7 @@ public class IOHelper {
 			if (len > 0) {
 				imgArray = new BufferedImage[len];
 				for (int i = 0; i < imgArray.length; i++) {
-					imgArray[i] = game.getImage(imgList[i].getPath());
+					imgArray[i] = game.getImage( imgList[i].toString().replace(path.separator + "game", "") );
 				}
 			} else {
 				throw new FolderContainsNoFilesException();

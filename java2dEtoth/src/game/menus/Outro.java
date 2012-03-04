@@ -20,14 +20,11 @@ public class Outro {
 	public Outro(EtothGame game) {
 		this.game = game;
 		this.bgImg = game.getImage(
-				new File(
-						game.IMGPATH + 
-						File.separator + 
-						"inventory" + 
-						File.separator + 
-						"pergament.png"
-				)
-				.getPath()
+			game.fileToURL(game.IMGPATH + 
+				File.separator + 
+				"inventory" + 
+				File.separator + 
+				"pergament.png")
 		);
 		this.pos = new Vector2d(75,90);
 		this.text = game.gameTexts.getText("finished");

@@ -13,14 +13,11 @@ public class HelpInfo {
 
 	public HelpInfo(EtothGame game) {
 		img = game.getImage(
-				new File(
-						game.IMGPATH + 
+						game.fileToURL(game.IMGPATH + 
 						File.separator + 
 						"helpmenu" + 
 						File.separator + 
-						"help.png"
-				)
-				.getPath()
+						"help.png")
 		);
 	}
 	

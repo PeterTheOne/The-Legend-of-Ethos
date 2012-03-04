@@ -40,7 +40,7 @@ public class TileManager {
 
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
-		Document doc = db.parse(game.TILEFILEPATH);
+		Document doc = db.parse(game.getResourceURL(game.TILEFILEPATH).openStream());
 		doc.getDocumentElement().normalize();
 		NodeList nodeLst = doc.getElementsByTagName("tile");
 		for (int i = 0; i < nodeLst.getLength(); i++) {
@@ -51,7 +51,7 @@ public class TileManager {
 				//TODO: Exceptions?
 				int id = Integer.parseInt((String) fstElmnt.getAttribute("id"));
 				Boolean solid = Boolean.parseBoolean((String) fstElmnt.getAttribute("solid"));
-				File imgFile = new File(game.TILESIMGPATH + File.separator +(String) fstElmnt.getAttribute("img"));
+				File imgFile = game.getResourceFile(new File("game" + File.separator + game.TILESIMGPATH + File.separator +(String) fstElmnt.getAttribute("img")));
 				BufferedImage imgArray[] = IOHelper.getImages(game, imgFile);
 				
 				tiles.add(
