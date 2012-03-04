@@ -9,6 +9,7 @@ import game.tileObjects.Tile;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -51,7 +52,7 @@ public class TileManager {
 				//TODO: Exceptions?
 				int id = Integer.parseInt((String) fstElmnt.getAttribute("id"));
 				Boolean solid = Boolean.parseBoolean((String) fstElmnt.getAttribute("solid"));
-				File imgFile = game.getResourceFile(new File("game" + File.separator + game.TILESIMGPATH + File.separator +(String) fstElmnt.getAttribute("img")));
+				URL imgFile = game.getResourceURL(new File(game.TILESIMGPATH + File.separator +(String) fstElmnt.getAttribute("img")));
 				BufferedImage imgArray[] = IOHelper.getImages(game, imgFile);
 				
 				tiles.add(

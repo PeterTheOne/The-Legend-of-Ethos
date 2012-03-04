@@ -14,6 +14,8 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 
 import com.golden.gamedev.object.AnimatedSprite;
@@ -122,16 +124,21 @@ public class ChooseMonsterMenu {
 				path = "pflanzenmonster_menu.png";
 				break;
 			}
-			spr = new AnimatedSprite(
-					IOHelper.getImages(
-						game, 
-						new File(
-							game.getResourceFile(game.FIGHTIMGPATH) + 
-							File.separator + "change" + File.separator + 
-							path
+			try {
+				spr = new AnimatedSprite(
+						IOHelper.getImages(
+							game, 
+							new URL(
+								game.getResourceURL(game.FIGHTIMGPATH) + 
+								File.separator + "change" + File.separator + 
+								path
+							)
 						)
-					)
-			);
+				);
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			spr.setX(itemImagePos.getX() - 80 + 10);
 			spr.setY(itemImagePos.getY() - 70);
 			spr.render(g);

@@ -8,6 +8,7 @@ import game.math.Vector2d;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.net.URL;
 
 import com.golden.gamedev.object.AnimatedSprite;
 
@@ -33,7 +34,7 @@ public class Tile extends TileObject {
 			//rescaleOp.filter(newImages[i], newImages[i]);
 			//TODO: change Image!
 			newImages[i] = game.getImage(
-					game.fileToURL(game.IMGPATH + 
+					EtothGame.fileToURL(game.IMGPATH + 
 					File.separator + 
 					"fogofwar" + 
 					File.separator + 
@@ -43,7 +44,7 @@ public class Tile extends TileObject {
 		this.sprHidden = new AnimatedSprite(newImages);
 	}
 	
-	public void setSprHidden(File path) throws FolderContainsNoFilesException {
+	public void setSprHidden(URL path) throws FolderContainsNoFilesException {
 		BufferedImage[] images = IOHelper.getImages(game, path);
 		this.sprHidden = new AnimatedSprite(images);
 	}

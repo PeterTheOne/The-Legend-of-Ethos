@@ -16,6 +16,7 @@ import game.math.Vector2d;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -108,20 +109,20 @@ public class NonPlayerCharacterManager {
 				boolean evil = IOHelper.XMLreadBooleanSafe(fstElmnt, "evil");
 				if (evil) {
 					String fightName = fstElmnt.getAttribute("fightName");
-					File imagesPath = IOHelper.XMLreadPath(
+					URL imagesPath = IOHelper.XMLreadPath(
 							fstElmnt, game.getResourceFile(game.FIGHTCHARSIDEIMGPATH), 
 							"fightImgPath");
 					BufferedImage[] images = IOHelper.getImages(
 							game, imagesPath);	
-					File projImgsPath = IOHelper.XMLreadPath(
+					URL projImgsPath = IOHelper.XMLreadPath(
 							fstElmnt, game.getResourceFile(game.FIGHTIMGPATH), 
 							"fightProjPath");			
 					BufferedImage[] projImgs = IOHelper.getImages(
 							game, projImgsPath);
 					Direction direction = Direction.LEFT;
-					File hitSound = IOHelper.XMLreadPath(
+					URL hitSound = IOHelper.XMLreadPath(
 							fstElmnt, game.getResourceFile(game.SOUNDPATH), "hitSound");
-					File projectileSound = IOHelper.XMLreadPath(
+					URL projectileSound = IOHelper.XMLreadPath(
 							fstElmnt, game.getResourceFile(game.SOUNDPATH), "projectileSound");
 					
 					NpcFightSprite fightSpr = new NpcFightSprite(game, fightName, images, 

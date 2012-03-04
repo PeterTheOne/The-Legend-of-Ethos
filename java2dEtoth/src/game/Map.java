@@ -20,6 +20,7 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -135,7 +136,7 @@ public class Map {
 		}
 		if (caveMode) {
 			//TODO...
-			File fogPath = new File(game.getResourceFile(game.IMGPATH) + 
+			URL fogPath = new URL(game.getResourceURL(game.IMGPATH) + 
 				File.separator + 
 				"fogofwar" + 
 				File.separator + 
@@ -188,7 +189,7 @@ public class Map {
 			Vector2d tilePos = new Vector2d(x, y); 
 			String info = fstElmnt.getTextContent();
 			Boolean solid = Boolean.parseBoolean((String) fstElmnt.getAttribute("solid"));
-			File imgFile = new File(game.fileToURL(game.INOFSIMGPATH + File.separator +(String) fstElmnt.getAttribute("img")));
+			URL imgFile = game.getResourceURL(new File(EtothGame.fileToURL(game.INOFSIMGPATH + File.separator +(String) fstElmnt.getAttribute("img"))));
 			BufferedImage imgArray[] = IOHelper.getImages(game, imgFile);
 			boolean light = IOHelper.XMLreadBooleanSafe(fstElmnt, "light");
 

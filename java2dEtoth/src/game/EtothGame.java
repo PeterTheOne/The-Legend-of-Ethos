@@ -21,14 +21,16 @@ import game.menus.MonsterTransformation;
 import game.menus.Outro;
 import game.menus.PlayerHealthBar;
 import game.quest.QuestManager;
-import game.tileObjects.Item;
 
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Graphics2D;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import com.golden.gamedev.*;
+import com.golden.gamedev.Game;
+import com.golden.gamedev.GameLoader;
 import com.golden.gamedev.object.GameFont;
 
 public class EtothGame extends Game {
@@ -43,7 +45,7 @@ public class EtothGame extends Game {
 	public final double VISIBLEDISCAVE = 2.5;
 
 	//Paths:
-	public final File IMGPATH = new File("assets\\img");
+	public final File IMGPATH = new File("img");
 	public final File TILESIMGPATH = new File(IMGPATH + File.separator + "tiles");
 	public final File CHARIMGPATH = new File(IMGPATH + File.separator + "characters");
 	public final File CHARDIAIMGPATH = new File(IMGPATH + File.separator + "charactersdialog");
@@ -55,7 +57,7 @@ public class EtothGame extends Game {
 	public final File CHARMENUIMGPATH = new File(IMGPATH + File.separator + "charmenu");
 	public final File EXITMENUIMGPATH = new File(IMGPATH + File.separator + "exitmenu");
 	public final File INVENTORYIMGPATH = new File(IMGPATH + File.separator + "inventory");
-	public final File XMLPATH = new File("game\\assets\\xml");
+	public final File XMLPATH = new File("xml");
 	public final File MAPPATH = new File(XMLPATH + File.separator + "maps");
 	public final File TILEFILEPATH = new File(XMLPATH + File.separator + "tiles.xml");
 	public final File ITEMFILEPATH = new File(XMLPATH + File.separator + "items.xml");
@@ -63,8 +65,8 @@ public class EtothGame extends Game {
 	public final File NPCDIALOGPATH = new File(XMLPATH + File.separator + "npcdialog");
 	public final File GAMETEXTSFILEPATH = new File(XMLPATH + File.separator + "gametexts.xml");
 	public final File GAMESOUNDSSFILEPATH = new File(XMLPATH + File.separator + "gamesounds.xml");
-	public final File SOUNDPATH = new File("game\\assets\\sound");
-	public final File FONTPATH = new File("game\\assets\\font");
+	public final File SOUNDPATH = new File("sound");
+	public final File FONTPATH = new File("font");
 	public final String STARTMAPFILENAME = "map_castle_start.xml";
 
 	//Options:
@@ -117,7 +119,12 @@ public class EtothGame extends Game {
 		//System.out.println("lol: " + this.codebase.getPath() + " - " + getResourceURL(ITEMFILEPATH));
 	}
 	
-	public String fileToURL(String filename) {
+	public URL getCodeBase()
+	{
+		return codebase;
+	}
+	
+	public static String fileToURL(String filename) {
 		return filename.replace("\\", "/");
 	}
 	
@@ -140,7 +147,7 @@ public class EtothGame extends Game {
 			}
 			else
 			{
-				System.out.println("Resource not found: " + "/" + filenameURLString);				
+				System.out.println("Resource not found: " + "/" + filenameURLString);
 			}
 		//File newFilename = new File(resource.getFile());
 			
@@ -273,11 +280,11 @@ public class EtothGame extends Game {
 		}
 	}
 
-	public static void main(String[] args) {
-		/*GameLoader game = new GameLoader();
-		game.setup(new EtothGame(), DIMENSION, FULLSCREEN);
-		game.start();*/
+	/*public static void main(String[] args) {
+		GameLoader game = new GameLoader();
+		game.setup(new EtothGame()), DIMENSION, FULLSCREEN);
+		game.start();
 		
-	}
+	}*/
 	
 }

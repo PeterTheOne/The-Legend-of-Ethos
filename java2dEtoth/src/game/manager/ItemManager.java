@@ -12,6 +12,7 @@ import game.tileObjects.MonsterItem;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -55,17 +56,17 @@ public class ItemManager {
 				int type = IOHelper.XMLreadInt(fstElmnt, "type");
 				String name = fstElmnt.getAttribute("name");
 				String info = fstElmnt.getTextContent();
-				File imgFile = IOHelper.XMLreadPath(
+				URL imgFile = IOHelper.XMLreadPath(
 						fstElmnt, game.getResourceFile(game.ITEMSIMGPATH), "img");
 				BufferedImage imgArray[] = IOHelper.getImages(game, imgFile);
 				boolean monster = IOHelper.XMLreadBooleanSafe(
 						fstElmnt, "monster");
 				
 				if (monster) {
-					File imagesPath = IOHelper.XMLreadPath(
+					URL imagesPath = IOHelper.XMLreadPath(
 							fstElmnt, game.getResourceFile(game.FIGHTCHARSIDEIMGPATH), 
 							"fightImgPath");
-					File projImgsPath = IOHelper.XMLreadPath(
+					URL projImgsPath = IOHelper.XMLreadPath(
 							fstElmnt, game.getResourceFile(game.FIGHTIMGPATH), 
 							"fightProjPath");
 					
@@ -76,9 +77,9 @@ public class ItemManager {
 					
 					String fightName = fstElmnt.getAttribute("fightName");
 					
-					File hitSound = IOHelper.XMLreadPath(
+					URL hitSound = IOHelper.XMLreadPath(
 							fstElmnt, game.getResourceFile(game.SOUNDPATH), "hitSound");
-					File projectileSound = IOHelper.XMLreadPath(
+					URL projectileSound = IOHelper.XMLreadPath(
 							fstElmnt, game.getResourceFile(game.SOUNDPATH), "projectileSound");
 					
 					PlayerFightSprite fightSpr = new PlayerFightSprite(game, 
