@@ -231,8 +231,8 @@ public class QuestManager {
 			Boolean attacks = IOHelper.XMLreadBoolean(ele, "attacks");
 			questRew = new CreateNpcReward(game, mapName, type, tilePos, dialogPath, direction, attacks);
 		} else if (questRewType.equals("createInfo")){
-			URL imgPath = game.getResourceURL(new File (game.getResourceFile(game.INOFSIMGPATH) + File.separator 
-					+ ele.getAttribute("img")));
+			URL imgPath = new URL(game.getResourceURL(game.INOFSIMGPATH) + "/" 
+					+ ele.getAttribute("img"));
 			BufferedImage[] images = IOHelper.getImages(game, imgPath);
 			int x = Integer.parseInt((String) ele.getAttribute("x"));
 			int y = Integer.parseInt((String) ele.getAttribute("y"));

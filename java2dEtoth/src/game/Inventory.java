@@ -5,6 +5,8 @@ import game.tileObjects.Item;
 import game.tileObjects.MonsterItem;
 
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 
 public class Inventory {
@@ -99,8 +101,14 @@ public class Inventory {
 			}
 			game.mapMana.getCurrentMap().removeItem(item);
 			
-			File itemFoundSound = new File(game.getResourceFile(game.SOUNDPATH) + File.separator + "item_found.wav");
-			game.bsSound.play(itemFoundSound.getAbsolutePath());
+			URL itemFoundSound = null;
+			try {
+				itemFoundSound = new URL(game.getResourceURL(game.SOUNDPATH) + "/" + "item_found.wav");
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			game.bsSound.play(itemFoundSound.toString());
 			
 			for (ArrayList<Item> arrayListOfItems : items) {
 				if (arrayListOfItems.get(0).getType() == item.getType()) {

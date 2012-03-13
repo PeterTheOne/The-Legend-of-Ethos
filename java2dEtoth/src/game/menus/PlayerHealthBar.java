@@ -2,11 +2,17 @@ package game.menus;
 
 import game.EtothGame;
 import game.GameStateMachine.GameState;
+import game.exceptions.FolderContainsNoFilesException;
+import game.helper.IOHelper;
 import game.math.Vector2d;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import com.golden.gamedev.object.AnimatedSprite;
 
 public class PlayerHealthBar {
 
@@ -25,22 +31,16 @@ public class PlayerHealthBar {
 		this.pHealth = -1;
 		this.npcHealth = -1;
 
-		this.bg = game.getImage(
-				new File (
-					game.fileToURL(game.FIGHTIMGPATH + 
-					File.separator + 
-					"health_bg.png")
-				)
-				.getAbsolutePath()
-		);
-		this.heart = game.getImage(
-				new File (
-					game.fileToURL(game.FIGHTIMGPATH + 
-					File.separator + 
-					"herz.png")
-				)
-				.getAbsolutePath()
-		);
+		try {
+			this.bg = IOHelper.getImages(game, new URL(game.getResourceURL(game.FIGHTIMGPATH) + "/" + "health_bg.png"))[0];
+			this.heart = IOHelper.getImages(game, new URL(game.getResourceURL(game.FIGHTIMGPATH) + "/" + "herz.png"))[0];
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (FolderContainsNoFilesException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		this.playerPos = new Vector2d(10, 10);
 		this.npcPos = new Vector2d(	game.getWidth() - bg.getWidth(), 0)

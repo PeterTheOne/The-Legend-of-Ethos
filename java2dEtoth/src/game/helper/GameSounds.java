@@ -4,6 +4,7 @@ import game.EtothGame;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -20,9 +21,9 @@ public class GameSounds {
 	
 	class SoundFile {
 		private String name;
-		private File sound;
+		private URL sound;
 		
-		public SoundFile(String name, File sound) {
+		public SoundFile(String name, URL sound) {
 			this.name = name;
 			this.sound = sound;
 		}
@@ -31,7 +32,7 @@ public class GameSounds {
 			return this.name;
 		}
 		
-		public File getSound() {
+		public URL getSound() {
 			return this.sound;
 		}
 	}
@@ -59,9 +60,9 @@ public class GameSounds {
 				sounds.add(
 					new SoundFile(
 							name,
-							new File(
-									game.getResourceFile(game.SOUNDPATH) + 
-									File.separator + 
+							new URL(
+									game.getResourceURL(game.SOUNDPATH) + 
+									"/" + 
 									soundPath
 							)
 					)
@@ -74,7 +75,7 @@ public class GameSounds {
 	public void playSound(String name) {
 		for (SoundFile soundFile : sounds) {
 			if (name.equals(soundFile.getName())) {
-				game.bsSound.play(soundFile.getSound().getAbsolutePath());
+				game.bsSound.play(soundFile.getSound().toString());
 			}
 		}
 	}
@@ -82,7 +83,7 @@ public class GameSounds {
 	public void stopSound(String name) {
 		for (SoundFile soundFile : sounds) {
 			if (name.equals(soundFile.getName())) {
-				game.bsSound.stop(soundFile.getSound().getAbsolutePath());
+				game.bsSound.stop(soundFile.getSound().toString());
 			}
 		}
 	}

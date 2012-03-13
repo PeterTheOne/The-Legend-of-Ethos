@@ -65,8 +65,8 @@ public abstract class Character {
 		int aniLengths[] = new int[direPaths.length];
 		for (int i = 0; i < aniLengths.length; i++) {
 			try {
-				aniLengths[i] = IOHelper.getResourceListing(Character.class, direPaths[i].getPath() + "/").length;
-				System.out.println("o: " + aniLengths[i]);
+				aniLengths[i] = IOHelper.getResourceListing(Character.class, direPaths[i].getPath() + "/", "img").length;
+				//System.out.println("o: " + aniLengths[i]);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -93,10 +93,10 @@ public abstract class Character {
 		int j = 0;
 		for (int i = 0; i < direPaths.length; i++) {
 			imageFiles = IOHelper.getImages(game, direPaths[i]);
-			System.out.println("imageFiles: " + imageFiles.length);
+			//System.out.println("imageFiles: " + imageFiles.length);
 			for (int k = 0; k < aniLengths[i]; j++, k++) {
 				images[j] = imageFiles[k];
-				System.out.println("l " + j + " " + k);
+				//System.out.println("l " + j + " " + k);
 			}
 		}
 		/*BufferedImage images[] = new BufferedImage[countImagFiles];
@@ -109,7 +109,7 @@ public abstract class Character {
 				images[k] = imagesDire[j];
 			}
 		}*/
-		System.out.println("images: " + images.length + " anilengths " + aniLengths.length);
+		//System.out.println("images: " + images.length + " anilengths " + aniLengths.length);
 		CharacterSprite charSprite = new CharacterSprite(images, aniLengths);
 		charSprite.getAnimationTimer().setDelay((long) (game.CHARANIMSPEED));
 		return charSprite;

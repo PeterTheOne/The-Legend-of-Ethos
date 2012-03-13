@@ -1,6 +1,5 @@
 package game;
 
-import game.GameStateMachine.GameState;
 import game.character.EvilNPC;
 import game.character.FriendlyNPC;
 import game.character.NonPlayerCharacter;
@@ -20,6 +19,8 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 
@@ -38,7 +39,7 @@ import com.golden.gamedev.object.Sprite;
 public class Map {
 
 	private EtothGame game;
-	private File mapFilePath;
+	private URL mapFilePath;
 	private String name;
 	private ArrayList<Tile> tiles;
 	private ArrayList<Door> doors;
@@ -51,23 +52,23 @@ public class Map {
 	private File enterMapSound;
 	private boolean caveMode;
 
-	public Map(EtothGame game, File mapFilePath)
+	public Map(EtothGame game, URL mapFilePath)
 			throws ParserConfigurationException, SAXException, IOException, 
 			CanNotReadFileException, FolderContainsNoFilesException, 
 			NotFoundException {
 		this.game = game;
 		this.mapFilePath = mapFilePath;
-		this.name = mapFilePath.getName();
+		this.name = mapFilePath.toString().substring( mapFilePath.toString().lastIndexOf('/')+1, mapFilePath.toString().length() );/*.getName()*/;
 		loadMapFile(mapFilePath);
 	}
 
-	private void loadMapFile(File mapFilePath)
+	private void loadMapFile(URL mapFilePath)
 			throws ParserConfigurationException, SAXException, IOException,
 			CanNotReadFileException, FolderContainsNoFilesException,
 			NotFoundException {
-		if (!mapFilePath.canRead())	throw new CanNotReadFileException();
+		//if (!mapFilePath.canRead())	throw new CanNotReadFileException();
 
-		lastModified = mapFilePath.lastModified();
+		//lastModified = mapFilePath.lastModified();
 
 		tiles = new ArrayList<Tile>();
 		doors = new ArrayList<Door>();
@@ -77,7 +78,14 @@ public class Map {
 
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
-		Document doc = db.parse(mapFilePath);
+		// Convert a URL to a URI
+		/*URI uri = null;
+		try {
+		    uri = new URI(mapFilePath.toString());
+		} catch (URISyntaxException e) {
+		}
+		Document doc = db.parse(uri.toString());*/
+		Document doc = db.parse(mapFilePath.openStream());
 
 		doc.getDocumentElement().normalize();
 		NodeList nodeLst = doc.getElementsByTagName("row");
@@ -137,9 +145,9 @@ public class Map {
 		if (caveMode) {
 			//TODO...
 			URL fogPath = new URL(game.getResourceURL(game.IMGPATH) + 
-				File.separator + 
+				"/" + 
 				"fogofwar" + 
-				File.separator + 
+				"/" + 
 				"fogofwar_cave.png");
 			for (Tile tile : tiles) {
 				tile.setSprHidden(fogPath);
@@ -274,12 +282,12 @@ public class Map {
 	FolderContainsNoFilesException,
 	NotFoundException {
 		System.out.print("reloadCurrentMapMode: on | try reload: ");
-		if (mapFilePath.lastModified() > lastModified) {
+		/*if (mapFilePath.lastModified() > lastModified) {
 			loadMapFile(mapFilePath);
 			System.out.println("reloaded: " + name);
-		} else {
+		} else {*/
 			System.out.println("no reload: " + name);
-		}
+		//}
 	}
 
 	public boolean isSolid(Vector2d pos, Direction dir) {

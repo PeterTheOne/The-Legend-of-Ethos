@@ -67,31 +67,31 @@ public class MonsterTransformation {
 		try {
 		URL path;
 		if (playerName.equals("player")) {
-			path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + File.separator + "char_player1.gif");
+			path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + "/" + "char_player1.gif");
 		} else {
-			path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + File.separator + "char_player_f.png");
+			path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + "/" + "char_player_f.png");
 		}
 		playerSpr = new AnimatedSprite(IOHelper.getImages(game, path));
 		
-		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + File.separator + "cloud.png");
+		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + "/" + "cloud.png");
 		cloudImg = ImageIO.read(path);
 		
 
-		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + File.separator + "windmonster.png");
+		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + "/" + "windmonster.png");
 		windMSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + File.separator + "zaubertrank_wind.png");
+		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + "/" + "zaubertrank_wind.png");
 		windTSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + File.separator + "feuermonster.png");
+		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + "/" + "feuermonster.png");
 		feuerMSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + File.separator + "zaubertrank_feuer.png");
+		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + "/" + "zaubertrank_feuer.png");
 		feuerTSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + File.separator + "steinmonster.png");
+		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + "/" + "steinmonster.png");
 		steinMSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + File.separator + "zaubertrank_stein.png");
+		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + "/" + "zaubertrank_stein.png");
 		steinTSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + File.separator + "pflanze_200.gif");
+		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + "/" + "pflanze_200.gif");
 		pflanzeMSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + File.separator + "zaubertrank_pflanze.png");
+		path = new URL(game.getResourceURL(game.FIGHTCHANGEIMGPATH) + "/" + "zaubertrank_pflanze.png");
 		pflanzeTSpr = new AnimatedSprite(IOHelper.getImages(game, path));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

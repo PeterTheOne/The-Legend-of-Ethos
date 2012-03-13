@@ -1,8 +1,10 @@
 package game.manager;
 
 import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -16,6 +18,7 @@ import game.exceptions.FolderContainsNoFilesException;
 import game.exceptions.IsNoDirectoryException;
 import game.exceptions.NotFoundException;
 import game.fileFilters.XMLFileFilter;
+import game.helper.IOHelper;
 
 public class MapManager {
 
@@ -36,13 +39,15 @@ public class MapManager {
 			SAXException, IOException, CanNotReadFileException, 
 			IsNoDirectoryException, FolderContainsNoFilesException, 
 			NotFoundException {
-		File mapsPathAbs = game.getResourceFile(game.MAPPATH).getAbsoluteFile();
+		/*File mapsPathAbs = game.getResourceFile(game.MAPPATH).getAbsoluteFile();
 		if (!mapsPathAbs.isDirectory()) {
 			throw new IsNoDirectoryException();
-		}
+		}*/
 
 		maps = new ArrayList<Map>();
-		File[] fileList = mapsPathAbs.listFiles(new XMLFileFilter());
+		//File[] fileList = mapsPathAbs.listFiles(new XMLFileFilter());
+		URL xmlFile = game.getResourceURL(game.MAPPATH);
+		URL[] fileList = IOHelper.getXMLFiles(game, xmlFile);
 		if (((Integer)fileList.length).equals(0)) {
 			throw new FolderContainsNoFilesException();
 		}
@@ -57,7 +62,7 @@ public class MapManager {
 				return map;
 			}
 		}
-		throw new NotFoundException("Map not Found");
+		throw new NotFoundException("Map not Found: " + name);
 	}
 
 	public Map getCurrentMap() {

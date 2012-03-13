@@ -80,7 +80,7 @@ public abstract class NonPlayerCharacter extends Character {
 			ParserConfigurationException {
 		
 		File xmlfile = new File(game.getResourceFile(game.NPCDIALOGPATH) + File.separator + dialogPath);
-		if (!xmlfile.canRead())	throw new CanNotReadFileException();
+		//if (!xmlfile.canRead())	throw new CanNotReadFileException();
 
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
