@@ -18,8 +18,8 @@ public class NpcFightSprite extends FightSprite {
 	private int jumpFreq;
 
 	public NpcFightSprite(EtothGame game, String name, BufferedImage[] images, 
-			BufferedImage[] projImgs, Direction dir, URL  hitSound, 
-			URL projectileSound) {
+			BufferedImage[] projImgs, Direction dir, String  hitSound, 
+			String projectileSound) {
 		super(game, name, images, projImgs, dir, hitSound, projectileSound);
 		this.kiCache = 0;
 		

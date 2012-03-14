@@ -120,9 +120,9 @@ public class NonPlayerCharacterManager {
 					BufferedImage[] projImgs = IOHelper.getImages(
 							game, projImgsPath);
 					Direction direction = Direction.LEFT;
-					URL hitSound = IOHelper.XMLreadPath(
+					String hitSound = IOHelper.XMLreadString(
 							fstElmnt, game.getResourceFile(game.SOUNDPATH), "hitSound");
-					URL projectileSound = IOHelper.XMLreadPath(
+					String projectileSound = IOHelper.XMLreadString(
 							fstElmnt, game.getResourceFile(game.SOUNDPATH), "projectileSound");
 					
 					NpcFightSprite fightSpr = new NpcFightSprite(game, fightName, images, 

@@ -130,7 +130,7 @@ public class ChooseMonsterMenu {
 							game, 
 							new URL(
 								game.getResourceURL(game.FIGHTIMGPATH) + 
-								File.separator + "change" + File.separator + 
+								"/" + "change" + "/" + 
 								path
 							)
 						)

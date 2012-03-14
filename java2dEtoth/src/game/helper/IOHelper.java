@@ -100,7 +100,7 @@ public class IOHelper {
 				{
 					imgFile = new URL("jar:file:" + imgFile.toString().replace("file:", ""));
 				}
-				System.out.println("hmm " + imgFile);
+				//System.out.println("hmm " + imgFile);
 				
 			   imgArray[0] = ImageIO.read(imgFile);
 			} catch (IOException e) {
@@ -141,7 +141,7 @@ public class IOHelper {
 				imgArray = new BufferedImage[len];
 				for (int i = 0; i < imgArray.length; i++) {
 					try {
-						System.out.println("hmm " + imgList[i]);
+						//System.out.println("hmm " + imgList[i]);
 					   imgArray[i] = ImageIO.read(imgList[i]);
 					} catch (IOException e) {
 						// TODO Auto-generated catch block
@@ -187,6 +187,12 @@ public class IOHelper {
 		return Boolean.parseBoolean(str);
 	}
 
+	public static String XMLreadString(Element elem, File startPath,
+			String string) {
+		String pathStr = (String) elem.getAttribute(string);
+		return pathStr;
+	}
+	
 	public static URL XMLreadPath(Element elem, File startPath,
 			String string) {
 		String pathStr = (String) elem.getAttribute(string);

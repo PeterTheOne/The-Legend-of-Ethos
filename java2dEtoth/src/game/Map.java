@@ -49,7 +49,7 @@ public class Map {
 	private Vector2d playerStart;
 	private Long lastModified;
 	private Sprite fightBgSpr;
-	private File enterMapSound;
+	private String enterMapSound;
 	private boolean caveMode;
 
 	public Map(EtothGame game, URL mapFilePath)
@@ -117,10 +117,7 @@ public class Map {
 		nodeLst = doc.getElementsByTagName("enterMapSound");
 		fstElmnt = (Element) nodeLst.item(0);
 		if (fstElmnt != null) {
-			this.enterMapSound = new File(game.getResourceFile(game.SOUNDPATH) + 
-					File.separator + 
-					fstElmnt.getAttribute("path") 
-			);
+			this.enterMapSound = fstElmnt.getAttribute("path");
 		}
 
 		nodeLst = doc.getElementsByTagName("background");
@@ -594,7 +591,7 @@ public class Map {
 	
 	public void playEnterMapSound() {
 		if (enterMapSound != null) {
-			game.bsSound.play(enterMapSound.getAbsolutePath());
+			game.gameSounds.playSound(enterMapSound);
 		}
 	}
 

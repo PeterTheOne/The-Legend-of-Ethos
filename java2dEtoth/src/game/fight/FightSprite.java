@@ -22,8 +22,8 @@ public abstract class FightSprite {
 	protected Direction dir;
 	protected AnimatedSprite spr;
 	protected BufferedImage[] projImgs;
-	protected URL hitSound;
-	protected URL projectileSound;
+	protected String hitSound;
+	protected String projectileSound;
 	
 	private int jumpCount;	
 	private long animateCache;
@@ -38,8 +38,8 @@ public abstract class FightSprite {
 	protected double resistance;
 	
 	public FightSprite(EtothGame game, String name, BufferedImage[] images, 
-			BufferedImage[] projImgs, Direction dir, URL hitSound2, 
-			URL projectileSound2) {
+			BufferedImage[] projImgs, Direction dir, String hitSound2, 
+			String projectileSound2) {
 		this.game = game;
 		this.name = name;
 		this.dir = dir;
@@ -139,7 +139,7 @@ public abstract class FightSprite {
 	}
 
 	public void hit(int damage) {
-		game.bsSound.play(hitSound.getPath()/*.getAbsolutePath()*/);
+		game.gameSounds.playSound(hitSound);
 		this.health -= damage / resistance;
 		spr.setAnimate(true);
 		spr.setLoopAnim(true);
@@ -173,7 +173,8 @@ public abstract class FightSprite {
 				dir,
 				damage
 			);
-			game.bsSound.play(projectileSound.getPath()/*.getAbsolutePath()*/);
+			
+			game.gameSounds.playSound(projectileSound);
 			game.fightMana.addProjectile(proj);
 		}
 	}

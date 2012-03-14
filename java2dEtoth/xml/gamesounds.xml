@@ -6,4 +6,10 @@
 	<sound name="walkGras">grasboden.wav</sound>
 	<sound name="gameWin">crowd.wav</sound>
 	<sound name="change">verwandlung.wav</sound>
+	<sound name="itemFound">item_found.wav</sound>
+	<sound name="heilung">heilung.wav</sound>
+	<sound name="hit">treffersound.wav</sound>
+	<sound name="projectileStone">stone.wav</sound>
+	<sound name="projectileWind">wind.wav</sound>
+	<sound name="projectileFire">fireball.wav</sound>
 </sounds>

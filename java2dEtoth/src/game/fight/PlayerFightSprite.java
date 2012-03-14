@@ -12,7 +12,7 @@ public class PlayerFightSprite extends FightSprite {
 
 	public PlayerFightSprite(EtothGame game, String name, 
 			BufferedImage[] images, BufferedImage[] projImgs, Direction dir, 
-			URL hitSound, URL projectileSound) {
+			String hitSound, String projectileSound) {
 		super(game, name, images, projImgs, dir, hitSound, projectileSound);
 	}
 	

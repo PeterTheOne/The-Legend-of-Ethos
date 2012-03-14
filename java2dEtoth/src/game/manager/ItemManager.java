@@ -77,9 +77,9 @@ public class ItemManager {
 					
 					String fightName = fstElmnt.getAttribute("fightName");
 					
-					URL hitSound = IOHelper.XMLreadPath(
+					String hitSound = IOHelper.XMLreadString(
 							fstElmnt, game.getResourceFile(game.SOUNDPATH), "hitSound");
-					URL projectileSound = IOHelper.XMLreadPath(
+					String projectileSound = IOHelper.XMLreadString(
 							fstElmnt, game.getResourceFile(game.SOUNDPATH), "projectileSound");
 					
 					PlayerFightSprite fightSpr = new PlayerFightSprite(game, 

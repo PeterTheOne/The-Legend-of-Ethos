@@ -143,7 +143,7 @@ public class EtothGame extends Game {
 			
 			if(resource != null)
 			{
-				System.out.println("Resource loaded! " + resource);
+				//System.out.println("Resource loaded! " + resource);
 			}
 			else
 			{
@@ -201,7 +201,7 @@ public class EtothGame extends Game {
 		//TODO: fix font..
 		String fName = "Andyb.ttf";
 		try {
-			andyFont = Font.createFont(Font.TRUETYPE_FONT, new File(getResourceURL(FONTPATH) + File.separator + fName));
+			andyFont = Font.createFont(Font.TRUETYPE_FONT, new URL(getResourceURL(FONTPATH) + "/" + fName).openStream());
 			font = andyFont.deriveFont(26f);
 		} catch (Exception ex) {
 			ex.printStackTrace();

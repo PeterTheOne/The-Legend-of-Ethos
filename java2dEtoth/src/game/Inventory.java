@@ -101,14 +101,7 @@ public class Inventory {
 			}
 			game.mapMana.getCurrentMap().removeItem(item);
 			
-			URL itemFoundSound = null;
-			try {
-				itemFoundSound = new URL(game.getResourceURL(game.SOUNDPATH) + "/" + "item_found.wav");
-			} catch (MalformedURLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			game.bsSound.play(itemFoundSound.toString());
+			game.gameSounds.playSound("itemFound");
 			
 			for (ArrayList<Item> arrayListOfItems : items) {
 				if (arrayListOfItems.get(0).getType() == item.getType()) {

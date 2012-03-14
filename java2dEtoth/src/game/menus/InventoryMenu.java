@@ -173,8 +173,7 @@ public class InventoryMenu {
 			if (game.player.getHealth() >= 10) {
 				break;
 			}
-			File walkSound = new File(game.getResourceFile(game.SOUNDPATH) + File.separator + "heilung.wav");
-			game.bsSound.play(walkSound.getAbsolutePath());
+			game.gameSounds.playSound("heilung");
 			game.player.heal(10);
 			if (game.gameStateMachine.getPrevState() == GameState.FIGHT) {
 				game.fightMana.reloadHealth();
