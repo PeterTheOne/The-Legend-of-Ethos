@@ -186,8 +186,8 @@ public class Map {
 			Vector2d tilePos = new Vector2d(x, y); 
 			String info = fstElmnt.getTextContent();
 			Boolean solid = Boolean.parseBoolean((String) fstElmnt.getAttribute("solid"));
-			URL imgFile = game.getResourceURL(new File(EtothGame.fileToURL(game.INOFSIMGPATH + File.separator +(String) fstElmnt.getAttribute("img"))));
-			BufferedImage imgArray[] = IOHelper.getImages(game, imgFile);
+			String imgFile = IOHelper.XMLreadString( fstElmnt, "img" );
+			BufferedImage[] imgArray = game.gameImages.getImages( game.INOFSIMG, imgFile );
 			boolean light = IOHelper.XMLreadBooleanSafe(fstElmnt, "light");
 
 			information.add(

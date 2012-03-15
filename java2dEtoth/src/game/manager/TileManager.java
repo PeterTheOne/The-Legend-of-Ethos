@@ -52,8 +52,8 @@ public class TileManager {
 				//TODO: Exceptions?
 				int id = Integer.parseInt((String) fstElmnt.getAttribute("id"));
 				Boolean solid = Boolean.parseBoolean((String) fstElmnt.getAttribute("solid"));
-				URL imgFile = game.getResourceURL(new File(game.TILESIMGPATH + File.separator +(String) fstElmnt.getAttribute("img")));
-				BufferedImage imgArray[] = IOHelper.getImages(game, imgFile);
+				String imgFile = IOHelper.XMLreadString( fstElmnt, "img" );
+				BufferedImage[] imgArray = game.gameImages.getImages( game.TILESIMG, imgFile );
 				
 				tiles.add(
 						new Tile(

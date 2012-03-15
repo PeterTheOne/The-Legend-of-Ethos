@@ -115,21 +115,10 @@ public class ChooseMonsterMenu {
 				path = "pflanzenmonster_menu";
 				break;
 			}
-			try {
-				spr = new AnimatedSprite(
-						IOHelper.getImages(
-							game, 
-							new URL(
-								game.getResourceURL(game.FIGHTIMGPATH) + 
-								"/" + "change" + "/" + 
-								path
-							)
-						)
-				);
-			} catch (MalformedURLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			BufferedImage[] images = game.gameImages.getImages( game.FIGHTCHANGEIMG, path );
+			spr = new AnimatedSprite(
+					images
+			);
 			spr.setX(itemImagePos.getX() - 80 + 10);
 			spr.setY(itemImagePos.getY() - 70);
 			spr.render(g);

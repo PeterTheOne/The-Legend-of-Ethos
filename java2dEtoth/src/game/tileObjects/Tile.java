@@ -39,8 +39,7 @@ public class Tile extends TileObject {
 	}
 	
 	public void setSprHidden(String fogImage) throws FolderContainsNoFilesException {
-		BufferedImage[] images = new BufferedImage[1];
-		images[0] = game.gameImages.getImage(game.FOGOFWARIMG, fogImage);
+		BufferedImage[] images = game.gameImages.getImages(game.FOGOFWARIMG, fogImage);
 		this.sprHidden = new AnimatedSprite(images);
 	}
 	

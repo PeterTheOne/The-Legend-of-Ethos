@@ -109,16 +109,12 @@ public class NonPlayerCharacterManager {
 				boolean evil = IOHelper.XMLreadBooleanSafe(fstElmnt, "evil");
 				if (evil) {
 					String fightName = fstElmnt.getAttribute("fightName");
-					URL imagesPath = IOHelper.XMLreadPath(
-							fstElmnt, game.getResourceFile(game.FIGHTCHARSIDEIMGPATH), 
-							"fightImgPath");
-					BufferedImage[] images = IOHelper.getImages(
-							game, imagesPath);	
-					URL projImgsPath = IOHelper.XMLreadPath(
-							fstElmnt, game.getResourceFile(game.FIGHTIMGPATH), 
-							"fightProjPath");			
-					BufferedImage[] projImgs = IOHelper.getImages(
-							game, projImgsPath);
+					
+					String imagesPath = IOHelper.XMLreadString( fstElmnt, "fightImgPath" );
+					BufferedImage[] images = game.gameImages.getImages( game.FIGHTCHARSIDEIMG, imagesPath );
+					String projImgsPath = IOHelper.XMLreadString( fstElmnt, "fightProjPath" );
+					BufferedImage[] projImgs = game.gameImages.getImages( game.FIGHTIMG, projImgsPath );
+					
 					Direction direction = Direction.LEFT;
 					String hitSound = IOHelper.XMLreadString(
 							fstElmnt, "hitSound");

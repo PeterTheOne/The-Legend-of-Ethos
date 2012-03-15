@@ -4,7 +4,6 @@ import game.EtothGame;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
@@ -136,7 +135,7 @@ public class GameImages {
 		}
 	}
 	
-	private BufferedImage[] readImages(Element fstElmntParent, String catName, String sequenceName, int noImgs) throws MalformedURLException
+	private BufferedImage[] readImages(Element fstElmntParent, String catName, String sequenceName, int noImgs)
 	{
 		String elementType = "image";
 		if(sequenceName != "")
@@ -162,20 +161,27 @@ public class GameImages {
 				// Load image files
 				//for(int x = 0; x < noImgs; x++)
 				//{
-					URL imgUrl = new URL(
-							game.getResourceURL(game.IMGPATH) +
-							"/" +
-							catName +
-							sequenceName +
-							"/" + 
-							imagePath
-					);
+				String path = game.getResourceURL(game.IMGPATH) +
+						"/" +
+						catName +
+						sequenceName +
+						"/" +
+						imagePath;
+				
+				try
+				{
+					URL imgUrl = new URL( path );
 					System.out.println("Loading image " + imgUrl.toString() + " ...");
 					int index = 0;
 					if(sequenceName != "")
 						index = i;
 					imgs[index/*x*/] = game.getImage( imgUrl.toString() );
 				//}
+				} catch(Exception e)
+				{
+					System.out.println("Loading image " + path + " failed!");
+					e.printStackTrace();
+				}
 				
 				if(noImgs == 1)
 				{

@@ -56,16 +56,16 @@ public abstract class Character {
 
 	protected CharacterSprite loadSprite(String imgPath) 
 			throws FolderContainsNoFilesException {
-		String basePath = new String(game.fileToURL(game.CHARIMGPATH + File.separator + imgPath));
-		URL direPaths[] = new URL[4];
-		direPaths[0] = game.getResourceURL(new File(basePath + File.separator + "up"));
-		direPaths[1] = game.getResourceURL(new File(basePath + File.separator + "down"));
-		direPaths[2] = game.getResourceURL(new File(basePath + File.separator + "left"));
-		direPaths[3] = game.getResourceURL(new File(basePath + File.separator + "right"));
+		String basePath = game.CHARIMG + "/" + imgPath;
+		String direPaths[] = new String[4];
+		direPaths[0] = "up";
+		direPaths[1] = "down";
+		direPaths[2] = "left";
+		direPaths[3] = "right";
 		int aniLengths[] = new int[direPaths.length];
 		for (int i = 0; i < aniLengths.length; i++) {
 			try {
-				aniLengths[i] = IOHelper.getResourceListing(Character.class, direPaths[i].getPath() + "/", "img").length;
+				aniLengths[i] = IOHelper.getResourceListing(Character.class, direPaths[i] + "/", "img").length;
 				//System.out.println("o: " + aniLengths[i]);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
@@ -92,7 +92,11 @@ public abstract class Character {
 		BufferedImage images[] = new BufferedImage[countImagFiles];
 		int j = 0;
 		for (int i = 0; i < direPaths.length; i++) {
-			imageFiles = IOHelper.getImages(game, direPaths[i]);
+			imageFiles = game.gameImages.getImages( basePath, direPaths[i] );
+			
+			
+			
+			
 			//System.out.println("imageFiles: " + imageFiles.length);
 			for (int k = 0; k < aniLengths[i]; j++, k++) {
 				images[j] = imageFiles[k];

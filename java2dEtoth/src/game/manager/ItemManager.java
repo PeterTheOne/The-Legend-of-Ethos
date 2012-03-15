@@ -10,7 +10,6 @@ import game.tileObjects.Item;
 import game.tileObjects.MonsterItem;
 
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -55,10 +54,11 @@ public class ItemManager {
 				//TODO: Exceptions? wen etwas schief geht beim parsen..
 				int type = IOHelper.XMLreadInt(fstElmnt, "type");
 				String name = fstElmnt.getAttribute("name");
-				String info = fstElmnt.getTextContent();
-				URL imgFile = IOHelper.XMLreadPath(
-						fstElmnt, game.getResourceFile(game.ITEMSIMGPATH), "img");
-				BufferedImage imgArray[] = IOHelper.getImages(game, imgFile);
+				String info = fstElmnt.getTextContent();				
+				String imgFile = IOHelper.XMLreadString( fstElmnt, "img" );
+				BufferedImage[] imgArray = game.gameImages.getImages( game.ITEMSIMG, imgFile );
+				
+				
 				boolean monster = IOHelper.XMLreadBooleanSafe(
 						fstElmnt, "monster");
 				

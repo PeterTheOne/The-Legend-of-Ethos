@@ -28,6 +28,12 @@
 		<image name="heart">herz.png</image>
 		<image name="wirbelsturm_200">wirbelsturm_200.gif</image>
 		<image name="feuerball_200">feuerball_200.gif</image>
+		<image name="speer_200">speer_200.gif</image>
+		<image name="koenigGeschoss_200">koenigGeschoss_200.gif</image>
+		<image name="speer2_200">speer2_200.gif</image>
+		<image name="zaehne_200">zaehne_200.gif</image>
+		<image name="steinangriff_200">steinangriff_200.gif</image>
+		<image name="blaetter_200">blaetter_200.gif</image>
 	</category>
 	<category name="fight/charactersideviews">
 		<imagesequence name="feuer_200">

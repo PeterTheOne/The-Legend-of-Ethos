@@ -47,16 +47,21 @@ public class EtothGame extends Game {
 	//Paths:
 	public final File IMGPATH = new File("img");
 	public final File TILESIMGPATH = new File(IMGPATH + File.separator + "tiles");
+	public final String TILESIMG = "tiles";
 	public final File CHARIMGPATH = new File(IMGPATH + File.separator + "characters");
+	public final String CHARIMG = "characters";
 	//public final File CHARDIAIMGPATH = new File(IMGPATH + File.separator + "charactersdialog");
 	public final String CHARDIAIMG = "charactersdialog";
 	public final File ITEMSIMGPATH = new File(IMGPATH + File.separator + "items");
+	public final String ITEMSIMG = "items";
 	public final File INOFSIMGPATH = new File(IMGPATH + File.separator + "infos");
+	public final String INOFSIMG = "infos";
 	public final File FIGHTIMGPATH = new File(IMGPATH + File.separator + "fight");
 	public final String FIGHTIMG = "fight";
 	public final File FIGHTCHANGEIMGPATH = new File(FIGHTIMGPATH + File.separator + "change");
 	public final File FIGHTCHARSIDEIMGPATH = new File(FIGHTIMGPATH + File.separator + "charactersideviews");
 	public final String FIGHTCHARSIDEIMG = "charactersideviews";
+	public final String FIGHTCHANGEIMG = FIGHTIMG + "/change";
 	public final File CHARMENUIMGPATH = new File(IMGPATH + File.separator + "charmenu");
 	public final String CHARMENUIMG = "charmenu";
 	public final String MSGIMG = "msg";
