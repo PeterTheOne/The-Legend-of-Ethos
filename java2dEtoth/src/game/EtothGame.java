@@ -31,6 +31,7 @@ import java.net.URL;
 
 import com.golden.gamedev.Game;
 import com.golden.gamedev.GameLoader;
+import com.golden.gamedev.engine.audio.JOrbisOggRenderer;
 import com.golden.gamedev.object.GameFont;
 
 public class EtothGame extends Game {
@@ -193,6 +194,16 @@ public class EtothGame extends Game {
 			notifyExit();
 		}
 		return false;
+	}
+	
+	protected void initEngine() {
+		super.initEngine();
+
+        // set sound effect to use ogg
+        bsSound.setBaseRenderer(new JOrbisOggRenderer());
+
+        // set music to use ogg
+        bsMusic.setBaseRenderer(new JOrbisOggRenderer());
 	}
 	
 	private void loadFont() {

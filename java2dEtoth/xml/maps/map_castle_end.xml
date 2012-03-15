@@ -2,7 +2,7 @@
 <map>
 	<player startX="16" startY="3" />
 	<background path="fight_bg_bad.jpg" />
-	<enterMapSound path="laughKing.wav" />
+	<enterMapSound path="laughKing" />
 	<doors>
 		<door id="0" x="19" y="3" direction="left" target="map_cave_end.xml" targetId="2" />
 		

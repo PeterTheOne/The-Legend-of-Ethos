@@ -13,8 +13,8 @@
 		fightName="opponent" 
 		fightImgPath="gegner_200" 
 		fightProjPath="speer_200.gif"
-		hitSound="gegnertreffer.wav"
-		projectileSound="arrow.wav"
+		hitSound="gegnertreffer"
+		projectileSound="projectileArrow"
 	/>
 	<npc 
 		evil="false" 
@@ -29,8 +29,8 @@
 		fightName="badking" 
 		fightImgPath="koenig_200" 
 		fightProjPath="koenigGeschoss_200.png"
-		hitSound="stoenenKoenig.wav"
-		projectileSound="fireball_king.wav"
+		hitSound="kingHit"
+		projectileSound="projectileKing"
 	/>
 	<npc 
 		evil="false" 
@@ -51,8 +51,8 @@
 		fightName="opponentblack" 
 		fightImgPath="gegner_black_200" 
 		fightProjPath="speer2_200.gif"
-		hitSound="gegnertreffer.wav"
-		projectileSound="arrow.wav"
+		hitSound="gegnertreffer"
+		projectileSound="projectileArrow"
 	/>
 	<npc 
 		evil="false"
@@ -79,8 +79,8 @@
 		fightName="cavemonster" 
 		fightImgPath="schlange_200" 
 		fightProjPath="zaehne_200.gif"
-		hitSound="gegnertreffer.wav"
-		projectileSound="arrow.wav"
+		hitSound="gegnertreffer"
+		projectileSound="projectileArrow"
 	/>
 
 	
