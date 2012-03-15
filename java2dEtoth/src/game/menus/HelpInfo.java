@@ -12,13 +12,7 @@ public class HelpInfo {
 	private BufferedImage img;
 
 	public HelpInfo(EtothGame game) {
-		img = game.getImage(
-						game.fileToURL(game.IMGPATH + 
-						File.separator + 
-						"helpmenu" + 
-						File.separator + 
-						"help.png")
-		);
+		img = game.gameImages.getImage(game.HELPMENUIMG, "help");
 	}
 	
 	public void render(Graphics2D g) {

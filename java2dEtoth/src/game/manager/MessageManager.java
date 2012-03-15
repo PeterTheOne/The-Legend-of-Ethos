@@ -122,15 +122,7 @@ public class MessageManager {
 			);
 		}
 		
-		BufferedImage box = game.getImage(
-				
-						game.fileToURL(game.IMGPATH + 
-						File.separator + 
-						"msg" + 
-						File.separator + 
-						"msg.png")
-				
-		);
+		BufferedImage box = game.gameImages.getImage(game.MSGIMG, "msg");
 		g.drawImage(
 				box, 
 				(int) (game.getWidth() / 2d - box.getWidth() / 2d), 

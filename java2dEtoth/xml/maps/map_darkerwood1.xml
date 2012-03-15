@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <map>
 	<player startX="16" startY="3" />
-	<background path="fight_bg_midbad.jpg" />
+	<background path="fight_bg_midbad" />
 	<doors>
 		<!-- TODO: sollen doors auch immer eine info haben? -->
 		<door id="0" x="0" y="3" direction="right" target="map_cave_start.xml" targetId="0" />
@@ -28,8 +28,8 @@
 		</matrix>
 	
 	<information>
-		<info x="12" y="1" img="rock.png" solid="true"> Dieser Felsen ist zu schwer, um ihn zu bewegen</info>
-		<info x="0" y="3" img="rock.png" solid="true"> Ein Felsen versperrt den Durchgang</info>
+		<info x="12" y="1" img="rock" solid="true"> Dieser Felsen ist zu schwer, um ihn zu bewegen</info>
+		<info x="0" y="3" img="rock" solid="true"> Ein Felsen versperrt den Durchgang</info>
 	</information>
 	
 	<npcs>

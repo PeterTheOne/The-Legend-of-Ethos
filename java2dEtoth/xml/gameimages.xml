@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<images>
+	<category name="inventory">
+		<image name="logoEND">logoEND.gif</image>
+		<image name="pergament_bg">pergament.png</image>
+	</category>
+	<category name="exitmenu">
+		<image name="resumeSelected">resumeSelected.png</image>
+		<image name="exitSelected">exitSelected.png</image>
+	</category>
+	<category name="helpmenu">
+		<image name="help">help.png</image>
+	</category>
+	<category name="fogofwar">
+		<image name="fogofwar1">fogofwar1.png</image>
+	</category>
+	<category name="charmenu">
+		<image name="char1_selected">char1_selected.png</image>
+		<image name="char1_notselected">char1_notselected.png</image>
+		<image name="char2_selected">char2_selected.png</image>
+		<image name="char2_notselected">char2_notselected.png</image>
+	</category>
+	
+	
+	<category name="fight">
+		<image name="fight_bg">fight_bg.jpg</image>
+		<image name="health_bg">health_bg.png</image>
+		<image name="heart">herz.png</image>
+		<image name="wirbelsturm_200">wirbelsturm_200.gif</image>
+		<image name="feuerball_200">feuerball_200.gif</image>
+	</category>
+	<category name="fight/charactersideviews">
+		<imagesequence name="feuer_200">
+			<frame name="feuer_200">feuer_200.gif</frame>
+			<frame name="feuer_200_treffer">feuer_200_treffer.gif</frame>
+		</imagesequence>
+		<imagesequence name="gegner_200">
+			<frame name="gegner_200">gegner_200.gif</frame>
+			<frame name="gegner_200_treffer">gegner_200_treffer.gif</frame>
+		</imagesequence>
+		<imagesequence name="gegner_black_200">
+			<frame name="gegner_black_200">gegner_black_200.gif</frame>
+			<frame name="gegner_black_200_treffer">gegner_black_200_treffer.gif</frame>
+		</imagesequence>
+		<imagesequence name="koenig_200">
+			<frame name="koenig_200">koenig_200.gif</frame>
+			<frame name="koenig_200_treffer">koenig_200_treffer.gif</frame>
+		</imagesequence>
+		<imagesequence name="pflanze_200">
+			<frame name="pflanze_200">pflanze_200.gif</frame>
+			<frame name="pflanze_200_treffer">pflanze_200_treffer.gif</frame>
+		</imagesequence>
+		<imagesequence name="schlange_200">
+			<frame name="schlange_200">schlange_200.gif</frame>
+			<frame name="schlange_200_treffer">schlange_200_treffer.gif</frame>
+		</imagesequence>
+		<imagesequence name="stein_200">
+			<frame name="stein_200">stein_200.gif</frame>
+			<frame name="stein_200_treffer">stein_200_treffer.gif</frame>
+		</imagesequence>
+		<imagesequence name="wind_200">
+			<frame name="wind_200">wind_200.gif</frame>
+			<frame name="wind_200_treffer">wind_200_treffer.gif</frame>
+		</imagesequence>
+	</category>
+	
+	
+	<category name="charactersdialog">
+		<image name="zauberer">zauberer.gif</image>
+		<image name="koenig">koenig.gif</image>
+		<image name="moench">moench.gif</image>
+		<image name="wahrsagerin">wahrsagerin.gif</image>
+		<image name="littlegirl">littlegirl.png</image>
+		<image name="oldman">oldman.png</image>
+	</category>
+	<category name="charmenu">
+		<image name="menu_bg">menu_gross_transp.gif</image>
+	</category>
+	<category name="fight">
+		<image name="fight_bg_bad">fight_bg_bad.jpg</image>
+		<image name="fight_bg_cave">fight_bg_cave.jpg</image>
+		<image name="fight_bg_midbad">fight_bg_midbad.jpg</image>
+		<image name="fight_bg_schloss">fight_bg_schloss.jpg</image>
+	</category>
+</images>

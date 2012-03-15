@@ -126,10 +126,10 @@ public class Map {
 		if (fstElmnt != null) {
 			path = fstElmnt.getAttribute("path");
 			if (path == null || path.equals("") || path.equals(" ")) {
-				path = "fight_bg.jpg";
+				path = "fight_bg";
 			}
 		} else {
-			path = "fight_bg.jpg";
+			path = "fight_bg";
 		}
 		
 		nodeLst = doc.getElementsByTagName("caveMode");
@@ -141,22 +141,14 @@ public class Map {
 		}
 		if (caveMode) {
 			//TODO...
-			URL fogPath = new URL(game.getResourceURL(game.IMGPATH) + 
-				"/" + 
-				"fogofwar" + 
-				"/" + 
-				"fogofwar_cave.png");
+			String fogPath = "fogofwar_cave";
 			for (Tile tile : tiles) {
 				tile.setSprHidden(fogPath);
 			}
 		}
 		
 		fightBgSpr = new Sprite(
-				game.getImage(
-						game.fileToURL(game.FIGHTIMGPATH + 
-						File.separator + 
-						path)
-				)
+			game.gameImages.getImage(game.FIGHTIMG, path)
 		);
 
 		nodeLst = doc.getElementsByTagName("door");

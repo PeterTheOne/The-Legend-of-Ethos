@@ -121,9 +121,9 @@ public class NonPlayerCharacterManager {
 							game, projImgsPath);
 					Direction direction = Direction.LEFT;
 					String hitSound = IOHelper.XMLreadString(
-							fstElmnt, game.getResourceFile(game.SOUNDPATH), "hitSound");
+							fstElmnt, "hitSound");
 					String projectileSound = IOHelper.XMLreadString(
-							fstElmnt, game.getResourceFile(game.SOUNDPATH), "projectileSound");
+							fstElmnt, "projectileSound");
 					
 					NpcFightSprite fightSpr = new NpcFightSprite(game, fightName, images, 
 							projImgs, direction, hitSound, projectileSound);

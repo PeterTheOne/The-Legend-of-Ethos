@@ -105,9 +105,7 @@ public abstract class NonPlayerCharacter extends Character {
 		if (dialogImgPath == null || dialogImgPath == "") {
 			return null;
 		}
-		String path = new String(
-				game.fileToURL(game.CHARDIAIMGPATH + File.separator + dialogImgPath));
-		return game.getImage(path);
+		return game.gameImages.getImage(game.CHARDIAIMG, dialogImgPath);
 	}
 	
 	public void interact(Vector2d playerPos) throws Exception {		

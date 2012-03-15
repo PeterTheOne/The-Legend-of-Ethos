@@ -30,8 +30,8 @@
 		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="0" /><b id="8" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
 	</matrix>
 	<information>
-		<info x="1" y="8" img="wegweiser.png" solid="true"> Hier gehts in den Zauberwald</info>
-		<info x="7" y="14" img="wegweiser.png" solid="true">  Hier gehts in die Stadt</info>
+		<info x="1" y="8" img="wegweiser" solid="true"> Hier gehts in den Zauberwald</info>
+		<info x="7" y="14" img="wegweiser" solid="true">  Hier gehts in die Stadt</info>
 	</information>
 	
 	<npcs>

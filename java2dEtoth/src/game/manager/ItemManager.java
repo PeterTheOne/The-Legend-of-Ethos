@@ -63,24 +63,24 @@ public class ItemManager {
 						fstElmnt, "monster");
 				
 				if (monster) {
-					URL imagesPath = IOHelper.XMLreadPath(
-							fstElmnt, game.getResourceFile(game.FIGHTCHARSIDEIMGPATH), 
+					String imagesPath = IOHelper.XMLreadString(
+							fstElmnt,
 							"fightImgPath");
-					URL projImgsPath = IOHelper.XMLreadPath(
-							fstElmnt, game.getResourceFile(game.FIGHTIMGPATH), 
+					String projImgsPath = IOHelper.XMLreadString(
+							fstElmnt, 
 							"fightProjPath");
 					
-					BufferedImage[] images = IOHelper.getImages(
-							game, imagesPath);					
-					BufferedImage[] projImgs = IOHelper.getImages(
-							game, projImgsPath);
+					BufferedImage[] images = new BufferedImage[1];
+					BufferedImage[] projImgs = new BufferedImage[1];
+					images[0] = game.gameImages.getImage(game.FIGHTCHARSIDEIMG, imagesPath);
+					projImgs[0] = game.gameImages.getImage(game.FIGHTIMG, projImgsPath);
 					
 					String fightName = fstElmnt.getAttribute("fightName");
 					
 					String hitSound = IOHelper.XMLreadString(
-							fstElmnt, game.getResourceFile(game.SOUNDPATH), "hitSound");
+							fstElmnt, "hitSound");
 					String projectileSound = IOHelper.XMLreadString(
-							fstElmnt, game.getResourceFile(game.SOUNDPATH), "projectileSound");
+							fstElmnt, "projectileSound");
 					
 					PlayerFightSprite fightSpr = new PlayerFightSprite(game, 
 							fightName, images, projImgs, Direction.RIGHT, 

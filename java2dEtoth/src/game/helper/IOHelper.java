@@ -187,8 +187,7 @@ public class IOHelper {
 		return Boolean.parseBoolean(str);
 	}
 
-	public static String XMLreadString(Element elem, File startPath,
-			String string) {
+	public static String XMLreadString(Element elem, String string) {
 		String pathStr = (String) elem.getAttribute(string);
 		return pathStr;
 	}
@@ -242,6 +241,15 @@ public class IOHelper {
 	        String jarPath = dirURL.getPath().substring(5, dirURL.getPath().indexOf("!")); //strip out only the JAR file
 	        //System.out.println("3" + jarPath);
 	        jarPath = jarPath.replace("ethos.jar", "ethos_assets.jar");
+	        
+	        //System.out.println("jar path: " + jarPath);
+	        /*if( jarPath.startsWith("//") )
+	        {
+	        	jarPath = "http:" + jarPath;
+	        	//jarPath = jarPath.replace("\\", "/");
+	        }*/
+	        //System.out.println("jar path: " + jarPath);
+	        
 	        JarFile jar = new JarFile(URLDecoder.decode(jarPath, "UTF-8"));
 	        //System.out.println("3" + jarPath);
 	        Enumeration<JarEntry> entries = jar.entries(); //gives ALL entries in jar

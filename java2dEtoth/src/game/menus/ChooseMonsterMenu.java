@@ -53,17 +53,8 @@ public class ChooseMonsterMenu {
 		this.itemImagePos = new Vector2d(450, 70).add(paperPos);
 		this.textSpacing = new Vector2d(0, 30);
 		
-		this.bg = game.getImage(
-				
-						game.fileToURL(game.CHARMENUIMGPATH + 
-						File.separator + 
-						"menu_gross_transp.gif")
-		);
-		this.paper = game.getImage(
-						game.fileToURL(game.INVENTORYIMGPATH + 
-						File.separator + 
-						"pergament.png")
-		);
+		this.bg = game.gameImages.getImage(game.CHARMENUIMG, "menu_bg");
+		this.paper = game.gameImages.getImage(game.INVENTORYIMG, "pergament_bg");
 	}
 
 	public void update(long elapsedTime) {
@@ -112,16 +103,16 @@ public class ChooseMonsterMenu {
 			switch (item.getType()) {
 			//TODO: change this to xml...
 			case 4: 
-				path = "windmonster_menu.gif";
+				path = "windmonster_menu";
 				break;
 			case 5: 
-				path = "feuermonster_menu.gif";
+				path = "feuermonster_menu";
 				break;
 			case 6: 
-				path = "steinmonster_menu.gif";
+				path = "steinmonster_menu";
 				break;
 			case 8:
-				path = "pflanzenmonster_menu.png";
+				path = "pflanzenmonster_menu";
 				break;
 			}
 			try {

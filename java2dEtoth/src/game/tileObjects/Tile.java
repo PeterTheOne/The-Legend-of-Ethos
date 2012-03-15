@@ -33,19 +33,14 @@ public class Tile extends TileObject {
 		for (int i = 0; i < newImages.length; i++) {
 			//rescaleOp.filter(newImages[i], newImages[i]);
 			//TODO: change Image!
-			newImages[i] = game.getImage(
-					EtothGame.fileToURL(game.IMGPATH + 
-					File.separator + 
-					"fogofwar" + 
-					File.separator + 
-					"fogofwar1.png")
-			);
+			newImages[i] = game.gameImages.getImage(game.FOGOFWARIMG, "fogofwar1");
 		}
 		this.sprHidden = new AnimatedSprite(newImages);
 	}
 	
-	public void setSprHidden(URL path) throws FolderContainsNoFilesException {
-		BufferedImage[] images = IOHelper.getImages(game, path);
+	public void setSprHidden(String fogImage) throws FolderContainsNoFilesException {
+		BufferedImage[] images = new BufferedImage[1];
+		images[0] = game.gameImages.getImage(game.FOGOFWARIMG, fogImage);
 		this.sprHidden = new AnimatedSprite(images);
 	}
 	

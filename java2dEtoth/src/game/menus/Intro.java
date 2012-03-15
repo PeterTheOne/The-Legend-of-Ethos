@@ -19,11 +19,7 @@ public class Intro {
 	public Intro(EtothGame game) {
 		this.game = game;
 		
-		this.img = game.getImage(
-				game.fileToURL(
-					game.IMGPATH + File.separator + "inventory" + File.separator + "logoEND.gif"
-				)
-		);
+		this.img = game.gameImages.getImage(game.INVENTORYIMG, "logoEND");
 		
 		this.text = game.gameTexts.getText("continue");
 	}

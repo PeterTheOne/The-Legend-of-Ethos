@@ -6,7 +6,6 @@ import game.math.Vector2d;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
 
 import com.golden.gamedev.object.GameFont;
 
@@ -19,13 +18,7 @@ public class Outro {
 
 	public Outro(EtothGame game) {
 		this.game = game;
-		this.bgImg = game.getImage(
-			game.fileToURL(game.IMGPATH + 
-				File.separator + 
-				"inventory" + 
-				File.separator + 
-				"pergament.png")
-		);
+		this.bgImg = game.gameImages.getImage(game.INVENTORYIMG, "pergament_bg");
 		this.pos = new Vector2d(75,90);
 		this.text = game.gameTexts.getText("finished");
 	}

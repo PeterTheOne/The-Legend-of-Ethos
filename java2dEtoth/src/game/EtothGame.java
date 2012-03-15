@@ -3,6 +3,7 @@ package game;
 import game.character.Player;
 import game.exceptions.FolderContainsNoFilesException;
 import game.fight.FightManager;
+import game.helper.GameImages;
 import game.helper.GameSounds;
 import game.helper.GameTexts;
 import game.manager.InputManager;
@@ -26,11 +27,9 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.io.File;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 import com.golden.gamedev.Game;
-import com.golden.gamedev.GameLoader;
 import com.golden.gamedev.engine.audio.JOrbisOggRenderer;
 import com.golden.gamedev.object.GameFont;
 
@@ -49,15 +48,24 @@ public class EtothGame extends Game {
 	public final File IMGPATH = new File("img");
 	public final File TILESIMGPATH = new File(IMGPATH + File.separator + "tiles");
 	public final File CHARIMGPATH = new File(IMGPATH + File.separator + "characters");
-	public final File CHARDIAIMGPATH = new File(IMGPATH + File.separator + "charactersdialog");
+	//public final File CHARDIAIMGPATH = new File(IMGPATH + File.separator + "charactersdialog");
+	public final String CHARDIAIMG = "charactersdialog";
 	public final File ITEMSIMGPATH = new File(IMGPATH + File.separator + "items");
 	public final File INOFSIMGPATH = new File(IMGPATH + File.separator + "infos");
 	public final File FIGHTIMGPATH = new File(IMGPATH + File.separator + "fight");
+	public final String FIGHTIMG = "fight";
 	public final File FIGHTCHANGEIMGPATH = new File(FIGHTIMGPATH + File.separator + "change");
 	public final File FIGHTCHARSIDEIMGPATH = new File(FIGHTIMGPATH + File.separator + "charactersideviews");
+	public final String FIGHTCHARSIDEIMG = "charactersideviews";
 	public final File CHARMENUIMGPATH = new File(IMGPATH + File.separator + "charmenu");
+	public final String CHARMENUIMG = "charmenu";
+	public final String MSGIMG = "msg";
+	public final String EXITMENUIMG = "exitmenu";
+	public final String HELPMENUIMG = "helpmenu";
+	public final String FOGOFWARIMG = "fogofwar";
 	public final File EXITMENUIMGPATH = new File(IMGPATH + File.separator + "exitmenu");
-	public final File INVENTORYIMGPATH = new File(IMGPATH + File.separator + "inventory");
+	//public final File INVENTORYIMGPATH = new File(IMGPATH + File.separator + "inventory");
+	public final String INVENTORYIMG = "inventory";
 	public final File XMLPATH = new File("xml");
 	public final File MAPPATH = new File(XMLPATH + File.separator + "maps");
 	public final File TILEFILEPATH = new File(XMLPATH + File.separator + "tiles.xml");
@@ -66,6 +74,7 @@ public class EtothGame extends Game {
 	public final File NPCDIALOGPATH = new File(XMLPATH + File.separator + "npcdialog");
 	public final File GAMETEXTSFILEPATH = new File(XMLPATH + File.separator + "gametexts.xml");
 	public final File GAMESOUNDSSFILEPATH = new File(XMLPATH + File.separator + "gamesounds.xml");
+	public final File GAMEIMAGESFILEPATH = new File(XMLPATH + File.separator + "gameimages.xml");
 	public final File SOUNDPATH = new File("sound");
 	public final File FONTPATH = new File("font");
 	public final String STARTMAPFILENAME = "map_castle_start.xml";
@@ -109,6 +118,7 @@ public class EtothGame extends Game {
 	public GameFont font30;
 	public GameTexts gameTexts;
 	public GameSounds gameSounds;
+	public GameImages gameImages;
 	public QuestManager questMana;
 
 	private URL codebase;
@@ -181,6 +191,7 @@ public class EtothGame extends Game {
 				inputMana = new InputManager(this);
 				gameTexts = new GameTexts(this);
 				gameSounds = new GameSounds(this);
+				gameImages = new GameImages(this);
 				intro = new Intro(this);
 				outro = new Outro(this);
 				exitMenu = new ExitMenu(this);

@@ -2,7 +2,7 @@
 <map>
 	<player startX="3" startY="3" />
 	<enterMapSound path="laughKing" />
-	<background path="fight_bg_schloss.jpg" />
+	<background path="fight_bg_schloss" />
 	<doors>
 		<!-- TODO: sollen doors auch immer eine info haben? -->
 		<door id="0" x="8" y="14" direction="UP" target="map_castle_end.xml" targetId="1" />

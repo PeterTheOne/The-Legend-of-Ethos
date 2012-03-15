@@ -30,18 +30,10 @@ public class CharMenu {
 	
 	public CharMenu(EtothGame game) {
 		this.game = game;
-		String c1s = game.fileToURL(game.CHARMENUIMGPATH + File.separator + 
-				"char1_selected.png");
-		String c1ns = game.fileToURL(game.CHARMENUIMGPATH + File.separator + 
-				"char1_notselected.png");
-		String c2s = game.fileToURL(game.CHARMENUIMGPATH + File.separator + 
-				"char2_selected.png");
-		String c2ns = game.fileToURL(game.CHARMENUIMGPATH + File.separator + 
-				"char2_notselected.png");
-		this.c1sImg = game.getImage(c1s);
-		this.c1nsImg = game.getImage(c1ns);
-		this.c2sImg = game.getImage(c2s);
-		this.c2nsImg = game.getImage(c2ns);
+		this.c1sImg = game.gameImages.getImage(game.CHARMENUIMG, "char1_selected");
+		this.c1nsImg = game.gameImages.getImage(game.CHARMENUIMG, "char1_notselected");
+		this.c2sImg = game.gameImages.getImage(game.CHARMENUIMG, "char2_selected");
+		this.c2nsImg = game.gameImages.getImage(game.CHARMENUIMG, "char2_notselected");
 		this.selected = true;
 		this.c1current = c1sImg;
 		this.c2current = c2nsImg;

@@ -23,12 +23,8 @@ public class ExitMenu {
 		this.game = game;
 		selected = true;
 
-		String resumePath = game.fileToURL(game.EXITMENUIMGPATH + File.separator + 
-				"resumeSelected.png");
-		String exitPath =  game.fileToURL(game.EXITMENUIMGPATH + File.separator + 
-				"exitSelected.png");
-		this.resume = game.getImage(resumePath);
-		this.exit = game.getImage(exitPath);
+		this.resume = game.gameImages.getImage(game.EXITMENUIMG, "resumeSelected");
+		this.exit = game.gameImages.getImage(game.EXITMENUIMG, "exitSelected");
 	}
 	
 	public void selectNext() {

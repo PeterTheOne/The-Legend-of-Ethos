@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <dialog>
-	<line img="eron01.png">THIEF: Halt! Keinen Schritt weiter!</line>
+	<line img="eron01">THIEF: Halt! Keinen Schritt weiter!</line>
 	
 	
 </dialog>

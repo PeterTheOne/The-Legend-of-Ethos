@@ -31,16 +31,8 @@ public class PlayerHealthBar {
 		this.pHealth = -1;
 		this.npcHealth = -1;
 
-		try {
-			this.bg = IOHelper.getImages(game, new URL(game.getResourceURL(game.FIGHTIMGPATH) + "/" + "health_bg.png"))[0];
-			this.heart = IOHelper.getImages(game, new URL(game.getResourceURL(game.FIGHTIMGPATH) + "/" + "herz.png"))[0];
-		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (FolderContainsNoFilesException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		this.bg = game.gameImages.getImage(game.FIGHTIMG, "health_bg");
+		this.heart = game.gameImages.getImage(game.FIGHTIMG, "heart");
 		
 		this.playerPos = new Vector2d(10, 10);
 		this.npcPos = new Vector2d(	game.getWidth() - bg.getWidth(), 0)

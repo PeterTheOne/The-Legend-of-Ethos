@@ -37,13 +37,8 @@ public class InventoryMenu {
 		spr = null;
 		
 
-		bg = game.getImage(
-				game.fileToURL(game.CHARMENUIMGPATH + File.separator + "menu_gross_transp.gif")
-		);
-
-		paper = game.getImage(
-				game.fileToURL(game.INVENTORYIMGPATH + File.separator + "pergament.png")
-		);
+		bg = game.gameImages.getImage(game.CHARMENUIMG, "menu_bg");
+		paper = game.gameImages.getImage(game.INVENTORYIMG, "pergament_bg");
 		
 		bgPos = new Vector2d(0, 0);
 		paperPos = new Vector2d(70, 70).add(bgPos);
