@@ -18,7 +18,6 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 public class GameImages {
-	
 	class ImageFile {
 		private String name;
 		private String category;
@@ -115,7 +114,7 @@ public class GameImages {
 						//TODO: Exceptions?
 						String name = fstElmnt.getAttribute("name");
 		
-						System.out.println("Adding sequence " + catName + " | " + name + " ...");
+						//System.out.println("Adding sequence " + catName + " | " + name + " ...");
 						
 						NodeList nodeLst = fstElmnt.getElementsByTagName("frame");
 						int noImgs = nodeLst.getLength();
@@ -156,11 +155,9 @@ public class GameImages {
 				String name = fstElmnt.getAttribute("name");
 				String imagePath = fstElmnt.getTextContent();
 
-				System.out.println("Adding " + catName + " | " + sequenceName + name + " ...");
+				//System.out.println("Adding " + catName + " | " + sequenceName + name + " ...");
 				
 				// Load image files
-				//for(int x = 0; x < noImgs; x++)
-				//{
 				String path = game.getResourceURL(game.IMGPATH) +
 						"/" +
 						catName +
@@ -171,12 +168,11 @@ public class GameImages {
 				try
 				{
 					URL imgUrl = new URL( path );
-					System.out.println("Loading image " + imgUrl.toString() + " ...");
+					//System.out.println("Loading image " + imgUrl.toString() + " ...");
 					int index = 0;
 					if(sequenceName != "")
 						index = i;
-					imgs[index/*x*/] = game.getImage( imgUrl.toString() );
-				//}
+					imgs[index] = game.getImage( imgUrl.toString() );
 				} catch(Exception e)
 				{
 					System.out.println("Loading image " + path + " failed!");
@@ -200,7 +196,7 @@ public class GameImages {
 	
 	public BufferedImage getImage(String category, String name) {
 		for (ImageFile imageFile : images) {
-			if (name.equals(imageFile.getName())) {
+			if( name.equals( imageFile.getName() ) && category.equals( imageFile.getCategory() ) ) {
 				return imageFile.getImages()[0];
 			}
 		}
@@ -210,11 +206,21 @@ public class GameImages {
 	
 	public BufferedImage[] getImages(String category, String name) {
 		for (ImageFile imageFile : images) {
-			if (name.equals(imageFile.getName())) {
+			if( name.equals( imageFile.getName() ) && category.equals( imageFile.getCategory() ) ) {
 				return imageFile.getImages();
 			}
 		}
 		System.out.println("Path for image \"" + name + "\", category \"" + category + "\" not defined in XML");
 		return null;
+	}
+	
+	public int getNoOfFrames(String category, String name) {
+		for (ImageFile imageFile : images) {
+			if( name.equals( imageFile.getName() ) && category.equals( imageFile.getCategory() ) ) {
+				return imageFile.getImages().length;
+			}
+		}
+		System.out.println("Path for image \"" + name + "\", category \"" + category + "\" not defined in XML");
+		return 0;
 	}
 }

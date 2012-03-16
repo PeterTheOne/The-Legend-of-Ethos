@@ -1,14 +1,18 @@
 package game.manager;
 
 import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import game.EtothGame;
@@ -17,8 +21,6 @@ import game.exceptions.CanNotReadFileException;
 import game.exceptions.FolderContainsNoFilesException;
 import game.exceptions.IsNoDirectoryException;
 import game.exceptions.NotFoundException;
-import game.fileFilters.XMLFileFilter;
-import game.helper.IOHelper;
 
 public class MapManager {
 
@@ -38,21 +40,30 @@ public class MapManager {
 	private void loadMapsArray() throws ParserConfigurationException, 
 			SAXException, IOException, CanNotReadFileException, 
 			IsNoDirectoryException, FolderContainsNoFilesException, 
-			NotFoundException {
-		/*File mapsPathAbs = game.getResourceFile(game.MAPPATH).getAbsoluteFile();
-		if (!mapsPathAbs.isDirectory()) {
-			throw new IsNoDirectoryException();
-		}*/
-
+			NotFoundException {		
 		maps = new ArrayList<Map>();
-		//File[] fileList = mapsPathAbs.listFiles(new XMLFileFilter());
-		URL xmlFile = game.getResourceURL(game.MAPPATH);
-		URL[] fileList = IOHelper.getXMLFiles(game, xmlFile);
-		if (((Integer)fileList.length).equals(0)) {
-			throw new FolderContainsNoFilesException();
-		}
-		for (int i = 0; i < fileList.length; i++) {
-			maps.add(new Map(game, fileList[i]));
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		DocumentBuilder db = dbf.newDocumentBuilder();
+		Document doc = db.parse(game.getResourceURL(game.MAPFILEPATH).openStream());
+		doc.getDocumentElement().normalize();
+		NodeList nodeLst = doc.getElementsByTagName("map");
+		for (int i = 0; i < nodeLst.getLength(); i++) {
+			Node fstNode = nodeLst.item(i);
+			if (fstNode.getNodeType() == Node.ELEMENT_NODE) {
+				Element fstElmnt = (Element) fstNode;
+
+				//TODO: Exceptions?
+				String name = fstElmnt.getAttribute("name");
+				String xmlPath = fstElmnt.getTextContent();
+
+				URL xmlFile = new URL(
+						game.getResourceURL(game.MAPPATH) + 
+						"/" + 
+						xmlPath
+				);
+				
+				maps.add(new Map(game, xmlFile));
+			}
 		}
 	}
 

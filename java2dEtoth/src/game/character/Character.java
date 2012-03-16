@@ -2,18 +2,12 @@ package game.character;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 import game.EtothGame;
 import game.exceptions.FolderContainsNoFilesException;
 import game.exceptions.NotFoundException;
-import game.fileFilters.ImageFileFilter;
 import game.helper.DirectionHelper;
 import game.helper.DirectionHelper.Direction;
-import game.helper.IOHelper;
 import game.math.Vector2d;
 
 public abstract class Character {
@@ -64,38 +58,18 @@ public abstract class Character {
 		direPaths[3] = "right";
 		int aniLengths[] = new int[direPaths.length];
 		for (int i = 0; i < aniLengths.length; i++) {
-			try {
-				aniLengths[i] = IOHelper.getResourceListing(Character.class, direPaths[i] + "/", "img").length;
-				//System.out.println("o: " + aniLengths[i]);
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			//aniLengths[i] = direPaths[i].listFiles(new ImageFileFilter()).length;
+			aniLengths[i] = game.gameImages.getNoOfFrames( basePath, direPaths[i] );
 		}
 		int countImagFiles = 0;
 		for (int i = 0; i < direPaths.length; i++) {
 			countImagFiles += aniLengths[i];
 		}
 
-		/*File imageFiles[];
-		BufferedImage images[] = new BufferedImage[countImagFiles];
-		int j = 0;
-		for (int i = 0; i < direPaths.length; i++) {
-			imageFiles = direPaths[i].listFiles(new ImageFileFilter());
-			for (int k = 0; k < aniLengths[i]; j++, k++) {
-				images[j] =
-					game.getImage(imageFiles[k].getPath());
-			}
-		}*/
 		BufferedImage imageFiles[];
 		BufferedImage images[] = new BufferedImage[countImagFiles];
 		int j = 0;
 		for (int i = 0; i < direPaths.length; i++) {
 			imageFiles = game.gameImages.getImages( basePath, direPaths[i] );
-			
-			
-			
 			
 			//System.out.println("imageFiles: " + imageFiles.length);
 			for (int k = 0; k < aniLengths[i]; j++, k++) {
@@ -103,16 +77,7 @@ public abstract class Character {
 				//System.out.println("l " + j + " " + k);
 			}
 		}
-		/*BufferedImage images[] = new BufferedImage[countImagFiles];
-		int k = 0;
-		for (int i = 0; i < direPaths.length; i++) {
-			BufferedImage imagesDire[] = new BufferedImage[1];
-			imagesDire = IOHelper.getImages(game, direPaths[i]);
-			for (int j = 0; j < imagesDire.length; j++, k++)
-			{
-				images[k] = imagesDire[j];
-			}
-		}*/
+		
 		//System.out.println("images: " + images.length + " anilengths " + aniLengths.length);
 		CharacterSprite charSprite = new CharacterSprite(images, aniLengths);
 		charSprite.getAnimationTimer().setDelay((long) (game.CHARANIMSPEED));

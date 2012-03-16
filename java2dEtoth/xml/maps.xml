@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<maps>
+	<map name="enteredcastle">enteredcastle.xml</map>
+	<map name="enteredcastle_bad">enteredcastle_bad.xml</map>
+	<map name="enteredhouse">enteredhouse.xml</map>
+	<map name="enteredhouse_caveend">enteredhouse_caveend.xml</map>
+	<map name="enteredhouse_t2">enteredhouse_t2.xml</map>
+	<map name="map_castle_end">map_castle_end.xml</map>
+	<map name="map_castle_start">map_castle_start.xml</map>
+	<map name="map_cave_end">map_cave_end.xml</map>
+	<map name="map_cave_inside1">map_cave_inside1.xml</map>
+	<map name="map_cave_inside_four">map_cave_inside_four.xml</map>
+	<map name="map_cave_inside_one">map_cave_inside_one.xml</map>
+	<map name="map_cave_inside_three">map_cave_inside_three.xml</map>
+	<map name="map_cave_inside_two">map_cave_inside_two.xml</map>
+	<map name="map_cave_start">map_cave_start.xml</map>
+	<map name="map_darkerwood1">map_darkerwood1.xml</map>
+	<map name="map_darkerwood2">map_darkerwood2.xml</map>
+	<map name="map_darkerwood3">map_darkerwood3.xml</map>
+	<map name="map_darkerwood4">map_darkerwood4.xml</map>
+	<map name="map_darkwood">map_darkwood.xml</map>
+	<map name="map_town1">map_town1.xml</map>
+	<map name="map_town2">map_town2.xml</map>
+	<map name="map_wood1">map_wood1.xml</map>
+	<map name="map_wood2">map_wood2.xml</map>
+	<map name="map_wood3">map_wood3.xml</map>
+</maps>

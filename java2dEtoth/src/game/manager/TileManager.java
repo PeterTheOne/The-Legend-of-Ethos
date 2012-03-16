@@ -7,9 +7,7 @@ import game.helper.IOHelper;
 import game.tileObjects.Tile;
 
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -54,6 +52,21 @@ public class TileManager {
 				Boolean solid = Boolean.parseBoolean((String) fstElmnt.getAttribute("solid"));
 				String imgFile = IOHelper.XMLreadString( fstElmnt, "img" );
 				BufferedImage[] imgArray = game.gameImages.getImages( game.TILESIMG, imgFile );
+				
+				
+				
+				/*
+				String path = game.getResourceURL(game.TILESIMGPATH) +
+						"/" +
+						imgFile;
+				
+					URL imgUrl = new URL( path );
+					System.out.println("(Tile) Loading image " + imgUrl.toString() + " ...");
+					BufferedImage[] imgArray = new BufferedImage[1];
+					imgArray[0] = game.getImage( imgUrl.toString() );
+				
+				
+				*/
 				
 				tiles.add(
 						new Tile(
