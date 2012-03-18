@@ -78,13 +78,6 @@ public class Map {
 
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
-		// Convert a URL to a URI
-		/*URI uri = null;
-		try {
-		    uri = new URI(mapFilePath.toString());
-		} catch (URISyntaxException e) {
-		}
-		Document doc = db.parse(uri.toString());*/
 		Document doc = db.parse(mapFilePath.openStream());
 
 		doc.getDocumentElement().normalize();

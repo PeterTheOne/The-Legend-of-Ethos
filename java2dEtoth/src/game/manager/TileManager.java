@@ -51,22 +51,8 @@ public class TileManager {
 				int id = Integer.parseInt((String) fstElmnt.getAttribute("id"));
 				Boolean solid = Boolean.parseBoolean((String) fstElmnt.getAttribute("solid"));
 				String imgFile = IOHelper.XMLreadString( fstElmnt, "img" );
+				//System.out.println("---");
 				BufferedImage[] imgArray = game.gameImages.getImages( game.TILESIMG, imgFile );
-				
-				
-				
-				/*
-				String path = game.getResourceURL(game.TILESIMGPATH) +
-						"/" +
-						imgFile;
-				
-					URL imgUrl = new URL( path );
-					System.out.println("(Tile) Loading image " + imgUrl.toString() + " ...");
-					BufferedImage[] imgArray = new BufferedImage[1];
-					imgArray[0] = game.getImage( imgUrl.toString() );
-				
-				
-				*/
 				
 				tiles.add(
 						new Tile(
@@ -76,6 +62,8 @@ public class TileManager {
 								solid
 						)
 				);
+				
+				//System.out.println("tile " + id + " " + imgFile + " " + imgArray[0].toString());
 			}
 		}
 	}

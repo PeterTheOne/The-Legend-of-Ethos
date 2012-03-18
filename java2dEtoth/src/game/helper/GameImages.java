@@ -207,6 +207,7 @@ public class GameImages {
 	public BufferedImage[] getImages(String category, String name) {
 		for (ImageFile imageFile : images) {
 			if( name.equals( imageFile.getName() ) && category.equals( imageFile.getCategory() ) ) {
+				//System.out.println("getimg " + imageFile.getName() + " | " + imageFile.getCategory());
 				return imageFile.getImages();
 			}
 		}
