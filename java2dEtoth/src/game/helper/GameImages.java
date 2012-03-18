@@ -155,7 +155,6 @@ public class GameImages {
 	public BufferedImage getImage(String category, String name) {
 		for (ImageFile imageFile : images) {
 			if( name.equals( imageFile.getName() ) && category.equals( imageFile.getCategory() ) ) {
-				//System.out.println("Path for image \"" + name + "\", category \"" + category + "\" not defined in XML");
 				return imageFile.getImages()[0];
 			}
 		}
