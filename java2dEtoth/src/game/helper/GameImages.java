@@ -61,48 +61,7 @@ public class GameImages {
 
 				//TODO: Exceptions?
 				String catName = fstElmntCat.getAttribute("name");
-		
-				/*NodeList nodeLst = fstElmntCat.getElementsByTagName("image");
-				for (int i = 0; i < nodeLst.getLength(); i++) {
-					Node fstNode = nodeLst.item(i);
-					if (fstNode.getNodeType() == Node.ELEMENT_NODE) {
-						Element fstElmnt = (Element) fstNode;
-		
-						//TODO: Exceptions?
-						String name = fstElmnt.getAttribute("name");
-						String imagePath = fstElmnt.getTextContent();
-		
-						System.out.println("adding \"" + name + "\", category \"" + catName + "\" with path \"" + new URL(
-											game.getResourceURL(game.IMGPATH) + 
-											"/" + 
-											imagePath
-									));
-						
-						// Load image files
-						int noImgs = 1; // temp
-						BufferedImage[] imgs = new BufferedImage[noImgs];
-						for(int x = 0; x < noImgs; x++)
-						{
-							URL imgUrl = new URL(
-									game.getResourceURL(game.IMGPATH) +
-									"/" +
-									catName +
-									"/" + 
-									imagePath
-							);
-							imgs[x] = game.getImage( imgUrl.toString() );
-						}
-						
-						images.add(
-							new ImageFile(
-									name,
-									catName,
-									imgs
-							)
-							
-						);
-					}
-				}*/
+				
 				readImages(fstElmntCat, catName, "", 1);
 				
 				NodeList nodeLst2 = fstElmntCat.getElementsByTagName("imagesequence");
@@ -148,6 +107,7 @@ public class GameImages {
 		NodeList nodeLst = fstElmntParent.getElementsByTagName(elementType);
 		for (int i = 0; i < nodeLst.getLength(); i++) {
 			Node fstNode = nodeLst.item(i);
+			if(noImgs == 1) imgs = new BufferedImage[noImgs];
 			if (fstNode.getNodeType() == Node.ELEMENT_NODE) {
 				Element fstElmnt = (Element) fstNode;
 
@@ -165,16 +125,14 @@ public class GameImages {
 						"/" +
 						imagePath;
 				
-				try
-				{
+				try {
 					URL imgUrl = new URL( path );
 					//System.out.println("Loading image " + imgUrl.toString() + " ...");
 					int index = 0;
 					if(sequenceName != "")
 						index = i;
 					imgs[index] = game.getImage( imgUrl.toString() );
-				} catch(Exception e)
-				{
+				} catch(Exception e) {
 					System.out.println("Loading image " + path + " failed!");
 					e.printStackTrace();
 				}
@@ -197,6 +155,7 @@ public class GameImages {
 	public BufferedImage getImage(String category, String name) {
 		for (ImageFile imageFile : images) {
 			if( name.equals( imageFile.getName() ) && category.equals( imageFile.getCategory() ) ) {
+				//System.out.println("Path for image \"" + name + "\", category \"" + category + "\" not defined in XML");
 				return imageFile.getImages()[0];
 			}
 		}
@@ -207,7 +166,6 @@ public class GameImages {
 	public BufferedImage[] getImages(String category, String name) {
 		for (ImageFile imageFile : images) {
 			if( name.equals( imageFile.getName() ) && category.equals( imageFile.getCategory() ) ) {
-				//System.out.println("getimg " + imageFile.getName() + " | " + imageFile.getCategory());
 				return imageFile.getImages();
 			}
 		}
@@ -216,12 +174,6 @@ public class GameImages {
 	}
 	
 	public int getNoOfFrames(String category, String name) {
-		for (ImageFile imageFile : images) {
-			if( name.equals( imageFile.getName() ) && category.equals( imageFile.getCategory() ) ) {
-				return imageFile.getImages().length;
-			}
-		}
-		System.out.println("Path for image \"" + name + "\", category \"" + category + "\" not defined in XML");
-		return 0;
+		return getImages(category, name).length;
 	}
 }

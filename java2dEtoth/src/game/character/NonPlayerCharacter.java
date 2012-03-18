@@ -4,7 +4,6 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -79,7 +78,7 @@ public abstract class NonPlayerCharacter extends Character {
 			throws CanNotReadFileException, SAXException, IOException, 
 			ParserConfigurationException {
 		
-		File xmlfile = new File(game.getResourceFile(game.NPCDIALOGPATH) + File.separator + dialogPath);
+		//File xmlfile = new File(game.getResourceURL(game.NPCDIALOGPATH) + File.separator + dialogPath);
 		//if (!xmlfile.canRead())	throw new CanNotReadFileException();
 
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();

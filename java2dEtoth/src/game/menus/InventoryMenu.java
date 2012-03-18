@@ -8,7 +8,6 @@ import game.tileObjects.Item;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.util.ArrayList;
 
 import com.golden.gamedev.object.AnimatedSprite;

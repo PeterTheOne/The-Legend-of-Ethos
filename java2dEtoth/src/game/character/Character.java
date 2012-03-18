@@ -71,14 +71,11 @@ public abstract class Character {
 		for (int i = 0; i < direPaths.length; i++) {
 			imageFiles = game.gameImages.getImages( basePath, direPaths[i] );
 			
-			//System.out.println("imageFiles: " + imageFiles.length);
 			for (int k = 0; k < aniLengths[i]; j++, k++) {
 				images[j] = imageFiles[k];
-				//System.out.println("l " + j + " " + k);
 			}
 		}
 		
-		//System.out.println("images: " + images.length + " anilengths " + aniLengths.length);
 		CharacterSprite charSprite = new CharacterSprite(images, aniLengths);
 		charSprite.getAnimationTimer().setDelay((long) (game.CHARANIMSPEED));
 		return charSprite;

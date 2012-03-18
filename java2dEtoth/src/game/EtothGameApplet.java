@@ -6,6 +6,6 @@ import com.golden.gamedev.GameLoader;
 public class EtothGameApplet extends GameLoader {
 
 	protected Game createAppletGame() {
-		return new EtothGame(getCodeBase());
+		return new EtothGame();
 	}
 }

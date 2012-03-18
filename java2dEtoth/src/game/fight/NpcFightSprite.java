@@ -5,8 +5,6 @@ import game.exceptions.FolderContainsNoFilesException;
 import game.helper.DirectionHelper.Direction;
 
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.net.URL;
 import java.util.ArrayList;
 
 public class NpcFightSprite extends FightSprite {

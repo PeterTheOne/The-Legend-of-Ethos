@@ -7,8 +7,6 @@ import game.math.Vector2d;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.net.URL;
 
 import com.golden.gamedev.object.AnimatedSprite;
 
@@ -38,15 +36,15 @@ public abstract class FightSprite {
 	protected double resistance;
 	
 	public FightSprite(EtothGame game, String name, BufferedImage[] images, 
-			BufferedImage[] projImgs, Direction dir, String hitSound2, 
-			String projectileSound2) {
+			BufferedImage[] projImgs, Direction dir, String hitSound, 
+			String projectileSound) {
 		this.game = game;
 		this.name = name;
 		this.dir = dir;
 		this.spr = new AnimatedSprite(images);
 		this.projImgs = projImgs;
-		this.hitSound = hitSound2;
-		this.projectileSound = projectileSound2;
+		this.hitSound = hitSound;
+		this.projectileSound = projectileSound;
 		
 		int x = 0;
 		if (dir == Direction.LEFT) {

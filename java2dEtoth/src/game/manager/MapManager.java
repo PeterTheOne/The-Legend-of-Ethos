@@ -53,7 +53,7 @@ public class MapManager {
 				Element fstElmnt = (Element) fstNode;
 
 				//TODO: Exceptions?
-				String name = fstElmnt.getAttribute("name");
+				//String name = fstElmnt.getAttribute("name");
 				String xmlPath = fstElmnt.getTextContent();
 
 				URL xmlFile = new URL(

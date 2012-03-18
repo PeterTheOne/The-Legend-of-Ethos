@@ -3,11 +3,6 @@ package game.menus;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.net.URL;
-
-import javax.imageio.ImageIO;
 
 import com.golden.gamedev.object.AnimatedSprite;
 
@@ -16,7 +11,6 @@ import game.GameStateMachine.GameState;
 import game.character.NonPlayerCharacter;
 import game.exceptions.FolderContainsNoFilesException;
 import game.fight.PlayerFightSprite;
-import game.helper.IOHelper;
 import game.math.Vector2d;
 
 public class MonsterTransformation {

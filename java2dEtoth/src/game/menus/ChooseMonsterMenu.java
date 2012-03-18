@@ -5,7 +5,6 @@ import game.GameStateMachine.GameState;
 import game.character.NonPlayerCharacter;
 import game.exceptions.FolderContainsNoFilesException;
 import game.fight.PlayerFightSprite;
-import game.helper.IOHelper;
 import game.math.Vector2d;
 import game.tileObjects.Item;
 import game.tileObjects.MonsterItem;
@@ -13,9 +12,6 @@ import game.tileObjects.MonsterItem;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 
 import com.golden.gamedev.object.AnimatedSprite;

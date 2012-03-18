@@ -2,17 +2,10 @@ package game.menus;
 
 import game.EtothGame;
 import game.GameStateMachine.GameState;
-import game.exceptions.FolderContainsNoFilesException;
-import game.helper.IOHelper;
 import game.math.Vector2d;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
-
-import com.golden.gamedev.object.AnimatedSprite;
 
 public class PlayerHealthBar {
 

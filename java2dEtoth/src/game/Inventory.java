@@ -4,9 +4,6 @@ import game.exceptions.FolderContainsNoFilesException;
 import game.tileObjects.Item;
 import game.tileObjects.MonsterItem;
 
-import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 
 public class Inventory {

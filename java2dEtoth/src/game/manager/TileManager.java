@@ -51,7 +51,6 @@ public class TileManager {
 				int id = Integer.parseInt((String) fstElmnt.getAttribute("id"));
 				Boolean solid = Boolean.parseBoolean((String) fstElmnt.getAttribute("solid"));
 				String imgFile = IOHelper.XMLreadString( fstElmnt, "img" );
-				//System.out.println("---");
 				BufferedImage[] imgArray = game.gameImages.getImages( game.TILESIMG, imgFile );
 				
 				tiles.add(
@@ -62,8 +61,6 @@ public class TileManager {
 								solid
 						)
 				);
-				
-				//System.out.println("tile " + id + " " + imgFile + " " + imgArray[0].toString());
 			}
 		}
 	}

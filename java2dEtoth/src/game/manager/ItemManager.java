@@ -11,7 +11,6 @@ import game.tileObjects.MonsterItem;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -70,10 +69,8 @@ public class ItemManager {
 							fstElmnt, 
 							"fightProjPath");
 					
-					BufferedImage[] images = new BufferedImage[1];
-					BufferedImage[] projImgs = new BufferedImage[1];
-					images[0] = game.gameImages.getImage(game.FIGHTCHARSIDEIMG, imagesPath);
-					projImgs[0] = game.gameImages.getImage(game.FIGHTIMG, projImgsPath);
+					BufferedImage[] images = game.gameImages.getImages(game.FIGHTCHARSIDEIMG, imagesPath);
+					BufferedImage[] projImgs = game.gameImages.getImages(game.FIGHTIMG, projImgsPath); 
 					
 					String fightName = fstElmnt.getAttribute("fightName");
 					

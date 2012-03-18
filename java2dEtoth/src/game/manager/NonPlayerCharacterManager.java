@@ -14,9 +14,7 @@ import game.helper.DirectionHelper.Direction;
 import game.math.Vector2d;
 
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;

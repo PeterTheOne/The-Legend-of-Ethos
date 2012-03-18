@@ -30,6 +30,7 @@ import java.io.File;
 import java.net.URL;
 
 import com.golden.gamedev.Game;
+import com.golden.gamedev.GameLoader;
 import com.golden.gamedev.engine.audio.JOrbisOggRenderer;
 import com.golden.gamedev.object.GameFont;
 
@@ -115,31 +116,13 @@ public class EtothGame extends Game {
 	public GameSounds gameSounds;
 	public GameImages gameImages;
 	public QuestManager questMana;
-
-	private URL codebase;
-	
-	public EtothGame(URL codebase) {
-		super();
-		this.codebase = codebase;
-		
-		//System.out.println("lol: " + this.codebase.getPath() + " - " + getResourceURL(ITEMFILEPATH));
-	}
-	
-	public URL getCodeBase()
-	{
-		return codebase;
-	}
 	
 	public static String fileToURL(String filename) {
 		return filename.replace("\\", "/");
 	}
 	
 	public URL getResourceURL(File filename) {
-		//System.out.println("filename: " + filename);
-		
 		String filenameURLString = fileToURL( filename.toString() );
-		
-		//System.out.println("filenamerepl: " + filenameURLString);
 		
 		URL resource = null;
 
@@ -155,19 +138,8 @@ public class EtothGame extends Game {
 			{
 				System.out.println("Resource not found: " + "/" + filenameURLString);
 			}
-		//File newFilename = new File(resource.getFile());
 			
 			return resource;
-				
-		
-		//System.out.println("final:" + newFilename);
-		
-		//return newFilename;
-		//return new File(this.codebase.getPath() + /*".." + */File.separator + filename);
-	}
-	
-	public File getResourceFile(File filename) {
-		return new File(getResourceURL(filename).getFile());
 	}
 	
 	public void initResources() {
@@ -299,9 +271,7 @@ public class EtothGame extends Game {
 
 	/*public static void main(String[] args) {
 		GameLoader game = new GameLoader();
-		game.setup(new EtothGame()), DIMENSION, FULLSCREEN);
+		game.setup(new EtothGame(), DIMENSION, FULLSCREEN);
 		game.start();
-		
 	}*/
-	
 }

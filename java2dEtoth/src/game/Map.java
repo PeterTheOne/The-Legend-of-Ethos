@@ -17,10 +17,7 @@ import game.tileObjects.Tile;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 
@@ -39,7 +36,6 @@ import com.golden.gamedev.object.Sprite;
 public class Map {
 
 	private EtothGame game;
-	private URL mapFilePath;
 	private String name;
 	private ArrayList<Tile> tiles;
 	private ArrayList<Door> doors;
@@ -57,8 +53,7 @@ public class Map {
 			CanNotReadFileException, FolderContainsNoFilesException, 
 			NotFoundException {
 		this.game = game;
-		this.mapFilePath = mapFilePath;
-		this.name = mapFilePath.toString().substring( mapFilePath.toString().lastIndexOf('/')+1, mapFilePath.toString().length() );/*.getName()*/;
+		this.name = mapFilePath.toString().substring( mapFilePath.toString().lastIndexOf('/')+1, mapFilePath.toString().length() );
 		loadMapFile(mapFilePath);
 	}
 
