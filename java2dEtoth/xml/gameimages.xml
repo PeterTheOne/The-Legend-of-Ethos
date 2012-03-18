@@ -436,6 +436,7 @@
 	</category>
 	<category name="fight/change">
 		<image name="char_player1">char_player1.gif</image>
+		<image name="char_player_f">char_player_f.png</image>
 		<image name="cloud">cloud.gif</image>
 		<image name="windmonster">windmonster.png</image>
 		<image name="windmonster_menu">windmonster_menu.gif</image>

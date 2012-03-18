@@ -1,7 +1,7 @@
 del ethos.jar
 del ethos_assets.jar
 cd ..\bin\
-"C:\Program Files (x86)\Java\jdk1.6.0_30\bin\jar" cf ethos.jar *
+"C:\Program Files (x86)\Java\jdk1.6.0_30\bin\jar" cfm ethos.jar ..\deploy\Manifest.txt *
 cd ..
 "C:\Program Files (x86)\Java\jdk1.6.0_30\bin\jar" cf ethos_assets.jar font img sound xml
 move ethos_assets.jar deploy/ethos_assets.jar

@@ -1,0 +1,1 @@
+Class-Path: goldenT.jar GTGE_add_ons.jar jogg-0.0.7.jar jorbis-0.0.15.jar
