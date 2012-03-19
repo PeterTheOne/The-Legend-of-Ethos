@@ -6,7 +6,6 @@ import game.math.Vector2d;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
 
 public class PlayerHealthBar {
 
@@ -25,22 +24,8 @@ public class PlayerHealthBar {
 		this.pHealth = -1;
 		this.npcHealth = -1;
 
-		this.bg = game.getImage(
-				new File (
-					game.FIGHTIMGPATH + 
-					File.separator + 
-					"health_bg.png"
-				)
-				.getAbsolutePath()
-		);
-		this.heart = game.getImage(
-				new File (
-					game.FIGHTIMGPATH + 
-					File.separator + 
-					"herz.png"
-				)
-				.getAbsolutePath()
-		);
+		this.bg = game.gameImages.getImage(game.FIGHTIMG, "health_bg");
+		this.heart = game.gameImages.getImage(game.FIGHTIMG, "heart");
 		
 		this.playerPos = new Vector2d(10, 10);
 		this.npcPos = new Vector2d(	game.getWidth() - bg.getWidth(), 0)

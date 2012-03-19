@@ -10,7 +10,6 @@ import game.tileObjects.Item;
 import game.tileObjects.MonsterItem;
 
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -43,7 +42,7 @@ public class ItemManager {
 
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
-		Document doc = db.parse(game.ITEMFILEPATH);
+		Document doc = db.parse(game.getResourceURL(game.ITEMFILEPATH).openStream());
 		doc.getDocumentElement().normalize();
 		NodeList nodeLst = doc.getElementsByTagName("item");
 		for (int i = 0; i < nodeLst.getLength(); i++) {
@@ -54,32 +53,31 @@ public class ItemManager {
 				//TODO: Exceptions? wen etwas schief geht beim parsen..
 				int type = IOHelper.XMLreadInt(fstElmnt, "type");
 				String name = fstElmnt.getAttribute("name");
-				String info = fstElmnt.getTextContent();
-				File imgFile = IOHelper.XMLreadPath(
-						fstElmnt, game.ITEMSIMGPATH, "img");
-				BufferedImage imgArray[] = IOHelper.getImages(game, imgFile);
+				String info = fstElmnt.getTextContent();				
+				String imgFile = IOHelper.XMLreadString( fstElmnt, "img" );
+				BufferedImage[] imgArray = game.gameImages.getImages( game.ITEMSIMG, imgFile );
+				
+				
 				boolean monster = IOHelper.XMLreadBooleanSafe(
 						fstElmnt, "monster");
 				
 				if (monster) {
-					File imagesPath = IOHelper.XMLreadPath(
-							fstElmnt, game.FIGHTCHARSIDEIMGPATH, 
+					String imagesPath = IOHelper.XMLreadString(
+							fstElmnt,
 							"fightImgPath");
-					File projImgsPath = IOHelper.XMLreadPath(
-							fstElmnt, game.FIGHTIMGPATH, 
+					String projImgsPath = IOHelper.XMLreadString(
+							fstElmnt, 
 							"fightProjPath");
 					
-					BufferedImage[] images = IOHelper.getImages(
-							game, imagesPath);					
-					BufferedImage[] projImgs = IOHelper.getImages(
-							game, projImgsPath);
+					BufferedImage[] images = game.gameImages.getImages(game.FIGHTCHARSIDEIMG, imagesPath);
+					BufferedImage[] projImgs = game.gameImages.getImages(game.FIGHTIMG, projImgsPath); 
 					
 					String fightName = fstElmnt.getAttribute("fightName");
 					
-					File hitSound = IOHelper.XMLreadPath(
-							fstElmnt, game.SOUNDPATH, "hitSound");
-					File projectileSound = IOHelper.XMLreadPath(
-							fstElmnt, game.SOUNDPATH, "projectileSound");
+					String hitSound = IOHelper.XMLreadString(
+							fstElmnt, "hitSound");
+					String projectileSound = IOHelper.XMLreadString(
+							fstElmnt, "projectileSound");
 					
 					PlayerFightSprite fightSpr = new PlayerFightSprite(game, 
 							fightName, images, projImgs, Direction.RIGHT, 

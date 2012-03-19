@@ -43,7 +43,8 @@ public class GameTexts {
 		
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
-		Document doc = db.parse(game.GAMETEXTSFILEPATH);
+		Document doc = db.parse(game.getResourceURL(game.GAMETEXTSFILEPATH).openStream());
+		
 		doc.getDocumentElement().normalize();
 		NodeList nodeLst = doc.getElementsByTagName("text");
 		for (int i = 0; i < nodeLst.getLength(); i++) {

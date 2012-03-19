@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <map>
 	<player startX="5" startY="2" />
-	<background path="fight_bg_midbad.jpg" />
+	<background path="fight_bg_midbad" />
 	<doors>
 		<!-- TODO: sollen doors auch immer eine info haben? -->
 		<door id="0" x="5" y="0" direction="down" target="map_darkerwood3.xml" targetId="1" />

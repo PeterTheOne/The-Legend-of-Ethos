@@ -4,7 +4,6 @@ import game.exceptions.FolderContainsNoFilesException;
 import game.tileObjects.Item;
 import game.tileObjects.MonsterItem;
 
-import java.io.File;
 import java.util.ArrayList;
 
 public class Inventory {
@@ -99,8 +98,7 @@ public class Inventory {
 			}
 			game.mapMana.getCurrentMap().removeItem(item);
 			
-			File itemFoundSound = new File(game.SOUNDPATH + File.separator + "item_found.wav");
-			game.bsSound.play(itemFoundSound.getAbsolutePath());
+			game.gameSounds.playSound("itemFound");
 			
 			for (ArrayList<Item> arrayListOfItems : items) {
 				if (arrayListOfItems.get(0).getType() == item.getType()) {

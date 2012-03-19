@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <dialog>
-	<line img="eron01.png">WIZZARD: Oh, ich sehe, Ihr habt alle Zutaten beisammen... Wartet kurz, sodass ich den Zaubertrank brauen kann.</line>
-	<line img="eron01.png">WIZZARD: ... </line>
-	<line img="eron01.png">WIZZARD: Bitte nehmt diesen Trank. Er wird Euch Kraft geben und Euren Körper für die Dauer eines Kampfes in den eines starken Wesens verwandeln. Probiert es einfach bei Eurem nächsten Kampf aus.</line>
-	<line img="eron01.png">ZAUBERTRANK ERHALTEN</line>
-	<line img="eron01.png">1. Quest erfolgreich abgeschlossen!</line>
-	<line img="eron01.png">WIZZARD: Haltet ein, teurer Freund! Beinah hätt ich es vergessen. Man munkelt, dass die Wahrsagerin im Dorf eine Prophezeihung für Euch hat. Besucht sie doch und findet heraus, ob etwas Wahres an der Geschichte ist..</line>
-	<line img="eron01.png">BESUCHE DIE WAHRSAGERIN IM DORF</line>
+	<line img="eron01">WIZZARD: Oh, ich sehe, Ihr habt alle Zutaten beisammen... Wartet kurz, sodass ich den Zaubertrank brauen kann.</line>
+	<line img="eron01">WIZZARD: ... </line>
+	<line img="eron01">WIZZARD: Bitte nehmt diesen Trank. Er wird Euch Kraft geben und Euren Körper für die Dauer eines Kampfes in den eines starken Wesens verwandeln. Probiert es einfach bei Eurem nächsten Kampf aus.</line>
+	<line img="eron01">ZAUBERTRANK ERHALTEN</line>
+	<line img="eron01">1. Quest erfolgreich abgeschlossen!</line>
+	<line img="eron01">WIZZARD: Haltet ein, teurer Freund! Beinah hätt ich es vergessen. Man munkelt, dass die Wahrsagerin im Dorf eine Prophezeihung für Euch hat. Besucht sie doch und findet heraus, ob etwas Wahres an der Geschichte ist..</line>
+	<line img="eron01">BESUCHE DIE WAHRSAGERIN IM DORF</line>
 </dialog>

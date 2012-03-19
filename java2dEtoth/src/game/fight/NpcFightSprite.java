@@ -5,7 +5,6 @@ import game.exceptions.FolderContainsNoFilesException;
 import game.helper.DirectionHelper.Direction;
 
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.util.ArrayList;
 
 public class NpcFightSprite extends FightSprite {
@@ -17,8 +16,8 @@ public class NpcFightSprite extends FightSprite {
 	private int jumpFreq;
 
 	public NpcFightSprite(EtothGame game, String name, BufferedImage[] images, 
-			BufferedImage[] projImgs, Direction dir, File  hitSound, 
-			File projectileSound) {
+			BufferedImage[] projImgs, Direction dir, String  hitSound, 
+			String projectileSound) {
 		super(game, name, images, projImgs, dir, hitSound, projectileSound);
 		this.kiCache = 0;
 		

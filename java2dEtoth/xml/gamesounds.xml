@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sounds>
-	<sound name="info">wizzardtafeln.wav</sound>
-	<sound name="findItem">wizzardtafeln.wav</sound>
-	<sound name="npcTalk">murmur.wav</sound>
-	<sound name="walkGras">grasboden.wav</sound>
-	<sound name="gameWin">crowd.wav</sound>
-	<sound name="change">verwandlung.wav</sound>
+	<sound name="info">wizzardtafeln.mp3</sound>
+	<sound name="findItem">wizzardtafeln.mp3</sound>
+	<sound name="npcTalk">murmur.mp3</sound>
+	<sound name="walkGras">grasboden.mp3</sound>
+	<sound name="gameWin">crowd.mp3</sound>
+	<sound name="change">verwandlung.mp3</sound>
+	<sound name="itemFound">item_found.mp3</sound>
+	<sound name="heilung">heilung.mp3</sound>
+	<sound name="hit">treffersound.mp3</sound>
+	<sound name="projectileStone">stone.mp3</sound>
+	<sound name="projectileWind">wind.mp3</sound>
+	<sound name="projectileFire">fireball.mp3</sound>
+	<sound name="projectileArrow">arrow.mp3</sound>
+	<sound name="projectileKing">fireball_king.mp3</sound>
+	<sound name="laughKing">laughKing.mp3</sound>
+	<sound name="gegnertreffer">gegnertreffer.mp3</sound>
+	<sound name="kingHit">stoenenKoenig.mp3</sound>
 </sounds>

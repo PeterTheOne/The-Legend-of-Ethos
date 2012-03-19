@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <dialog>
-<line img="eron01.png">Endlich habt Ihr es geschafft! Wie ich sehe, seid Ihr nun im Besitz aller Monstertränke, die in Ethos versteckt waren... Vor Euch liegt nun das Reich des Dunklen Königs! </line>
-<line img="eron01.png">Ich hoffe, die Heiltränke hier, die ich für Euch gebraut habe, werden Euch bei dieser letzten und schwersten aller Prüfungen unterstützen.</line>
+<line img="eron01">Endlich habt Ihr es geschafft! Wie ich sehe, seid Ihr nun im Besitz aller Monstertränke, die in Ethos versteckt waren... Vor Euch liegt nun das Reich des Dunklen Königs! </line>
+<line img="eron01">Ich hoffe, die Heiltränke hier, die ich für Euch gebraut habe, werden Euch bei dieser letzten und schwersten aller Prüfungen unterstützen.</line>
 
 </dialog>

@@ -78,12 +78,12 @@ public abstract class NonPlayerCharacter extends Character {
 			throws CanNotReadFileException, SAXException, IOException, 
 			ParserConfigurationException {
 		
-		File xmlfile = new File(game.NPCDIALOGPATH + File.separator + dialogPath);
-		if (!xmlfile.canRead())	throw new CanNotReadFileException();
+		//File xmlfile = new File(game.getResourceURL(game.NPCDIALOGPATH) + File.separator + dialogPath);
+		//if (!xmlfile.canRead())	throw new CanNotReadFileException();
 
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
-		Document doc = db.parse(xmlfile);
+		Document doc = db.parse(game.getResourceURL(new File(game.NPCDIALOGPATH + File.separator + dialogPath)).openStream());
 
 		doc.getDocumentElement().normalize();
 		NodeList nodeLst = doc.getElementsByTagName("line");
@@ -104,9 +104,7 @@ public abstract class NonPlayerCharacter extends Character {
 		if (dialogImgPath == null || dialogImgPath == "") {
 			return null;
 		}
-		File path = new File(
-				game.CHARDIAIMGPATH + File.separator + dialogImgPath);
-		return game.getImage(path.getPath());
+		return game.gameImages.getImage(game.CHARDIAIMG, dialogImgPath);
 	}
 	
 	public void interact(Vector2d playerPos) throws Exception {		

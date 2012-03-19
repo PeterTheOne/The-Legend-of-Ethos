@@ -8,7 +8,6 @@ import game.tileObjects.Item;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.util.ArrayList;
 
 import com.golden.gamedev.object.AnimatedSprite;
@@ -37,15 +36,8 @@ public class InventoryMenu {
 		spr = null;
 		
 
-		bg = game.getImage(
-				new File(game.CHARMENUIMGPATH + File.separator + "menu_gross_transp.gif")
-				.getPath()
-		);
-
-		paper = game.getImage(
-				new File(game.INVENTORYIMGPATH + File.separator + "pergament.png")
-				.getPath()
-		);
+		bg = game.gameImages.getImage(game.CHARMENUIMG, "menu_bg");
+		paper = game.gameImages.getImage(game.INVENTORYIMG, "pergament_bg");
 		
 		bgPos = new Vector2d(0, 0);
 		paperPos = new Vector2d(70, 70).add(bgPos);
@@ -175,8 +167,7 @@ public class InventoryMenu {
 			if (game.player.getHealth() >= 10) {
 				break;
 			}
-			File walkSound = new File(game.SOUNDPATH + File.separator + "heilung.wav");
-			game.bsSound.play(walkSound.getAbsolutePath());
+			game.gameSounds.playSound("heilung");
 			game.player.heal(10);
 			if (game.gameStateMachine.getPrevState() == GameState.FIGHT) {
 				game.fightMana.reloadHealth();

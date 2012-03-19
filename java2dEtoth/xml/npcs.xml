@@ -4,7 +4,7 @@
 		evil="false" 
 		type="0" 
 		imgPath="wizzard" 
-		dialogImgPath="zauberer.gif"
+		dialogImgPath="zauberer"
 	/>
 	<npc 
 		evil="true" 
@@ -12,9 +12,9 @@
 		imgPath="opponent" 
 		fightName="opponent" 
 		fightImgPath="gegner_200" 
-		fightProjPath="speer_200.gif"
-		hitSound="gegnertreffer.wav"
-		projectileSound="arrow.wav"
+		fightProjPath="speer_200"
+		hitSound="gegnertreffer"
+		projectileSound="projectileArrow"
 	/>
 	<npc 
 		evil="false" 
@@ -25,24 +25,24 @@
 		evil="true" 
 		type="3" 
 		imgPath="badking" 
-		dialogImgPath="koenig.gif" 
+		dialogImgPath="koenig" 
 		fightName="badking" 
 		fightImgPath="koenig_200" 
-		fightProjPath="koenigGeschoss_200.png"
-		hitSound="stoenenKoenig.wav"
-		projectileSound="fireball_king.wav"
+		fightProjPath="koenigGeschoss_200"
+		hitSound="kingHit"
+		projectileSound="projectileKing"
 	/>
 	<npc 
 		evil="false" 
 		type="4" 
 		imgPath="monk" 
-		dialogImgPath="moench.gif"
+		dialogImgPath="moench"
 	/>
 	<npc 
 		evil="false" 
 		type="5" 
 		imgPath="oracle" 
-		dialogImgPath="wahrsagerin.gif"
+		dialogImgPath="wahrsagerin"
 	/>
 	<npc 
 		evil="true" 
@@ -50,9 +50,9 @@
 		imgPath="opponentblack" 
 		fightName="opponentblack" 
 		fightImgPath="gegner_black_200" 
-		fightProjPath="speer2_200.gif"
-		hitSound="gegnertreffer.wav"
-		projectileSound="arrow.wav"
+		fightProjPath="speer2_200"
+		hitSound="gegnertreffer"
+		projectileSound="projectileArrow"
 	/>
 	<npc 
 		evil="false"
@@ -64,13 +64,13 @@
 		evil="false" 
 		type="8" 
 		imgPath="littlegirl" 
-		dialogImgPath="littlegirl.png"
+		dialogImgPath="littlegirl"
 	/>
 	<npc 
 		evil="false" 
 		type="9" 
 		imgPath="oldman" 
-		dialogImgPath="oldman.png"
+		dialogImgPath="oldman"
 	/>
 	<npc 
 		evil="true" 
@@ -78,9 +78,9 @@
 		imgPath="cavemonster" 
 		fightName="cavemonster" 
 		fightImgPath="schlange_200" 
-		fightProjPath="zaehne_200.gif"
-		hitSound="gegnertreffer.wav"
-		projectileSound="arrow.wav"
+		fightProjPath="zaehne_200"
+		hitSound="gegnertreffer"
+		projectileSound="projectileArrow"
 	/>
 
 	

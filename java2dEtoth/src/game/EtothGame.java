@@ -3,6 +3,7 @@ package game;
 import game.character.Player;
 import game.exceptions.FolderContainsNoFilesException;
 import game.fight.FightManager;
+import game.helper.GameImages;
 import game.helper.GameSounds;
 import game.helper.GameTexts;
 import game.manager.InputManager;
@@ -21,12 +22,17 @@ import game.menus.MonsterTransformation;
 import game.menus.Outro;
 import game.menus.PlayerHealthBar;
 import game.quest.QuestManager;
-import game.tileObjects.Item;
 
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Graphics2D;
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 
-import com.golden.gamedev.*;
+import com.golden.gamedev.Game;
+import com.golden.gamedev.GameLoader;
+import com.golden.gamedev.engine.audio.JavaLayerMp3Renderer;
 import com.golden.gamedev.object.GameFont;
 
 public class EtothGame extends Game {
@@ -34,39 +40,45 @@ public class EtothGame extends Game {
 	//Constants:
 	public final int TILESIZE = 40;
 	private static final Dimension DIMENSION = new Dimension(800, 600);
-	private static final boolean FULLSCREEN = true;
+	private static final boolean FULLSCREEN = false;
 	public final double CHARSPEED = 0.2;
 	public final double CHARANIMSPEED = 20 / CHARSPEED;
 	public final double VISIBLEDIS = 4.5;
 	public final double VISIBLEDISCAVE = 2.5;
 
 	//Paths:
+	public static boolean applet = true;
 	public final File IMGPATH = new File("img");
-	public final File TILESIMGPATH = new File(IMGPATH + File.separator + "tiles");
-	public final File CHARIMGPATH = new File(IMGPATH + File.separator + "characters");
-	public final File CHARDIAIMGPATH = new File(IMGPATH + File.separator + "charactersdialog");
-	public final File ITEMSIMGPATH = new File(IMGPATH + File.separator + "items");
-	public final File INOFSIMGPATH = new File(IMGPATH + File.separator + "infos");
-	public final File FIGHTIMGPATH = new File(IMGPATH + File.separator + "fight");
-	public final File FIGHTCHANGEIMGPATH = new File(FIGHTIMGPATH + File.separator + "change");
-	public final File FIGHTCHARSIDEIMGPATH = new File(FIGHTIMGPATH + File.separator + "charactersideviews");
-	public final File CHARMENUIMGPATH = new File(IMGPATH + File.separator + "charmenu");
-	public final File EXITMENUIMGPATH = new File(IMGPATH + File.separator + "exitmenu");
-	public final File INVENTORYIMGPATH = new File(IMGPATH + File.separator + "inventory");
+	public final String TILESIMG = "tiles";
+	public final String CHARIMG = "characters";
+	public final String CHARDIAIMG = "charactersdialog";
+	public final String ITEMSIMG = "items";
+	public final String INOFSIMG = "infos";
+	public final String FIGHTIMG = "fight";
+	public final String FIGHTCHARSIDEIMG = FIGHTIMG + "/charactersideviews";
+	public final String FIGHTCHANGEIMG = FIGHTIMG + "/change";
+	public final String CHARMENUIMG = "charmenu";
+	public final String MSGIMG = "msg";
+	public final String EXITMENUIMG = "exitmenu";
+	public final String HELPMENUIMG = "helpmenu";
+	public final String FOGOFWARIMG = "fogofwar";
+	public final String INVENTORYIMG = "inventory";
 	public final File XMLPATH = new File("xml");
 	public final File MAPPATH = new File(XMLPATH + File.separator + "maps");
+	public final File MAPFILEPATH = new File(XMLPATH + File.separator + "maps.xml");
 	public final File TILEFILEPATH = new File(XMLPATH + File.separator + "tiles.xml");
 	public final File ITEMFILEPATH = new File(XMLPATH + File.separator + "items.xml");
 	public final File NPCFILEPATH = new File(XMLPATH + File.separator + "npcs.xml");
 	public final File NPCDIALOGPATH = new File(XMLPATH + File.separator + "npcdialog");
 	public final File GAMETEXTSFILEPATH = new File(XMLPATH + File.separator + "gametexts.xml");
 	public final File GAMESOUNDSSFILEPATH = new File(XMLPATH + File.separator + "gamesounds.xml");
+	public final File GAMEIMAGESFILEPATH = new File(XMLPATH + File.separator + "gameimages.xml");
 	public final File SOUNDPATH = new File("sound");
 	public final File FONTPATH = new File("font");
 	public final String STARTMAPFILENAME = "map_castle_start.xml";
 
 	//Options:
-	{ distribute = false; }
+	{ distribute = true; }
 	private int FPS = 30;
 
 	//DebugModes:
@@ -104,8 +116,36 @@ public class EtothGame extends Game {
 	public GameFont font30;
 	public GameTexts gameTexts;
 	public GameSounds gameSounds;
+	public GameImages gameImages;
 	public QuestManager questMana;
-
+	
+	public static String fileToURL(String filename) {
+		return filename.replace("\\", "/");
+	}
+	
+	public URL getResourceURL(File filename) {
+		URL resource = null;
+		if( applet ) {
+			String filenameURLString = fileToURL( filename.toString() );
+			resource = getClass().getResource( "/" + filenameURLString );
+		} else {
+			try {
+				resource = filename.toURI().toURL();
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		if(resource != null) {
+			//System.out.println("Resource loaded! " + resource);
+		} else {
+			System.out.println("Resource not found: " + filename);
+		}
+		
+		return resource;
+	}
+	
 	public void initResources() {
 		super.hideCursor();
 		gameStateMachine = new GameStateMachine(this);
@@ -118,16 +158,25 @@ public class EtothGame extends Game {
 				
 				setFPS(FPS);
 				elapsedCache = 0L;
-
+				
+				System.out.println("Initializing...");
+				
 				inputMana = new InputManager(this);
 				gameTexts = new GameTexts(this);
+				
+				System.out.print("Loading sounds...");
 				gameSounds = new GameSounds(this);
+				System.out.println("done.");
+				System.out.print("Loading images...");
+				gameImages = new GameImages(this);
+				System.out.println("done.");
 				intro = new Intro(this);
 				outro = new Outro(this);
 				exitMenu = new ExitMenu(this);
 				charMenu = new CharMenu(this);
 				helpInfo = new HelpInfo(this);
 				loadFont();
+				System.out.println("Done.");
 			}
 			return true;
 		} catch (Exception e) {
@@ -137,13 +186,23 @@ public class EtothGame extends Game {
 		return false;
 	}
 	
+	protected void initEngine() {
+		super.initEngine();
+
+        // set sound effect to use ogg
+        bsSound.setBaseRenderer(new JavaLayerMp3Renderer());
+
+        // set music to use ogg
+        bsMusic.setBaseRenderer(new JavaLayerMp3Renderer());
+	}
+	
 	private void loadFont() {
 		Font font;
 		Font andyFont;
 		//TODO: fix font..
 		String fName = "Andyb.ttf";
 		try {
-			andyFont = Font.createFont(Font.TRUETYPE_FONT, new File(FONTPATH + File.separator + fName));
+			andyFont = Font.createFont(Font.TRUETYPE_FONT, new URL(getResourceURL(FONTPATH) + "/" + fName).openStream());
 			font = andyFont.deriveFont(26f);
 		} catch (Exception ex) {
 			ex.printStackTrace();
@@ -164,6 +223,8 @@ public class EtothGame extends Game {
 		try {
 			if (!playInitalized) {
 				playInitalized = true;
+				
+				System.out.print("Loading world...");
 				
 				tileMana = new TileManager(this);
 				itemMana = new ItemManager(this);
@@ -191,6 +252,8 @@ public class EtothGame extends Game {
 				mapMana.getCurrentMap().updateVisible();
 				
 				questMana = new QuestManager(this);
+				
+				System.out.println("done.");
 			}
 			return true;
 		} catch (Exception e) {
@@ -223,10 +286,9 @@ public class EtothGame extends Game {
 	}
 
 	public static void main(String[] args) {
+		applet = false;
 		GameLoader game = new GameLoader();
 		game.setup(new EtothGame(), DIMENSION, FULLSCREEN);
 		game.start();
-		
 	}
-	
 }

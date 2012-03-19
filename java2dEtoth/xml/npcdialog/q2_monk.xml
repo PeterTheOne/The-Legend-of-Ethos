@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <dialog>
-	<line img="eron01.png">MONK: Wer seid Ihr? Es ist gefaehrlich, hier zu sein, also suchet schnell das Weite!</line>
-	<line img="eron01.png">Was, wer schickt Euch? Penelope, die Wahrsagerin? Sie ist meine treuste Freundin schon seit ewigen Zeiten!</line>
-	<line img="eron01.png">Sie gab Euch ein Geschenk für mich? Das Medaillon ... das heisst, Ihr seid DER Auserwählte?</line>
-	<line img="eron01.png">Wenn dem so ist, habe ich im Gegenzug auch etwas für Euch!</line>
-	<line img="eron01.png">Zaubertrank erhalten!</line>
-	<line img="eron01.png">Diesen Trank verwahre ich schon seit Langem, stets in der Hoffnung, ihm dem Retter uebergeben zu können! Geht weise damit um, er wird Euch bei Eurer Mission gute Dienste erweisen</line>
-	<line img="eron01.png">Außerdem wurde  mir zugetragen, dass die Soldaten des dunklen Königs die Enkelin unseres Bürgermeisters entführt haben, vielleicht könnt Ihr ihm ja helfen...</line>
+	<line img="eron01">MONK: Wer seid Ihr? Es ist gefaehrlich, hier zu sein, also suchet schnell das Weite!</line>
+	<line img="eron01">Was, wer schickt Euch? Penelope, die Wahrsagerin? Sie ist meine treuste Freundin schon seit ewigen Zeiten!</line>
+	<line img="eron01">Sie gab Euch ein Geschenk für mich? Das Medaillon ... das heisst, Ihr seid DER Auserwählte?</line>
+	<line img="eron01">Wenn dem so ist, habe ich im Gegenzug auch etwas für Euch!</line>
+	<line img="eron01">Zaubertrank erhalten!</line>
+	<line img="eron01">Diesen Trank verwahre ich schon seit Langem, stets in der Hoffnung, ihm dem Retter uebergeben zu können! Geht weise damit um, er wird Euch bei Eurer Mission gute Dienste erweisen</line>
+	<line img="eron01">Außerdem wurde  mir zugetragen, dass die Soldaten des dunklen Königs die Enkelin unseres Bürgermeisters entführt haben, vielleicht könnt Ihr ihm ja helfen...</line>
 	
 </dialog>

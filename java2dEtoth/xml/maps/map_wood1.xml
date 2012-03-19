@@ -30,7 +30,7 @@
 	</matrix>
 	
 	<information>
-		<info x="2" y="2" img="wegweiser.png" solid="true"> Hier gehts in den dunklen Wald</info>
+		<info x="2" y="2" img="wegweiser" solid="true"> Hier gehts in den dunklen Wald</info>
 	</information>
 	
 	<items>

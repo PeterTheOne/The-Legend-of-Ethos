@@ -14,8 +14,7 @@ public class GameOutroReward extends QuestReward {
 	
 	public void reward() throws Exception {
 		if (rewarded) return;		
-		File crowdSound = new File(game.SOUNDPATH + File.separator + "crowd.wav");
-		game.bsSound.play(crowdSound.getAbsolutePath());
+		game.gameSounds.playSound("gameWin");
 		game.gameStateMachine.switchState(GameState.OUTRO);
 		rewarded = true;
 	}

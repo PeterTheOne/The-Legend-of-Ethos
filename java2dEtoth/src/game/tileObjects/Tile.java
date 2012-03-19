@@ -2,12 +2,10 @@ package game.tileObjects;
 
 import game.EtothGame;
 import game.exceptions.FolderContainsNoFilesException;
-import game.helper.IOHelper;
 import game.math.Vector2d;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
 
 import com.golden.gamedev.object.AnimatedSprite;
 
@@ -32,19 +30,13 @@ public class Tile extends TileObject {
 		for (int i = 0; i < newImages.length; i++) {
 			//rescaleOp.filter(newImages[i], newImages[i]);
 			//TODO: change Image!
-			newImages[i] = game.getImage(
-					game.IMGPATH + 
-					File.separator + 
-					"fogofwar" + 
-					File.separator + 
-					"fogofwar1.png"
-			);
+			newImages[i] = game.gameImages.getImage(game.FOGOFWARIMG, "fogofwar1");
 		}
 		this.sprHidden = new AnimatedSprite(newImages);
 	}
 	
-	public void setSprHidden(File path) throws FolderContainsNoFilesException {
-		BufferedImage[] images = IOHelper.getImages(game, path);
+	public void setSprHidden(String fogImage) throws FolderContainsNoFilesException {
+		BufferedImage[] images = game.gameImages.getImages(game.FOGOFWARIMG, fogImage);
 		this.sprHidden = new AnimatedSprite(images);
 	}
 	

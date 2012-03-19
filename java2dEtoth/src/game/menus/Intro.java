@@ -6,7 +6,6 @@ import game.math.Vector2d;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
 
 import com.golden.gamedev.object.GameFont;
 
@@ -19,11 +18,7 @@ public class Intro {
 	public Intro(EtothGame game) {
 		this.game = game;
 		
-		this.img = game.getImage(
-				new File(game.IMGPATH + File.separator + "inventory" + 
-						File.separator + "logoEND.gif")
-				.getPath()
-		);
+		this.img = game.gameImages.getImage(game.INVENTORYIMG, "logoEND");
 		
 		this.text = game.gameTexts.getText("continue");
 	}

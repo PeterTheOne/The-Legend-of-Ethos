@@ -5,13 +5,12 @@ import game.helper.DirectionHelper.Direction;
 import game.math.Vector2d;
 
 import java.awt.image.BufferedImage;
-import java.io.File;
 
 public class PlayerFightSprite extends FightSprite {
 
 	public PlayerFightSprite(EtothGame game, String name, 
 			BufferedImage[] images, BufferedImage[] projImgs, Direction dir, 
-			File hitSound, File projectileSound) {
+			String hitSound, String projectileSound) {
 		super(game, name, images, projImgs, dir, hitSound, projectileSound);
 	}
 	

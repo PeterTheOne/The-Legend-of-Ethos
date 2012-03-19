@@ -7,7 +7,6 @@ import game.math.Vector2d;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
 
 import com.golden.gamedev.object.AnimatedSprite;
 
@@ -21,8 +20,8 @@ public abstract class FightSprite {
 	protected Direction dir;
 	protected AnimatedSprite spr;
 	protected BufferedImage[] projImgs;
-	protected File hitSound;
-	protected File projectileSound;
+	protected String hitSound;
+	protected String projectileSound;
 	
 	private int jumpCount;	
 	private long animateCache;
@@ -37,8 +36,8 @@ public abstract class FightSprite {
 	protected double resistance;
 	
 	public FightSprite(EtothGame game, String name, BufferedImage[] images, 
-			BufferedImage[] projImgs, Direction dir, File hitSound, 
-			File projectileSound) {
+			BufferedImage[] projImgs, Direction dir, String hitSound, 
+			String projectileSound) {
 		this.game = game;
 		this.name = name;
 		this.dir = dir;
@@ -138,7 +137,7 @@ public abstract class FightSprite {
 	}
 
 	public void hit(int damage) {
-		game.bsSound.play(hitSound.getAbsolutePath());
+		game.gameSounds.playSound(hitSound);
 		this.health -= damage / resistance;
 		spr.setAnimate(true);
 		spr.setLoopAnim(true);
@@ -172,7 +171,8 @@ public abstract class FightSprite {
 				dir,
 				damage
 			);
-			game.bsSound.play(projectileSound.getAbsolutePath());
+			
+			game.gameSounds.playSound(projectileSound);
 			game.fightMana.addProjectile(proj);
 		}
 	}

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <dialog>
-	<line img="eron01.png">DUMMY MONSTER: Ihr werdet das magische Kraut niemals bekommen!</line>
-	<line img="player01.png">ERON: Oh doch, du hast keine Chance gegen mich!</line>
-	<line img="eron01.png">DUMMY MONSTER: doch</line>
-	<line img="player01.png">ERON : nein</line>
-	<line img="eron01.png">DUMMY MONSTER: mimimimimimi =(</line>
-	<line img="player01.png">ERON: Schleich dich endlich </line>
-	<line img="player01.png">DUMMY MONSTER: NIEMALS!  NIEMALS! NIEMALS! NIEMALS! NIEMALS! Das petze ich dem dunklen Koenig</line>
+	<line img="eron01">DUMMY MONSTER: Ihr werdet das magische Kraut niemals bekommen!</line>
+	<line img="player01">ERON: Oh doch, du hast keine Chance gegen mich!</line>
+	<line img="eron01">DUMMY MONSTER: doch</line>
+	<line img="player01">ERON : nein</line>
+	<line img="eron01">DUMMY MONSTER: mimimimimimi =(</line>
+	<line img="player01">ERON: Schleich dich endlich </line>
+	<line img="player01">DUMMY MONSTER: NIEMALS!  NIEMALS! NIEMALS! NIEMALS! NIEMALS! Das petze ich dem dunklen Koenig</line>
 	
 </dialog>

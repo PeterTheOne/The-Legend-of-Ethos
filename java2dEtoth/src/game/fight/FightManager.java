@@ -1,7 +1,6 @@
 package game.fight;
 
 import java.awt.Graphics2D;
-import java.io.File;
 import java.util.ArrayList;
 
 import com.golden.gamedev.object.Sprite;
@@ -33,11 +32,7 @@ public class FightManager {
 	public FightManager(EtothGame game) {
 		this.game = game;
 		bgSpr = new Sprite(
-				game.getImage(
-						game.FIGHTIMGPATH + 
-						File.separator + 
-						"fight_bg.jpg"
-						)
+			game.gameImages.getImage(game.FIGHTIMG, "fight_bg")
 		);
 		active = false;
 		projectiles = new ArrayList<FightProjectileSprite>();

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <map>
 	<player startX="16" startY="11" />
-	<background path="fight_bg_midbad.jpg" />
+	<background path="fight_bg_midbad" />
 	<doors>
 		<!-- TODO: sollen doors auch immer eine info haben? -->
 		<door id="0" x="19" y="11" direction="left" target="map_darkerwood1.xml" targetId="0" />
@@ -26,7 +26,7 @@
 		</matrix>
 	
 	<information>
-		<info x="8" y="3" img="wegweiser.png" solid="true"> DUNKLE HÖHLE - danach wartet nur mehr das Reich des Dunklen Königs - Im Inneren der Höhle ist es so finster, dass man nicht besonders weit sehen kann - und Vorsicht vor den Monstern, die sich im Schutz der Dunkelheit verborgen halten!</info>
+		<info x="8" y="3" img="wegweiser" solid="true"> DUNKLE HÖHLE - danach wartet nur mehr das Reich des Dunklen Königs - Im Inneren der Höhle ist es so finster, dass man nicht besonders weit sehen kann - und Vorsicht vor den Monstern, die sich im Schutz der Dunkelheit verborgen halten!</info>
 	</information>
 	
 	<items>

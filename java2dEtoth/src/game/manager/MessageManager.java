@@ -8,7 +8,6 @@ import game.exceptions.FolderContainsNoFilesException;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
 
 import com.golden.gamedev.object.GameFont;
 
@@ -122,16 +121,7 @@ public class MessageManager {
 			);
 		}
 		
-		BufferedImage box = game.getImage(
-				new File(
-						game.IMGPATH + 
-						File.separator + 
-						"msg" + 
-						File.separator + 
-						"msg.png"
-				)
-				.getPath()
-		);
+		BufferedImage box = game.gameImages.getImage(game.MSGIMG, "msg");
 		g.drawImage(
 				box, 
 				(int) (game.getWidth() / 2d - box.getWidth() / 2d), 

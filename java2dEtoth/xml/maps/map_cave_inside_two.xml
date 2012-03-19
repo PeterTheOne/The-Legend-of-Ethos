@@ -2,7 +2,7 @@
 <map>
 	<player startX="16" startY="3" />
 	<caveMode on="true" />
-	<background path="fight_bg_cave.jpg" />
+	<background path="fight_bg_cave" />
 	<doors>
 		<!-- TODO: sollen doors auch immer eine info haben? -->
 		

@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<images>
+	<category name="msg">
+		<image name="msg">msg.png</image>
+	</category>
+	<category name="inventory">
+		<image name="logoEND">logoEND.gif</image>
+		<image name="pergament_bg">pergament.png</image>
+	</category>
+	<category name="exitmenu">
+		<image name="resumeSelected">resumeSelected.png</image>
+		<image name="exitSelected">exitSelected.png</image>
+	</category>
+	<category name="helpmenu">
+		<image name="help">help.png</image>
+	</category>
+	<category name="fogofwar">
+		<image name="fogofwar1">fogofwar1.png</image>
+		<image name="fogofwar_cave">fogofwar_cave.png</image>
+	</category>
+	<category name="charmenu">
+		<image name="char1_selected">char1_selected.png</image>
+		<image name="char1_notselected">char1_notselected.png</image>
+		<image name="char2_selected">char2_selected.png</image>
+		<image name="char2_notselected">char2_notselected.png</image>
+	</category>
+	<category name="infos">
+		<image name="fallentree">fallentree.png</image>
+		<image name="fence">fence.png</image>
+		<image name="haus_rot_03">haus_rot_03.png</image>
+		<image name="rock">rock.png</image>
+		<image name="wegweiser">wegweiser.png</image>
+		<imagesequence name="cave_fackel">
+			<frame name="1">hoelenboden_fackel1.png</frame>
+			<frame name="2">hoelenboden_fackel2.png</frame>
+		</imagesequence>
+	</category>
+	
+	
+	
+	<category name="characters/badking">
+		<imagesequence name="down">
+			<frame name="1">king_v1 - Kopie - Kopie - Kopie.png</frame>
+			<frame name="2">king_v1 - Kopie - Kopie.png</frame>
+			<frame name="3">king_v1 - Kopie.png</frame>
+			<frame name="4">king_v1.png</frame>
+		</imagesequence>
+		<imagesequence name="left">
+			<frame name="1">king_v1 - Kopie - Kopie - Kopie.png</frame>
+			<frame name="2">king_v1 - Kopie - Kopie.png</frame>
+			<frame name="3">king_v1 - Kopie.png</frame>
+			<frame name="4">king_v1.png</frame>
+		</imagesequence>
+		<imagesequence name="right">
+			<frame name="1">king_v1 - Kopie - Kopie - Kopie.png</frame>
+			<frame name="2">king_v1 - Kopie - Kopie.png</frame>
+			<frame name="3">king_v1 - Kopie.png</frame>
+			<frame name="4">king_v1.png</frame>
+		</imagesequence>
+		<imagesequence name="up">
+			<frame name="1">king_v1 - Kopie - Kopie - Kopie.png</frame>
+			<frame name="2">king_v1 - Kopie - Kopie.png</frame>
+			<frame name="3">king_v1 - Kopie.png</frame>
+			<frame name="4">king_v1.png</frame>
+		</imagesequence>
+	</category>
+	<category name="characters/wizzard">
+		<imagesequence name="down">
+			<frame name="1">wiz_v1.png</frame>
+			<frame name="2">wiz_v2.png</frame>
+			<frame name="3">wiz_v3.png</frame>
+			<frame name="4">wiz_v4.png</frame>
+		</imagesequence>
+		<imagesequence name="left">
+			<frame name="1">wiz_l1.png</frame>
+			<frame name="2">wiz_l2.png</frame>
+			<frame name="3">wiz_l3.png</frame>
+			<frame name="4">wiz_l4.png</frame>
+		</imagesequence>
+		<imagesequence name="right">
+			<frame name="1">wiz_r1.png</frame>
+			<frame name="2">wiz_r2.png</frame>
+			<frame name="3">wiz_r3.png</frame>
+			<frame name="4">wiz_r4.png</frame>
+		</imagesequence>
+		<imagesequence name="up">
+			<frame name="1">wiz_h1.png</frame>
+			<frame name="2">wiz_h2.png</frame>
+			<frame name="3">wiz_h3.png</frame>
+			<frame name="4">wiz_h4.png</frame>
+		</imagesequence>
+	</category>
+	<category name="characters/cavemonster">
+		<imagesequence name="down">
+			<frame name="1">cavemonster - Kopie (2).png</frame>
+			<frame name="2">cavemonster - Kopie (3).png</frame>
+			<frame name="3">cavemonster - Kopie.png</frame>
+			<frame name="4">cavemonster.png</frame>
+			<frame name="5">cavemonster1.png</frame>
+			<frame name="6">cavemonster2.png</frame>
+			<frame name="7">cavemonster3.png</frame>
+		</imagesequence>
+		<imagesequence name="left">
+			<frame name="1">cavemonster - Kopie (2).png</frame>
+			<frame name="2">cavemonster - Kopie (3).png</frame>
+			<frame name="3">cavemonster - Kopie.png</frame>
+			<frame name="4">cavemonster.png</frame>
+			<frame name="5">cavemonster1.png</frame>
+			<frame name="6">cavemonster2.png</frame>
+			<frame name="7">cavemonster3.png</frame>
+		</imagesequence>
+		<imagesequence name="right">
+			<frame name="1">cavemonster - Kopie (2).png</frame>
+			<frame name="2">cavemonster - Kopie (3).png</frame>
+			<frame name="3">cavemonster - Kopie.png</frame>
+			<frame name="4">cavemonster.png</frame>
+			<frame name="5">cavemonster1.png</frame>
+			<frame name="6">cavemonster2.png</frame>
+			<frame name="7">cavemonster3.png</frame>
+		</imagesequence>
+		<imagesequence name="up">
+			<frame name="1">cavemonster - Kopie (2).png</frame>
+			<frame name="2">cavemonster - Kopie (3).png</frame>
+			<frame name="3">cavemonster - Kopie.png</frame>
+			<frame name="4">cavemonster.png</frame>
+			<frame name="5">cavemonster1.png</frame>
+			<frame name="6">cavemonster2.png</frame>
+			<frame name="7">cavemonster3.png</frame>
+		</imagesequence>
+	</category>
+	<category name="characters/eron">
+		<imagesequence name="down">
+			<frame name="1">op_v1.png</frame>
+			<frame name="2">op_v2.png</frame>
+			<frame name="3">op_v3.png</frame>
+			<frame name="4">op_v4.png</frame>
+		</imagesequence>
+		<imagesequence name="left">
+			<frame name="1">op_l1.png</frame>
+			<frame name="2">op_l2.png</frame>
+			<frame name="3">op_l3.png</frame>
+			<frame name="4">op_l4.png</frame>
+		</imagesequence>
+		<imagesequence name="right">
+			<frame name="1">op_r1.png</frame>
+			<frame name="2">op_r2.png</frame>
+			<frame name="3">op_r3.png</frame>
+			<frame name="4">op_r4.png</frame>
+		</imagesequence>
+		<imagesequence name="up">
+			<frame name="1">op_h1.png</frame>
+			<frame name="2">op_h2.png</frame>
+			<frame name="3">op_h3.png</frame>
+			<frame name="4">op_h4.png</frame>
+		</imagesequence>
+	</category>
+	<category name="characters/harmless">
+		<imagesequence name="down">
+			<frame name="1">harmless_v - Kopie (2).png</frame>
+			<frame name="2">harmless_v - Kopie (3).png</frame>
+			<frame name="3">harmless_v - Kopie.png</frame>
+			<frame name="4">harmless_v.png</frame>
+		</imagesequence>
+		<imagesequence name="left">
+			<frame name="1">harmless_l1 - Kopie (2).png</frame>
+			<frame name="2">harmless_l1 - Kopie (3).png</frame>
+			<frame name="3">harmless_l1 - Kopie.png</frame>
+			<frame name="4">harmless_l1.png</frame>
+		</imagesequence>
+		<imagesequence name="right">
+			<frame name="1">harmless_r1 - Kopie (2).png</frame>
+			<frame name="2">harmless_r1 - Kopie (3).png</frame>
+			<frame name="3">harmless_r1 - Kopie.png</frame>
+			<frame name="4">harmless_r1.png</frame>
+		</imagesequence>
+		<imagesequence name="up">
+			<frame name="1">harmless_h - Kopie (2).png</frame>
+			<frame name="2">harmless_h - Kopie (3).png</frame>
+			<frame name="3">harmless_h - Kopie.png</frame>
+			<frame name="4">harmless_h.png</frame>
+		</imagesequence>
+	</category>
+	<category name="characters/littlegirl">
+		<imagesequence name="down">
+			<frame name="1">girl_v1.png</frame>
+			<frame name="2">girl_v2.png</frame>
+			<frame name="3">girl_v3.png</frame>
+			<frame name="4">girl_v4.png</frame>
+		</imagesequence>
+		<imagesequence name="left">
+			<frame name="1">girl_l1.png</frame>
+			<frame name="2">girl_l2.png</frame>
+			<frame name="3">girl_l3.png</frame>
+			<frame name="4">girl_l4.png</frame>
+		</imagesequence>
+		<imagesequence name="right">
+			<frame name="1">girl_r1.png</frame>
+			<frame name="2">girl_r2.png</frame>
+			<frame name="3">girl_r3.png</frame>
+			<frame name="4">girl_r4.png</frame>
+		</imagesequence>
+		<imagesequence name="up">
+			<frame name="1">girl_h1.png</frame>
+			<frame name="2">girl_h2.png</frame>
+			<frame name="3">girl_h3.png</frame>
+			<frame name="4">girl_h4.png</frame>
+		</imagesequence>
+	</category>
+	<category name="characters/monk">
+		<imagesequence name="down">
+			<frame name="1">monk_v1 - Kopie (2).png</frame>
+			<frame name="2">monk_v1 - Kopie (3).png</frame>
+			<frame name="3">monk_v1 - Kopie.png</frame>
+			<frame name="4">monk_v1.png</frame>
+		</imagesequence>
+		<imagesequence name="left">
+			<frame name="1">monk_v1 - Kopie (2).png</frame>
+			<frame name="2">monk_v1 - Kopie (3).png</frame>
+			<frame name="3">monk_v1 - Kopie.png</frame>
+			<frame name="4">monk_v1.png</frame>
+		</imagesequence>
+		<imagesequence name="right">
+			<frame name="1">monk_r1 - Kopie (2).png</frame>
+			<frame name="2">monk_r1 - Kopie (3).png</frame>
+			<frame name="3">monk_r1 - Kopie (4).png</frame>
+			<frame name="4">monk_r1.png</frame>
+		</imagesequence>
+		<imagesequence name="up">
+			<frame name="1">monk_h1 - Kopie (2).png</frame>
+			<frame name="2">monk_h1 - Kopie (3).png</frame>
+			<frame name="3">monk_h1 - Kopie.png</frame>
+			<frame name="4">monk_h1.png</frame>
+		</imagesequence>
+	</category>
+	<category name="characters/oldman">
+		<imagesequence name="down">
+			<frame name="1">oldman_v1 - Kopie (2).png</frame>
+			<frame name="2">oldman_v1 - Kopie (3).png</frame>
+			<frame name="3">oldman_v1 - Kopie.png</frame>
+			<frame name="4">oldman_v1.png</frame>
+		</imagesequence>
+		<imagesequence name="left">
+			<frame name="1">oldman_v1 - Kopie (2).png</frame>
+			<frame name="2">oldman_v1 - Kopie (3).png</frame>
+			<frame name="3">oldman_v1 - Kopie.png</frame>
+			<frame name="4">oldman_v1.png</frame>
+		</imagesequence>
+		<imagesequence name="right">
+			<frame name="1">oldman_v1 - Kopie (2).png</frame>
+			<frame name="2">oldman_v1 - Kopie (3).png</frame>
+			<frame name="3">oldman_v1 - Kopie.png</frame>
+			<frame name="4">oldman_v1.png</frame>
+		</imagesequence>
+		<imagesequence name="up">
+			<frame name="1">oldman_v1 - Kopie (2).png</frame>
+			<frame name="2">oldman_v1 - Kopie (3).png</frame>
+			<frame name="3">oldman_v1 - Kopie.png</frame>
+			<frame name="4">oldman_v1.png</frame>
+		</imagesequence>
+	</category>
+	<category name="characters/opponent">
+		<imagesequence name="down">
+			<frame name="1">op_v1.png</frame>
+			<frame name="2">op_v2.png</frame>
+			<frame name="3">op_v3.png</frame>
+			<frame name="4">op_v4.png</frame>
+		</imagesequence>
+		<imagesequence name="left">
+			<frame name="1">op_l1.png</frame>
+			<frame name="2">op_l2.png</frame>
+			<frame name="3">op_l3.png</frame>
+			<frame name="4">op_l4.png</frame>
+		</imagesequence>
+		<imagesequence name="right">
+			<frame name="1">op_r1.png</frame>
+			<frame name="2">op_r2.png</frame>
+			<frame name="3">op_r3.png</frame>
+			<frame name="4">op_r4.png</frame>
+		</imagesequence>
+		<imagesequence name="up">
+			<frame name="1">op_h1.png</frame>
+			<frame name="2">op_h2.png</frame>
+			<frame name="3">op_h3.png</frame>
+			<frame name="4">op_h4.png</frame>
+		</imagesequence>
+	</category>
+	<category name="characters/opponent1">
+		<imagesequence name="down">
+			<frame name="1">op_v1.png</frame>
+			<frame name="2">op_v2.png</frame>
+			<frame name="3">op_v3.png</frame>
+			<frame name="4">op_v4.png</frame>
+		</imagesequence>
+		<imagesequence name="left">
+			<frame name="1">op_l1.png</frame>
+			<frame name="2">op_l2.png</frame>
+			<frame name="3">op_l3.png</frame>
+			<frame name="4">op_l4.png</frame>
+		</imagesequence>
+		<imagesequence name="right">
+			<frame name="1">op_r1.png</frame>
+			<frame name="2">op_r2.png</frame>
+			<frame name="3">op_r3.png</frame>
+			<frame name="4">op_r4.png</frame>
+		</imagesequence>
+		<imagesequence name="up">
+			<frame name="1">op_h1.png</frame>
+			<frame name="2">op_h2.png</frame>
+			<frame name="3">op_h3.png</frame>
+			<frame name="4">op_h4.png</frame>
+		</imagesequence>
+	</category>
+	<category name="characters/opponentblack">
+		<imagesequence name="down">
+			<frame name="1">opb_v1.png</frame>
+			<frame name="2">opb_v2.png</frame>
+			<frame name="3">opb_v3.png</frame>
+			<frame name="4">opb_v4.png</frame>
+		</imagesequence>
+		<imagesequence name="left">
+			<frame name="1">opb_l1.png</frame>
+			<frame name="2">opb_l2.png</frame>
+			<frame name="3">opb_l3.png</frame>
+			<frame name="4">opb_l4.png</frame>
+		</imagesequence>
+		<imagesequence name="right">
+			<frame name="1">opb_r1.png</frame>
+			<frame name="2">opb_r2.png</frame>
+			<frame name="3">opb_r3.png</frame>
+			<frame name="4">opb_r4.png</frame>
+		</imagesequence>
+		<imagesequence name="up">
+			<frame name="1">opb_h1.png</frame>
+			<frame name="2">opb_h2.png</frame>
+			<frame name="3">opb_h3.png</frame>
+			<frame name="4">opb_h4.png</frame>
+		</imagesequence>
+	</category>
+	<category name="characters/oracle">
+		<imagesequence name="down">
+			<frame name="1">oracle_v1 - Kopie (2).png</frame>
+			<frame name="2">oracle_v1 - Kopie (3).png</frame>
+			<frame name="3">oracle_v1 - Kopie.png</frame>
+			<frame name="4">oracle_v1.png</frame>
+		</imagesequence>
+		<imagesequence name="left">
+			<frame name="1">oracle_v1 - Kopie (2).png</frame>
+			<frame name="2">oracle_v1 - Kopie (3).png</frame>
+			<frame name="3">oracle_v1 - Kopie.png</frame>
+			<frame name="4">oracle_v1.png</frame>
+		</imagesequence>
+		<imagesequence name="right">
+			<frame name="1">oracle_v1 - Kopie (2).png</frame>
+			<frame name="2">oracle_v1 - Kopie (3).png</frame>
+			<frame name="3">oracle_v1 - Kopie.png</frame>
+			<frame name="4">oracle_v1.png</frame>
+		</imagesequence>
+		<imagesequence name="up">
+			<frame name="1">oracle_v1 - Kopie (2).png</frame>
+			<frame name="2">oracle_v1 - Kopie (3).png</frame>
+			<frame name="3">oracle_v1 - Kopie.png</frame>
+			<frame name="4">oracle_v1.png</frame>
+		</imagesequence>
+	</category>
+	<category name="characters/player">
+		<imagesequence name="down">
+			<frame name="1">mc_v1.png</frame>
+			<frame name="2">mc_v2.png</frame>
+			<frame name="3">mc_v3.png</frame>
+			<frame name="4">mc_v4.png</frame>
+		</imagesequence>
+		<imagesequence name="left">
+			<frame name="1">mc_l1.png</frame>
+			<frame name="2">mc_l2.png</frame>
+			<frame name="3">mc_l3.png</frame>
+			<frame name="4">mc_l4.png</frame>
+		</imagesequence>
+		<imagesequence name="right">
+			<frame name="1">mc_r1.png</frame>
+			<frame name="2">mc_r2.png</frame>
+			<frame name="3">mc_r3.png</frame>
+			<frame name="4">mc_r4.png</frame>
+		</imagesequence>
+		<imagesequence name="up">
+			<frame name="1">mc_h1.png</frame>
+			<frame name="2">mc_h2.png</frame>
+			<frame name="3">mc_h3.png</frame>
+			<frame name="4">mc_h4.png</frame>
+		</imagesequence>
+	</category>
+	<category name="characters/player_f">
+		<imagesequence name="down">
+			<frame name="1">mcf_v1.png</frame>
+			<frame name="2">mcf_v2.png</frame>
+			<frame name="3">mcf_v3.png</frame>
+			<frame name="4">mcf_v4.png</frame>
+		</imagesequence>
+		<imagesequence name="left">
+			<frame name="1">mcf_l1.png</frame>
+			<frame name="2">mcf_l2.png</frame>
+			<frame name="3">mcf_l3.png</frame>
+			<frame name="4">mcf_l4.png</frame>
+		</imagesequence>
+		<imagesequence name="right">
+			<frame name="1">mcf_r1.png</frame>
+			<frame name="2">mcf_r2.png</frame>
+			<frame name="3">mcf_r3.png</frame>
+			<frame name="4">mcf_r4.png</frame>
+		</imagesequence>
+		<imagesequence name="up">
+			<frame name="1">mcf_h1.png</frame>
+			<frame name="2">mcf_h2.png</frame>
+			<frame name="3">mcf_h3.png</frame>
+			<frame name="4">mcf_h4.png</frame>
+		</imagesequence>
+	</category>
+	
+	
+	
+	<category name="fight">
+		<image name="health_bg">health_bg.png</image>
+		<image name="fight_bg">fight_bg.jpg</image>
+		<image name="fight_bg_bad">fight_bg_bad.jpg</image>
+		<image name="fight_bg_cave">fight_bg_cave.jpg</image>
+		<image name="fight_bg_midbad">fight_bg_midbad.jpg</image>
+		<image name="fight_bg_schloss">fight_bg_schloss.jpg</image>		
+		<image name="heart">herz.png</image>
+		<image name="wirbelsturm_200">wirbelsturm_200.gif</image>
+		<image name="feuerball_200">feuerball_200.gif</image>
+		<image name="speer_200">speer_200.gif</image>
+		<image name="koenigGeschoss_200">koenigGeschoss_200.gif</image>
+		<image name="speer2_200">speer2_200.gif</image>
+		<image name="zaehne_200">zaehne_200.gif</image>
+		<image name="steinangriff_200">steinangriff_200.gif</image>
+		<image name="blaetter_200">blaetter_200.gif</image>
+	</category>
+	<category name="fight/change">
+		<image name="char_player1">char_player1.gif</image>
+		<image name="char_player_f">char_player_f.png</image>
+		<image name="cloud">cloud.gif</image>
+		<image name="windmonster">windmonster.png</image>
+		<image name="windmonster_menu">windmonster_menu.gif</image>
+		<image name="zaubertrank_wind">zaubertrank_wind.png</image>
+		<image name="feuermonster">feuermonster.png</image>
+		<image name="feuermonster_menu">feuermonster_menu.gif</image>
+		<image name="zaubertrank_feuer">zaubertrank_feuer.png</image>
+		<image name="steinmonster">steinmonster.png</image>
+		<image name="steinmonster_menu">steinmonster_menu.gif</image>
+		<image name="zaubertrank_stein">zaubertrank_stein.png</image>
+		<image name="pflanze_200">pflanze_200.gif</image>
+		<image name="pflanzenmonster_menu">pflanzenmonster_menu.png</image>
+		<image name="zaubertrank_pflanze">zaubertrank_pflanze.png</image>
+	</category>
+	<category name="fight/charactersideviews">
+		<imagesequence name="feuer_200">
+			<frame name="feuer_200">feuer_200.gif</frame>
+			<frame name="feuer_200_treffer">feuer_200_treffer.gif</frame>
+		</imagesequence>
+		<imagesequence name="gegner_200">
+			<frame name="gegner_200">gegner_200.gif</frame>
+			<frame name="gegner_200_treffer">gegner_200_treffer.gif</frame>
+		</imagesequence>
+		<imagesequence name="gegner_black_200">
+			<frame name="gegner_black_200">gegner_black_200.gif</frame>
+			<frame name="gegner_black_200_treffer">gegner_black_200_treffer.gif</frame>
+		</imagesequence>
+		<imagesequence name="koenig_200">
+			<frame name="koenig_200">koenig_200.gif</frame>
+			<frame name="koenig_200_treffer">koenig_200_treffer.gif</frame>
+		</imagesequence>
+		<imagesequence name="pflanze_200">
+			<frame name="pflanze_200">pflanze_200.gif</frame>
+			<frame name="pflanze_200_treffer">pflanze_200_treffer.gif</frame>
+		</imagesequence>
+		<imagesequence name="schlange_200">
+			<frame name="schlange_200">schlange_200.gif</frame>
+			<frame name="schlange_200_treffer">schlange_200_treffer.gif</frame>
+		</imagesequence>
+		<imagesequence name="stein_200">
+			<frame name="stein_200">stein_200.gif</frame>
+			<frame name="stein_200_treffer">stein_200_treffer.gif</frame>
+		</imagesequence>
+		<imagesequence name="wind_200">
+			<frame name="wind_200">wind_200.gif</frame>
+			<frame name="wind_200_treffer">wind_200_treffer.gif</frame>
+		</imagesequence>
+	</category>
+	
+	
+	<category name="charactersdialog">
+		<image name="zauberer">zauberer.gif</image>
+		<image name="koenig">koenig.gif</image>
+		<image name="moench">moench.gif</image>
+		<image name="wahrsagerin">wahrsagerin.gif</image>
+		<image name="littlegirl">littlegirl.png</image>
+		<image name="oldman">oldman.png</image>
+	</category>
+	<category name="charmenu">
+		<image name="menu_bg">menu_gross_transp.gif</image>
+	</category>
+	
+	
+	
+	
+	
+	
+	<category name="items">
+		<imagesequence name="halskette">
+			<frame name="halskette1.png">halskette1.png</frame>
+			<frame name="halskette11.png">halskette11.png</frame>
+		</imagesequence>
+		<imagesequence name="heiltrank">
+			<frame name="heiltrank_klein11.png">heiltrank_klein11.png</frame>
+			<frame name="item01.png">item01.png</frame>
+		</imagesequence>
+		<imagesequence name="kraut01">
+			<frame name="kraut1.png">kraut1.png</frame>
+			<frame name="kraut11.png">kraut11.png</frame>
+		</imagesequence>
+		<imagesequence name="kraut02">
+			<frame name="kraut2.png">kraut2.png</frame>
+			<frame name="kraut22.png">kraut22.png</frame>
+		</imagesequence>
+		<imagesequence name="kraut03">
+			<frame name="kraut3.png">kraut3.png</frame>
+			<frame name="kraut33.png">kraut33.png</frame>
+		</imagesequence>
+		<imagesequence name="zt1">
+			<frame name="zaubertrank1.png">zaubertrank1.png</frame>
+			<frame name="zaubertrank11.png">zaubertrank11.png</frame>
+		</imagesequence>
+		<imagesequence name="zt2">
+			<frame name="zaubertrank2.png">zaubertrank2.png</frame>
+			<frame name="zaubertrank22.png">zaubertrank22.png</frame>
+		</imagesequence>
+		<imagesequence name="zt3">
+			<frame name="zaubertrank3.png">zaubertrank3.png</frame>
+			<frame name="zaubertrank33.png">zaubertrank33.png</frame>
+		</imagesequence>
+		<imagesequence name="zt4">
+			<frame name="zaubertrank4.png">zaubertrank4.png</frame>
+			<frame name="zaubertrank44.png">zaubertrank44.png</frame>
+		</imagesequence>
+	</category>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<category name="tiles">
+		<image name="grass1">grass1.png</image>
+		<image name="grass2">grass2.png</image>
+		<image name="wald1">wald1.png</image>
+		<image name="path_c1">path_c1.png</image>
+		<image name="path_c2">path_c2.png</image>
+		<image name="path_c3">path_c3.png</image>
+		<image name="path_c4">path_c4.png</image>
+		<image name="path_h">path_h.png</image>
+		<image name="path_v">path_v.png</image>
+		<image name="path_x">path_x.png</image>
+		<image name="path_x1">path_x1.png</image>
+		<image name="path_x2">path_x2.png</image>
+		<image name="haus_ol">haus_ol.png</image>
+		<image name="haus_or">haus_or.png</image>
+		<image name="haus_ul">haus_ul.png</image>
+		<image name="haus_ur">haus_ur.png</image>
+		
+		<image name="castle_23">castle_23.png</image>
+		<image name="castle_24">castle_24.png</image>
+		<image name="castle_25">castle_25.png</image>
+		<image name="castle_26">castle_26.png</image>
+		<image name="castle_27">castle_27.png</image>
+		<image name="castle_28">castle_28.png</image>
+		<image name="castle_29">castle_29.png</image>
+		<image name="castle_30">castle_30.png</image>
+		<image name="castle_31">castle_31.png</image>
+		<image name="castle_32">castle_32.png</image>
+		<image name="castle_33">castle_33.png</image>
+		<image name="castle_34">castle_34.png</image>
+		<image name="castle_35">castle_35.png</image>
+		<image name="castle_36">castle_36.png</image>
+		<image name="castle_37">castle_37.png</image>
+		<image name="castle_38">castle_38.png</image>
+		<image name="castle_39">castle_39.png</image>
+		<image name="castle_40">castle_40.png</image>
+		<image name="castle_41">castle_41.png</image>
+		<image name="castle_42">castle_42.png</image>
+		<image name="castle_43">castle_43.png</image>
+		<image name="castle_44">castle_44.png</image>
+		<image name="castle_45">castle_45.png</image>
+		<image name="castle_46">castle_46.png</image>
+		<image name="castle_47">castle_47.png</image>
+		<image name="castle_48">castle_48.png</image>
+		<image name="castle_49">castle_49.png</image>
+		<image name="castle_50">castle_50.png</image>
+		<image name="castle_51">castle_51.png</image>
+		<image name="castle_52">castle_52.png</image>
+		<image name="castle_53">castle_53.png</image>
+		<image name="castle_54">castle_54.png</image>
+		<image name="castle_55">castle_55.png</image>
+		<image name="castle_56">castle_56.png</image>
+		<image name="castle_57">castle_57.png</image>
+		<image name="castle_58">castle_58.png</image>
+		<image name="castle_59">castle_59.png</image>
+		<image name="castle_60">castle_60.png</image>
+		<image name="castle_61">castle_61.png</image>
+		<image name="castle_62">castle_62.png</image>
+		<image name="castle_63">castle_63.png</image>
+		<image name="castle_64">castle_64.png</image>
+		<image name="castle_65">castle_65.png</image>
+		<image name="castle_66">castle_66.png</image>
+		<image name="castle_67">castle_67.png</image>
+		<image name="castle_68">castle_68.png</image>
+		<image name="castle_69">castle_69.png</image>
+		<image name="castle_70">castle_70.png</image>
+		<image name="castle_71">castle_71.png</image>
+		<image name="castle_72">castle_72.png</image>
+		<image name="castle_73">castle_73.png</image>
+		<image name="castle_74">castle_74.png</image>
+		<image name="castle_75">castle_75.png</image>
+		<image name="castle_76">castle_76.png</image>
+		<image name="castle_77">castle_77.png</image>
+		<image name="castle_78">castle_78.png</image>
+		<image name="castle_79">castle_79.png</image>
+		<image name="castle_80">castle_80.png</image>
+		<image name="castle_81">castle_81.png</image>
+		<image name="castle_82">castle_82.png</image>
+		<image name="castle_83">castle_83.png</image>
+		<image name="castle_84">castle_84.png</image>
+		<image name="castle_85">castle_85.png</image>
+		<image name="castle_86">castle_86.png</image>
+		<image name="castle_87">castle_87.png</image>
+		<image name="castle_88">castle_88.png</image>
+		<image name="castle_89">castle_89.png</image>
+		<image name="castle_90">castle_90.png</image>
+		<image name="castle_91">castle_91.png</image>
+		<image name="castle_92">castle_92.png</image>
+		<image name="castle_93">castle_93.png</image>
+		<image name="castle_94">castle_94.png</image>
+		<image name="castle_95">castle_95.png</image>
+		<image name="castle_96">castle_96.png</image>
+		<image name="castle_97">castle_97.png</image>
+		<image name="castle_98">castle_98.png</image>
+		<image name="castle_99">castle_99.png</image>
+		<image name="castle_100">castle_100.png</image>
+		<image name="castle_101">castle_101.png</image>
+		<image name="castle_102">castle_102.png</image>
+		<image name="castle_103">castle_103.png</image>
+		<image name="castle_104">castle_104.png</image>
+		<image name="castle_105">castle_105.png</image>
+		<image name="castle_106">castle_106.png</image>
+		<image name="castle_107">castle_107.png</image>
+		<image name="castle_108">castle_108.png</image>
+		<image name="castle_109">castle_109.png</image>
+		<image name="castle_110">castle_110.png</image>
+		<image name="castle_111">castle_111.png</image>
+		<image name="castle_112">castle_112.png</image>
+		<image name="castle_113">castle_113.png</image>
+		<image name="castle_114">castle_114.png</image>
+		<image name="castle_115">castle_115.png</image>
+		<image name="castle_116">castle_116.png</image>
+		<image name="castle_117">castle_117.png</image>
+		<image name="castle_118">castle_118.png</image>
+		<image name="castle_119">castle_119.png</image>
+		<image name="castle_120">castle_120.png</image>
+		<image name="castle_121">castle_121.png</image>
+		
+		<image name="castleB_23">castleB_23.png</image>
+		<image name="castleB_24">castleB_24.png</image>
+		<image name="castleB_25">castleB_25.png</image>
+		<image name="castleB_26">castleB_26.png</image>
+		<image name="castleB_27">castleB_27.png</image>
+		<image name="castleB_28">castleB_28.png</image>
+		<image name="castleB_29">castleB_29.png</image>
+		<image name="castleB_30">castleB_30.png</image>
+		<image name="castleB_31">castleB_31.png</image>
+		<image name="castleB_32">castleB_32.png</image>
+		<image name="castleB_33">castleB_33.png</image>
+		<image name="castleB_34">castleB_34.png</image>
+		<image name="castleB_35">castleB_35.png</image>
+		<image name="castleB_36">castleB_36.png</image>
+		<image name="castleB_37">castleB_37.png</image>
+		<image name="castleB_38">castleB_38.png</image>
+		<image name="castleB_39">castleB_39.png</image>
+		<image name="castleB_40">castleB_40.png</image>
+		<image name="castleB_41">castleB_41.png</image>
+		<image name="castleB_42">castleB_42.png</image>
+		<image name="castleB_43">castleB_43.png</image>
+		<image name="castleB_44">castleB_44.png</image>
+		<image name="castleB_45">castleB_45.png</image>
+		<image name="castleB_46">castleB_46.png</image>
+		<image name="castleB_47">castleB_47.png</image>
+		<image name="castleB_48">castleB_48.png</image>
+		<image name="castleB_49">castleB_49.png</image>
+		<image name="castleB_50">castleB_50.png</image>
+		<image name="castleB_51">castleB_51.png</image>
+		<image name="castleB_52">castleB_52.png</image>
+		<image name="castleB_53">castleB_53.png</image>
+		<image name="castleB_54">castleB_54.png</image>
+		<image name="castleB_55">castleB_55.png</image>
+		<image name="castleB_56">castleB_56.png</image>
+		<image name="castleB_57">castleB_57.png</image>
+		<image name="castleB_58">castleB_58.png</image>
+		<image name="castleB_59">castleB_59.png</image>
+		<image name="castleB_60">castleB_60.png</image>
+		<image name="castleB_61">castleB_61.png</image>
+		<image name="castleB_62">castleB_62.png</image>
+		<image name="castleB_63">castleB_63.png</image>
+		<image name="castleB_64">castleB_64.png</image>
+		<image name="castleB_65">castleB_65.png</image>
+		<image name="castleB_66">castleB_66.png</image>
+		<image name="castleB_67">castleB_67.png</image>
+		<image name="castleB_68">castleB_68.png</image>
+		<image name="castleB_69">castleB_69.png</image>
+		<image name="castleB_70">castleB_70.png</image>
+		<image name="castleB_71">castleB_71.png</image>
+		<image name="castleB_72">castleB_72.png</image>
+		<image name="castleB_73">castleB_73.png</image>
+		<image name="castleB_74">castleB_74.png</image>
+		<image name="castleB_75">castleB_75.png</image>
+		<image name="castleB_76">castleB_76.png</image>
+		<image name="castleB_77">castleB_77.png</image>
+		<image name="castleB_78">castleB_78.png</image>
+		<image name="castleB_79">castleB_79.png</image>
+		<image name="castleB_80">castleB_80.png</image>
+		<image name="castleB_81">castleB_81.png</image>
+		<image name="castleB_82">castleB_82.png</image>
+		<image name="castleB_83">castleB_83.png</image>
+		<image name="castleB_84">castleB_84.png</image>
+		<image name="castleB_85">castleB_85.png</image>
+		<image name="castleB_86">castleB_86.png</image>
+		<image name="castleB_87">castleB_87.png</image>
+		<image name="castleB_88">castleB_88.png</image>
+		<image name="castleB_89">castleB_89.png</image>
+		<image name="castleB_90">castleB_90.png</image>
+		<image name="castleB_91">castleB_91.png</image>
+		<image name="castleB_92">castleB_92.png</image>
+		<image name="castleB_93">castleB_93.png</image>
+		<image name="castleB_94">castleB_94.png</image>
+		<image name="castleB_95">castleB_95.png</image>
+		<image name="castleB_96">castleB_96.png</image>
+		<image name="castleB_97">castleB_97.png</image>
+		<image name="castleB_98">castleB_98.png</image>
+		<image name="castleB_99">castleB_99.png</image>
+		<image name="castleB_100">castleB_100.png</image>
+		<image name="castleB_101">castleB_101.png</image>
+		<image name="castleB_102">castleB_102.png</image>
+		<image name="castleB_103">castleB_103.png</image>
+		<image name="castleB_104">castleB_104.png</image>
+		<image name="castleB_105">castleB_105.png</image>
+		<image name="castleB_106">castleB_106.png</image>
+		<image name="castleB_107">castleB_107.png</image>
+		<image name="castleB_108">castleB_108.png</image>
+		<image name="castleB_109">castleB_109.png</image>
+		<image name="castleB_110">castleB_110.png</image>
+		<image name="castleB_111">castleB_111.png</image>
+		<image name="castleB_112">castleB_112.png</image>
+		<image name="castleB_113">castleB_113.png</image>
+		<image name="castleB_114">castleB_114.png</image>
+		<image name="castleB_115">castleB_115.png</image>
+		<image name="castleB_116">castleB_116.png</image>
+		<image name="castleB_117">castleB_117.png</image>
+		<image name="castleB_118">castleB_118.png</image>
+		<image name="castleB_119">castleB_119.png</image>
+		<image name="castleB_120">castleB_120.png</image>
+		<image name="castleB_121">castleB_121.png</image>
+		
+		<image name="tree_dead">tree_dead.png</image>
+		<imagesequence name="lava">
+			<frame name="lava">lava.png</frame>
+			<frame name="lava1">lava1.png</frame>
+		</imagesequence>
+		<image name="path_bad">path_bad.png</image>
+		
+		<image name="wald_dark">wald_dark.png</image>
+		
+		<image name="dorfboden">dorfboden.png</image>
+		<image name="black">black.png</image>
+		
+		<image name="haus_braun_01">haus_braun_01.png</image>
+		<image name="haus_braun_02">haus_braun_02.png</image>
+		<image name="haus_braun_03">haus_braun_03.png</image>
+		<image name="haus_braun_04">haus_braun_04.png</image>
+		
+		<image name="haus_rot_01">haus_rot_01.png</image>
+		<image name="haus_rot_02">haus_rot_02.png</image>
+		<image name="haus_rot_03">haus_rot_03.png</image>
+		<image name="haus_rot_04">haus_rot_04.png</image>
+		<image name="diele">diele.png</image>
+		
+		<image name="brunnen_01">brunnen_01.png</image>
+		<image name="brunnen_02">brunnen_02.png</image>
+		<image name="brunnen_03">brunnen_03.png</image>
+		<image name="brunnen_04">brunnen_04.png</image>
+		<image name="brunnen_05">brunnen_05.png</image>
+		<image name="brunnen_06">brunnen_06.png</image>
+		<image name="brunnen_07">brunnen_07.png</image>
+		<image name="brunnen_08">brunnen_08.png</image>
+		<image name="brunnen_09">brunnen_09.png</image>
+
+		<imagesequence name="fackel">
+			<frame name="fackel">fackel.png</frame>
+			<frame name="fackel1">fackel1.png</frame>
+		</imagesequence>
+		<image name="castlefloor">castlefloor.png</image>
+		<imagesequence name="fackelcastle">
+			<frame name="fackel_castle">fackel_castle.png</frame>
+			<frame name="fackel1_castle">fackel1_castle.png</frame>
+		</imagesequence>
+		
+		<image name="tree_alivedead">tree_alivedead.png</image>
+		<image name="path_midbad">path_midbad.png</image>
+		<imagesequence name="fire">
+			<frame name="fire">fire.png</frame>
+			<frame name="fire1">fire1.png</frame>
+		</imagesequence>
+		<image name="bones">bones.png</image>
+		<image name="rock">rock.png</image>
+		<image name="fence">fence.png</image>
+		<image name="prison1">prison1.png</image>
+		
+		<image name="table_l">table_l.png</image>
+		<image name="table_r">table_r.png</image>
+		<image name="chair_l">chair_l.png</image>
+		<image name="chair_r">chair_r.png</image>
+		
+		<image name="cave_outside1">cave_outside1.png</image>
+		<image name="cave_outside2">cave_outside2.png</image>
+		<image name="cave_outside3">cave_outside3.png</image>
+		
+		<image name="hoelenboden">hoelenboden.png</image>
+		
+		<image name="caveentry_01">caveentry_01.png</image>
+		<image name="caveentry_02">caveentry_02.png</image>
+		<image name="caveentry_03">caveentry_03.png</image>
+		<image name="caveentry_04">caveentry_04.png</image>
+		<image name="caveentry_05">caveentry_05.png</image>
+		<image name="caveentry_06">caveentry_06.png</image>
+		<image name="caveentry_07">caveentry_07.png</image>
+		<image name="caveentry_08">caveentry_08.png</image>
+		<image name="caveentry_09">caveentry_09.png</image>
+		<image name="caveentry_10">caveentry_10.png</image>
+		<image name="caveentry_11">caveentry_11.png</image>
+		<image name="caveentry_12">caveentry_12.png</image>
+		<image name="caveentry_13">caveentry_13.png</image>
+		<image name="caveentry_14">caveentry_14.png</image>
+		<image name="caveentry_15">caveentry_15.png</image>
+		<image name="caveentry_16">caveentry_16.png</image>
+		<image name="caveentry_17">caveentry_17.png</image>
+		<image name="caveentry_18">caveentry_18.png</image>
+		<image name="caveentry_19">caveentry_19.png</image>
+		<image name="caveentry_20">caveentry_20.png</image>
+		<image name="caveentry_21">caveentry_21.png</image>
+		
+		<image name="house_last_01">house_last_01.png</image>
+		<image name="house_last_02">house_last_02.png</image>
+		<image name="house_last_03">house_last_03.png</image>
+		<image name="house_last_04">house_last_04.png</image>
+	</category>
+</images>

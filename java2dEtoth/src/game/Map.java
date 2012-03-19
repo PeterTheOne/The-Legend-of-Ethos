@@ -1,6 +1,5 @@
 package game;
 
-import game.GameStateMachine.GameState;
 import game.character.EvilNPC;
 import game.character.FriendlyNPC;
 import game.character.NonPlayerCharacter;
@@ -18,8 +17,8 @@ import game.tileObjects.Tile;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -37,7 +36,6 @@ import com.golden.gamedev.object.Sprite;
 public class Map {
 
 	private EtothGame game;
-	private File mapFilePath;
 	private String name;
 	private ArrayList<Tile> tiles;
 	private ArrayList<Door> doors;
@@ -47,26 +45,25 @@ public class Map {
 	private Vector2d playerStart;
 	private Long lastModified;
 	private Sprite fightBgSpr;
-	private File enterMapSound;
+	private String enterMapSound;
 	private boolean caveMode;
 
-	public Map(EtothGame game, File mapFilePath)
+	public Map(EtothGame game, URL mapFilePath)
 			throws ParserConfigurationException, SAXException, IOException, 
 			CanNotReadFileException, FolderContainsNoFilesException, 
 			NotFoundException {
 		this.game = game;
-		this.mapFilePath = mapFilePath;
-		this.name = mapFilePath.getName();
+		this.name = mapFilePath.toString().substring( mapFilePath.toString().lastIndexOf('/')+1, mapFilePath.toString().length() );
 		loadMapFile(mapFilePath);
 	}
 
-	private void loadMapFile(File mapFilePath)
+	private void loadMapFile(URL mapFilePath)
 			throws ParserConfigurationException, SAXException, IOException,
 			CanNotReadFileException, FolderContainsNoFilesException,
 			NotFoundException {
-		if (!mapFilePath.canRead())	throw new CanNotReadFileException();
+		//if (!mapFilePath.canRead())	throw new CanNotReadFileException();
 
-		lastModified = mapFilePath.lastModified();
+		//lastModified = mapFilePath.lastModified();
 
 		tiles = new ArrayList<Tile>();
 		doors = new ArrayList<Door>();
@@ -76,7 +73,7 @@ public class Map {
 
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
-		Document doc = db.parse(mapFilePath);
+		Document doc = db.parse(mapFilePath.openStream());
 
 		doc.getDocumentElement().normalize();
 		NodeList nodeLst = doc.getElementsByTagName("row");
@@ -108,10 +105,7 @@ public class Map {
 		nodeLst = doc.getElementsByTagName("enterMapSound");
 		fstElmnt = (Element) nodeLst.item(0);
 		if (fstElmnt != null) {
-			this.enterMapSound = new File(game.SOUNDPATH + 
-					File.separator + 
-					fstElmnt.getAttribute("path") 
-			);
+			this.enterMapSound = fstElmnt.getAttribute("path");
 		}
 
 		nodeLst = doc.getElementsByTagName("background");
@@ -120,10 +114,10 @@ public class Map {
 		if (fstElmnt != null) {
 			path = fstElmnt.getAttribute("path");
 			if (path == null || path.equals("") || path.equals(" ")) {
-				path = "fight_bg.jpg";
+				path = "fight_bg";
 			}
 		} else {
-			path = "fight_bg.jpg";
+			path = "fight_bg";
 		}
 		
 		nodeLst = doc.getElementsByTagName("caveMode");
@@ -135,22 +129,14 @@ public class Map {
 		}
 		if (caveMode) {
 			//TODO...
-			File fogPath = new File(game.IMGPATH + 
-				File.separator + 
-				"fogofwar" + 
-				File.separator + 
-				"fogofwar_cave.png");
+			String fogPath = "fogofwar_cave";
 			for (Tile tile : tiles) {
 				tile.setSprHidden(fogPath);
 			}
 		}
 		
 		fightBgSpr = new Sprite(
-				game.getImage(
-						game.FIGHTIMGPATH + 
-						File.separator + 
-						path
-				)
+			game.gameImages.getImage(game.FIGHTIMG, path)
 		);
 
 		nodeLst = doc.getElementsByTagName("door");
@@ -188,8 +174,8 @@ public class Map {
 			Vector2d tilePos = new Vector2d(x, y); 
 			String info = fstElmnt.getTextContent();
 			Boolean solid = Boolean.parseBoolean((String) fstElmnt.getAttribute("solid"));
-			File imgFile = new File(game.INOFSIMGPATH + File.separator +(String) fstElmnt.getAttribute("img"));
-			BufferedImage imgArray[] = IOHelper.getImages(game, imgFile);
+			String imgFile = IOHelper.XMLreadString( fstElmnt, "img" );
+			BufferedImage[] imgArray = game.gameImages.getImages( game.INOFSIMG, imgFile );
 			boolean light = IOHelper.XMLreadBooleanSafe(fstElmnt, "light");
 
 			information.add(
@@ -273,12 +259,12 @@ public class Map {
 	FolderContainsNoFilesException,
 	NotFoundException {
 		System.out.print("reloadCurrentMapMode: on | try reload: ");
-		if (mapFilePath.lastModified() > lastModified) {
+		/*if (mapFilePath.lastModified() > lastModified) {
 			loadMapFile(mapFilePath);
 			System.out.println("reloaded: " + name);
-		} else {
+		} else {*/
 			System.out.println("no reload: " + name);
-		}
+		//}
 	}
 
 	public boolean isSolid(Vector2d pos, Direction dir) {
@@ -585,7 +571,7 @@ public class Map {
 	
 	public void playEnterMapSound() {
 		if (enterMapSound != null) {
-			game.bsSound.play(enterMapSound.getAbsolutePath());
+			game.gameSounds.playSound(enterMapSound);
 		}
 	}
 

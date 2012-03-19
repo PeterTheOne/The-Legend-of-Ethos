@@ -3,7 +3,6 @@ package game.menus;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
-import java.io.File;
 
 import com.golden.gamedev.object.AnimatedSprite;
 
@@ -12,7 +11,6 @@ import game.GameStateMachine.GameState;
 import game.character.NonPlayerCharacter;
 import game.exceptions.FolderContainsNoFilesException;
 import game.fight.PlayerFightSprite;
-import game.helper.IOHelper;
 import game.math.Vector2d;
 
 public class MonsterTransformation {
@@ -60,34 +58,24 @@ public class MonsterTransformation {
 		
 		this.elapsedTimeCache = 0;
 		
-		File path;
+		BufferedImage[] images;
 		if (playerName.equals("player")) {
-			path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "char_player1.gif");
+			images = game.gameImages.getImages( game.FIGHTCHANGEIMG, "char_player1" );
 		} else {
-			path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "char_player_f.png");
+			images = game.gameImages.getImages( game.FIGHTCHANGEIMG, "char_player_f" );
 		}
-		playerSpr = new AnimatedSprite(IOHelper.getImages(game, path));
+		playerSpr = new AnimatedSprite( images );
 		
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "cloud.png");
-		cloudImg = game.getImage(path.getAbsolutePath());
-
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "windmonster.png");
-		windMSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "zaubertrank_wind.png");
-		windTSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "feuermonster.png");
-		feuerMSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "zaubertrank_feuer.png");
-		feuerTSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "steinmonster.png");
-		steinMSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "zaubertrank_stein.png");
-		steinTSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "pflanze_200.gif");
-		pflanzeMSpr = new AnimatedSprite(IOHelper.getImages(game, path));
-		path = new File(game.FIGHTCHANGEIMGPATH + File.separator + "zaubertrank_pflanze.png");
-		pflanzeTSpr = new AnimatedSprite(IOHelper.getImages(game, path));
+		cloudImg = game.gameImages.getImage( game.FIGHTCHANGEIMG, "cloud" );
 		
+		windMSpr = new AnimatedSprite( game.gameImages.getImages( game.FIGHTCHANGEIMG, "windmonster" ) );
+		windTSpr = new AnimatedSprite( game.gameImages.getImages( game.FIGHTCHANGEIMG, "zaubertrank_wind" ) );
+		feuerMSpr = new AnimatedSprite( game.gameImages.getImages( game.FIGHTCHANGEIMG, "feuermonster" ) );
+		feuerTSpr = new AnimatedSprite( game.gameImages.getImages( game.FIGHTCHANGEIMG, "zaubertrank_feuer" ) );
+		steinMSpr = new AnimatedSprite( game.gameImages.getImages( game.FIGHTCHANGEIMG, "steinmonster" ) );
+		steinTSpr = new AnimatedSprite( game.gameImages.getImages( game.FIGHTCHANGEIMG, "zaubertrank_stein" ) );
+		pflanzeMSpr = new AnimatedSprite( game.gameImages.getImages( game.FIGHTCHANGEIMG, "pflanze_200" ) );
+		pflanzeTSpr = new AnimatedSprite( game.gameImages.getImages( game.FIGHTCHANGEIMG, "zaubertrank_pflanze" ) );
 	}
 
 	public void setTrans(PlayerFightSprite playerFightSpr, 

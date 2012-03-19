@@ -14,7 +14,6 @@ import game.helper.DirectionHelper.Direction;
 import game.math.Vector2d;
 
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -49,7 +48,7 @@ public class NonPlayerCharacterManager {
 
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
-		Document doc = db.parse(game.NPCFILEPATH);
+		Document doc = db.parse(game.getResourceURL(game.NPCFILEPATH).openStream());
 		doc.getDocumentElement().normalize();
 		NodeList nodeLst = doc.getElementsByTagName("npc");
 		for (int i = 0; i < nodeLst.getLength(); i++) {
@@ -108,21 +107,17 @@ public class NonPlayerCharacterManager {
 				boolean evil = IOHelper.XMLreadBooleanSafe(fstElmnt, "evil");
 				if (evil) {
 					String fightName = fstElmnt.getAttribute("fightName");
-					File imagesPath = IOHelper.XMLreadPath(
-							fstElmnt, game.FIGHTCHARSIDEIMGPATH, 
-							"fightImgPath");
-					BufferedImage[] images = IOHelper.getImages(
-							game, imagesPath);	
-					File projImgsPath = IOHelper.XMLreadPath(
-							fstElmnt, game.FIGHTIMGPATH, 
-							"fightProjPath");			
-					BufferedImage[] projImgs = IOHelper.getImages(
-							game, projImgsPath);
+					
+					String imagesPath = IOHelper.XMLreadString( fstElmnt, "fightImgPath" );
+					BufferedImage[] images = game.gameImages.getImages( game.FIGHTCHARSIDEIMG, imagesPath );
+					String projImgsPath = IOHelper.XMLreadString( fstElmnt, "fightProjPath" );
+					BufferedImage[] projImgs = game.gameImages.getImages( game.FIGHTIMG, projImgsPath );
+					
 					Direction direction = Direction.LEFT;
-					File hitSound = IOHelper.XMLreadPath(
-							fstElmnt, game.SOUNDPATH, "hitSound");
-					File projectileSound = IOHelper.XMLreadPath(
-							fstElmnt, game.SOUNDPATH, "projectileSound");
+					String hitSound = IOHelper.XMLreadString(
+							fstElmnt, "hitSound");
+					String projectileSound = IOHelper.XMLreadString(
+							fstElmnt, "projectileSound");
 					
 					NpcFightSprite fightSpr = new NpcFightSprite(game, fightName, images, 
 							projImgs, direction, hitSound, projectileSound);

@@ -3,6 +3,7 @@ package game.quest;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -51,18 +52,18 @@ public class QuestManager {
 		this.game = game;
 		quests = new ArrayList<Quest>();
 
-		File mapFilePath = new File(game.XMLPATH + File.separator + 
-				"quests.xml");
+		URL mapFilePath = game.getResourceURL(new File(game.XMLPATH + File.separator + 
+				"quests.xml"));
 		loadXML(mapFilePath);
 	}
 	
-	private void loadXML(File mapFilePath) throws ParserConfigurationException, 
+	private void loadXML(URL mapFilePath) throws ParserConfigurationException, 
 			SAXException, IOException, CanNotReadFileException, 
 			NotFoundException, FolderContainsNoFilesException {
 		
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
-		Document doc = db.parse(mapFilePath);
+		Document doc = db.parse(mapFilePath.openStream());
 
 		doc.getDocumentElement().normalize();
 		NodeList nodeLst = doc.getElementsByTagName("quest");
@@ -230,9 +231,8 @@ public class QuestManager {
 			Boolean attacks = IOHelper.XMLreadBoolean(ele, "attacks");
 			questRew = new CreateNpcReward(game, mapName, type, tilePos, dialogPath, direction, attacks);
 		} else if (questRewType.equals("createInfo")){
-			File imgPath = new File (game.INOFSIMGPATH + File.separator 
-					+ ele.getAttribute("img"));
-			BufferedImage[] images = IOHelper.getImages(game, imgPath);
+			String imgPath = IOHelper.XMLreadString( ele, "img" );
+			BufferedImage[] images = game.gameImages.getImages( game.INOFSIMG, imgPath );
 			int x = Integer.parseInt((String) ele.getAttribute("x"));
 			int y = Integer.parseInt((String) ele.getAttribute("y"));
 			Vector2d tilePos = new Vector2d(x, y);

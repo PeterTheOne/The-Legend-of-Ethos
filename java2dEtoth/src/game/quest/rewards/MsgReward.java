@@ -17,9 +17,7 @@ public class MsgReward extends QuestReward {
 		if (rewarded) return;
 		game.msgMana.setMsg(text);
 		rewarded = true;
-		//TODO: loadFile
-		File walkSound = new File(game.SOUNDPATH + File.separator + "wizzardtafeln.wav");
-		game.bsSound.play(walkSound.getAbsolutePath());
+		game.gameSounds.playSound("info");
 	}
 
 }

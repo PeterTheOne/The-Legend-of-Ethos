@@ -8,7 +8,6 @@ import game.math.Vector2d;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
 
 import com.golden.gamedev.object.GameFont;
 
@@ -30,18 +29,10 @@ public class CharMenu {
 	
 	public CharMenu(EtothGame game) {
 		this.game = game;
-		File c1s = new File(game.CHARMENUIMGPATH + File.separator + 
-				"char1_selected.png");
-		File c1ns = new File(game.CHARMENUIMGPATH + File.separator + 
-				"char1_notselected.png");
-		File c2s = new File(game.CHARMENUIMGPATH + File.separator + 
-				"char2_selected.png");
-		File c2ns = new File(game.CHARMENUIMGPATH + File.separator + 
-				"char2_notselected.png");
-		this.c1sImg = game.getImage(c1s.getPath());
-		this.c1nsImg = game.getImage(c1ns.getPath());
-		this.c2sImg = game.getImage(c2s.getPath());
-		this.c2nsImg = game.getImage(c2ns.getPath());
+		this.c1sImg = game.gameImages.getImage(game.CHARMENUIMG, "char1_selected");
+		this.c1nsImg = game.gameImages.getImage(game.CHARMENUIMG, "char1_notselected");
+		this.c2sImg = game.gameImages.getImage(game.CHARMENUIMG, "char2_selected");
+		this.c2nsImg = game.gameImages.getImage(game.CHARMENUIMG, "char2_notselected");
 		this.selected = true;
 		this.c1current = c1sImg;
 		this.c2current = c2nsImg;

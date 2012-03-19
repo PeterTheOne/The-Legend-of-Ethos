@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <dialog>
-	<line img="eron01.png">BAD KING: Ihr seid zwar bis hierher gekommen! Gegen mich habt Ihr keine Chance! Seht dem Tode ins Auge!</line>
-	<line img="eron01.png">MUHAHAHAHAHAHAHAHAHA</line>
+	<line img="eron01">BAD KING: Ihr seid zwar bis hierher gekommen! Gegen mich habt Ihr keine Chance! Seht dem Tode ins Auge!</line>
+	<line img="eron01">MUHAHAHAHAHAHAHAHAHA</line>
 	
 	
 </dialog>

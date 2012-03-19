@@ -5,7 +5,6 @@ import game.GameStateMachine.GameState;
 import game.character.NonPlayerCharacter;
 import game.exceptions.FolderContainsNoFilesException;
 import game.fight.PlayerFightSprite;
-import game.helper.IOHelper;
 import game.math.Vector2d;
 import game.tileObjects.Item;
 import game.tileObjects.MonsterItem;
@@ -13,7 +12,6 @@ import game.tileObjects.MonsterItem;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.util.ArrayList;
 
 import com.golden.gamedev.object.AnimatedSprite;
@@ -51,22 +49,8 @@ public class ChooseMonsterMenu {
 		this.itemImagePos = new Vector2d(450, 70).add(paperPos);
 		this.textSpacing = new Vector2d(0, 30);
 		
-		this.bg = game.getImage(
-				new File(
-						game.CHARMENUIMGPATH + 
-						File.separator + 
-						"menu_gross_transp.gif"
-				)
-				.getPath()
-		);
-		this.paper = game.getImage(
-				new File(
-						game.INVENTORYIMGPATH + 
-						File.separator + 
-						"pergament.png"
-				)
-				.getPath()
-		);
+		this.bg = game.gameImages.getImage(game.CHARMENUIMG, "menu_bg");
+		this.paper = game.gameImages.getImage(game.INVENTORYIMG, "pergament_bg");
 	}
 
 	public void update(long elapsedTime) {
@@ -115,27 +99,21 @@ public class ChooseMonsterMenu {
 			switch (item.getType()) {
 			//TODO: change this to xml...
 			case 4: 
-				path = "windmonster_menu.gif";
+				path = "windmonster_menu";
 				break;
 			case 5: 
-				path = "feuermonster_menu.gif";
+				path = "feuermonster_menu";
 				break;
 			case 6: 
-				path = "steinmonster_menu.gif";
+				path = "steinmonster_menu";
 				break;
 			case 8:
-				path = "pflanzenmonster_menu.png";
+				path = "pflanzenmonster_menu";
 				break;
 			}
+			BufferedImage[] images = game.gameImages.getImages( game.FIGHTCHANGEIMG, path );
 			spr = new AnimatedSprite(
-					IOHelper.getImages(
-						game, 
-						new File(
-							game.FIGHTIMGPATH + 
-							File.separator + "change" + File.separator + 
-							path
-						)
-					)
+					images
 			);
 			spr.setX(itemImagePos.getX() - 80 + 10);
 			spr.setY(itemImagePos.getY() - 70);

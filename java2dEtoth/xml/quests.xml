@@ -63,7 +63,7 @@
 			<beforeEndReward rewType="msg" text="Hurra, das kleine Mädchen wurde befreit, bringt sie gesund zurück zu ihrem Großvater" />
 			<beforeEndReward rewType="removeInfo" mapName="map_darkerwood3.xml" x="17" y="7" />
 			<beforeEndReward rewType="removeInfo" mapName="map_darkerwood1.xml" x="12" y="1" />
-			<beforeEndReward rewType="createInfo" mapName="map_darkerwood3.xml" x="6" y="7" solid="true" img="fence.png" infoStr="Oh nein, der Durchgang ist nun versperrt... Es muss einen anderen Weg geben" />
+			<beforeEndReward rewType="createInfo" mapName="map_darkerwood3.xml" x="6" y="7" solid="true" img="fence" infoStr="Oh nein, der Durchgang ist nun versperrt... Es muss einen anderen Weg geben" />
 		</beforeEndRewards>
 		<endObjective objType="haveFollowing" mapName="enteredhouse_t2.xml" npcType="8" />
 		<objectives>

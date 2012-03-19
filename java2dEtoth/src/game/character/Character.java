@@ -2,12 +2,10 @@ package game.character;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
 
 import game.EtothGame;
 import game.exceptions.FolderContainsNoFilesException;
 import game.exceptions.NotFoundException;
-import game.fileFilters.ImageFileFilter;
 import game.helper.DirectionHelper;
 import game.helper.DirectionHelper.Direction;
 import game.math.Vector2d;
@@ -52,31 +50,32 @@ public abstract class Character {
 
 	protected CharacterSprite loadSprite(String imgPath) 
 			throws FolderContainsNoFilesException {
-		File basePath = new File(game.CHARIMGPATH + File.separator + imgPath);
-		File direPaths[] = new File[4];
-		direPaths[0] = new File(basePath + File.separator + "up");
-		direPaths[1] = new File(basePath + File.separator + "down");
-		direPaths[2] = new File(basePath + File.separator + "left");
-		direPaths[3] = new File(basePath + File.separator + "right");
+		String basePath = game.CHARIMG + "/" + imgPath;
+		String direPaths[] = new String[4];
+		direPaths[0] = "up";
+		direPaths[1] = "down";
+		direPaths[2] = "left";
+		direPaths[3] = "right";
 		int aniLengths[] = new int[direPaths.length];
 		for (int i = 0; i < aniLengths.length; i++) {
-			aniLengths[i] = direPaths[i].listFiles(new ImageFileFilter()).length;
+			aniLengths[i] = game.gameImages.getNoOfFrames( basePath, direPaths[i] );
 		}
 		int countImagFiles = 0;
 		for (int i = 0; i < direPaths.length; i++) {
 			countImagFiles += aniLengths[i];
 		}
 
-		File imageFiles[];
+		BufferedImage imageFiles[];
 		BufferedImage images[] = new BufferedImage[countImagFiles];
 		int j = 0;
 		for (int i = 0; i < direPaths.length; i++) {
-			imageFiles = direPaths[i].listFiles(new ImageFileFilter());
+			imageFiles = game.gameImages.getImages( basePath, direPaths[i] );
+			
 			for (int k = 0; k < aniLengths[i]; j++, k++) {
-				images[j] =
-					game.getImage(imageFiles[k].getPath());
+				images[j] = imageFiles[k];
 			}
 		}
+		
 		CharacterSprite charSprite = new CharacterSprite(images, aniLengths);
 		charSprite.getAnimationTimer().setDelay((long) (game.CHARANIMSPEED));
 		return charSprite;

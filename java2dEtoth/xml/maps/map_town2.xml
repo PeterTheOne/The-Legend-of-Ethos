@@ -25,8 +25,8 @@
 		<row><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /><b id="2" /></row>
 		</matrix>
 	<information>
-		<info x="0" y="3" img="fallentree.png" solid="true"> Oh nein, ein umgefallener Baum versperrt den Weg</info>
-		<info x="11" y="10" img="haus_rot_03.png" solid="true"> Schade, diese Tür ist derzeit verschlossen...</info>
+		<info x="0" y="3" img="fallentree" solid="true"> Oh nein, ein umgefallener Baum versperrt den Weg</info>
+		<info x="11" y="10" img="haus_rot_03" solid="true"> Schade, diese Tür ist derzeit verschlossen...</info>
 		
 	</information>
 	
