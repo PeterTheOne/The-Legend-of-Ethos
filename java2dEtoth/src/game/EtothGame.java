@@ -78,7 +78,7 @@ public class EtothGame extends Game {
 	public final String STARTMAPFILENAME = "map_castle_start.xml";
 
 	//Options:
-	{ distribute = false; }
+	{ distribute = true; }
 	private int FPS = 30;
 
 	//DebugModes:
@@ -158,17 +158,25 @@ public class EtothGame extends Game {
 				
 				setFPS(FPS);
 				elapsedCache = 0L;
-
+				
+				System.out.println("Initializing...");
+				
 				inputMana = new InputManager(this);
 				gameTexts = new GameTexts(this);
+				
+				System.out.print("Loading sounds...");
 				gameSounds = new GameSounds(this);
+				System.out.println("done.");
+				System.out.print("Loading images...");
 				gameImages = new GameImages(this);
+				System.out.println("done.");
 				intro = new Intro(this);
 				outro = new Outro(this);
 				exitMenu = new ExitMenu(this);
 				charMenu = new CharMenu(this);
 				helpInfo = new HelpInfo(this);
 				loadFont();
+				System.out.println("Done.");
 			}
 			return true;
 		} catch (Exception e) {
@@ -216,6 +224,8 @@ public class EtothGame extends Game {
 			if (!playInitalized) {
 				playInitalized = true;
 				
+				System.out.print("Loading world...");
+				
 				tileMana = new TileManager(this);
 				itemMana = new ItemManager(this);
 				npcMana = new NonPlayerCharacterManager(this);
@@ -242,6 +252,8 @@ public class EtothGame extends Game {
 				mapMana.getCurrentMap().updateVisible();
 				
 				questMana = new QuestManager(this);
+				
+				System.out.println("done.");
 			}
 			return true;
 		} catch (Exception e) {
