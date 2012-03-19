@@ -2,6 +2,7 @@ package game.helper;
 
 import game.EtothGame;
 
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -20,9 +21,9 @@ public class GameSounds {
 	
 	class SoundFile {
 		private String name;
-		private URL sound;
+		private String sound;
 		
-		public SoundFile(String name, URL sound) {
+		public SoundFile(String name, String sound) {
 			this.name = name;
 			this.sound = sound;
 		}
@@ -31,7 +32,7 @@ public class GameSounds {
 			return this.name;
 		}
 		
-		public URL getSound() {
+		public String getSound() {
 			return this.sound;
 		}
 	}
@@ -56,14 +57,30 @@ public class GameSounds {
 				String name = fstElmnt.getAttribute("name");
 				String soundPath = fstElmnt.getTextContent();
 
+				
+				// Load sound files
+				String path = null;
+				try {
+					if(EtothGame.applet)
+					{
+						URL soundUrl = new URL( game.getResourceURL(game.SOUNDPATH) +
+									"/" +
+									soundPath);
+						path = soundUrl.toString();
+					} else {
+						path = game.SOUNDPATH +
+								"/" +
+								soundPath;
+					}
+				} catch(Exception e) {
+					System.out.println("Loading sound " + path + " failed!");
+					e.printStackTrace();
+				}
+				
 				sounds.add(
 					new SoundFile(
 							name,
-							new URL(
-									game.getResourceURL(game.SOUNDPATH) + 
-									"/" + 
-									soundPath
-							)
+							path
 					)
 					
 				);
@@ -74,7 +91,7 @@ public class GameSounds {
 	public void playSound(String name) {
 		for (SoundFile soundFile : sounds) {
 			if (name.equals(soundFile.getName())) {
-				game.bsSound.play(soundFile.getSound().toString());
+				game.bsSound.play(soundFile.getSound());
 			}
 		}
 	}
@@ -82,9 +99,8 @@ public class GameSounds {
 	public void stopSound(String name) {
 		for (SoundFile soundFile : sounds) {
 			if (name.equals(soundFile.getName())) {
-				game.bsSound.stop(soundFile.getSound().toString());
+				game.bsSound.stop(soundFile.getSound());
 			}
 		}
 	}
-	
 }

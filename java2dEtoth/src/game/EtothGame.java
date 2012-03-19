@@ -27,6 +27,7 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.io.File;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 import com.golden.gamedev.Game;
@@ -46,6 +47,7 @@ public class EtothGame extends Game {
 	public final double VISIBLEDISCAVE = 2.5;
 
 	//Paths:
+	public static boolean applet = true;
 	public final File IMGPATH = new File("img");
 	public final String TILESIMG = "tiles";
 	public final String CHARIMG = "characters";
@@ -122,24 +124,26 @@ public class EtothGame extends Game {
 	}
 	
 	public URL getResourceURL(File filename) {
-		String filenameURLString = fileToURL( filename.toString() );
-		
 		URL resource = null;
-
-			resource = getClass().getResource(
-				"/" + filenameURLString
-			);
-			
-			if(resource != null)
-			{
-				//System.out.println("Resource loaded! " + resource);
+		if( applet ) {
+			String filenameURLString = fileToURL( filename.toString() );
+			resource = getClass().getResource( "/" + filenameURLString );
+		} else {
+			try {
+				resource = filename.toURI().toURL();
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
-			else
-			{
-				System.out.println("Resource not found: " + "/" + filenameURLString);
-			}
-			
-			return resource;
+		}
+		
+		if(resource != null) {
+			//System.out.println("Resource loaded! " + resource);
+		} else {
+			System.out.println("Resource not found: " + filename);
+		}
+		
+		return resource;
 	}
 	
 	public void initResources() {
@@ -269,9 +273,10 @@ public class EtothGame extends Game {
 		}
 	}
 
-	/*public static void main(String[] args) {
+	public static void main(String[] args) {
+		applet = false;
 		GameLoader game = new GameLoader();
 		game.setup(new EtothGame(), DIMENSION, FULLSCREEN);
 		game.start();
-	}*/
+	}
 }

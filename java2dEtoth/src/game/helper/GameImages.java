@@ -118,24 +118,36 @@ public class GameImages {
 				//System.out.println("Adding " + catName + " | " + sequenceName + name + " ...");
 				
 				// Load image files
-				String path = game.getResourceURL(game.IMGPATH) +
-						"/" +
-						catName +
-						sequenceName +
-						"/" +
-						imagePath;
-				
+				String path = null;
+				BufferedImage img = null;
 				try {
-					URL imgUrl = new URL( path );
-					//System.out.println("Loading image " + imgUrl.toString() + " ...");
-					int index = 0;
-					if(sequenceName != "")
-						index = i;
-					imgs[index] = game.getImage( imgUrl.toString() );
+					if(EtothGame.applet)
+					{
+						URL imgUrl = new URL( game.getResourceURL(game.IMGPATH) +
+									"/" +
+									catName +
+									sequenceName +
+									"/" +
+									imagePath);
+						path = imgUrl.toString();
+					} else {
+						path = game.IMGPATH +
+								"/" +
+								catName +
+								sequenceName +
+								"/" +
+								imagePath;
+					}
+					img = game.getImage( path );
 				} catch(Exception e) {
 					System.out.println("Loading image " + path + " failed!");
 					e.printStackTrace();
 				}
+				
+				int index = 0;
+				if(sequenceName != "")
+					index = i;
+				imgs[index] = img;
 				
 				if(noImgs == 1)
 				{
