@@ -11,7 +11,7 @@ cd ..\gtge\bin\
 "C:\Program Files (x86)\Java\jdk1.6.0_30\bin\jar" cf goldenT.jar *
 move goldenT.jar ..\..\java2dEtoth\deploy\goldenT.jar
 cd ..\..\java2dEtoth\deploy\
-cd ..\gtge_addons\bin\
+cd ..\..\gtge_addons\bin\
 "C:\Program Files (x86)\Java\jdk1.6.0_30\bin\jar" cfm GTGE_add_ons.jar ..\..\java2dEtoth\deploy\Manifest_gtge.txt *
 move GTGE_add_ons.jar ..\..\java2dEtoth\deploy\GTGE_add_ons.jar
 cd ..\..\java2dEtoth\deploy\
