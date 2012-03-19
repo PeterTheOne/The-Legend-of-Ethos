@@ -32,7 +32,7 @@ import java.net.URL;
 
 import com.golden.gamedev.Game;
 import com.golden.gamedev.GameLoader;
-import com.golden.gamedev.engine.audio.JOrbisOggRenderer;
+import com.golden.gamedev.engine.audio.JavaLayerMp3Renderer;
 import com.golden.gamedev.object.GameFont;
 
 public class EtothGame extends Game {
@@ -190,10 +190,10 @@ public class EtothGame extends Game {
 		super.initEngine();
 
         // set sound effect to use ogg
-        bsSound.setBaseRenderer(new JOrbisOggRenderer());
+        bsSound.setBaseRenderer(new JavaLayerMp3Renderer());
 
         // set music to use ogg
-        bsMusic.setBaseRenderer(new JOrbisOggRenderer());
+        bsMusic.setBaseRenderer(new JavaLayerMp3Renderer());
 	}
 	
 	private void loadFont() {

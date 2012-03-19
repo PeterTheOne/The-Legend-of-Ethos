@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sounds>
-	<sound name="info">wizzardtafeln.ogg</sound>
-	<sound name="findItem">wizzardtafeln.ogg</sound>
-	<sound name="npcTalk">murmur.ogg</sound>
-	<sound name="walkGras">grasboden.ogg</sound>
-	<sound name="gameWin">crowd.ogg</sound>
-	<sound name="change">verwandlung.ogg</sound>
-	<sound name="itemFound">item_found.ogg</sound>
-	<sound name="heilung">heilung.ogg</sound>
-	<sound name="hit">treffersound.ogg</sound>
-	<sound name="projectileStone">stone.ogg</sound>
-	<sound name="projectileWind">wind.ogg</sound>
-	<sound name="projectileFire">fireball.ogg</sound>
-	<sound name="projectileArrow">arrow.ogg</sound>
-	<sound name="projectileKing">fireball_king.ogg</sound>
-	<sound name="laughKing">laughKing.ogg</sound>
-	<sound name="gegnertreffer">gegnertreffer.ogg</sound>
-	<sound name="kingHit">stoenenKoenig.ogg</sound>
+	<sound name="info">wizzardtafeln.mp3</sound>
+	<sound name="findItem">wizzardtafeln.mp3</sound>
+	<sound name="npcTalk">murmur.mp3</sound>
+	<sound name="walkGras">grasboden.mp3</sound>
+	<sound name="gameWin">crowd.mp3</sound>
+	<sound name="change">verwandlung.mp3</sound>
+	<sound name="itemFound">item_found.mp3</sound>
+	<sound name="heilung">heilung.mp3</sound>
+	<sound name="hit">treffersound.mp3</sound>
+	<sound name="projectileStone">stone.mp3</sound>
+	<sound name="projectileWind">wind.mp3</sound>
+	<sound name="projectileFire">fireball.mp3</sound>
+	<sound name="projectileArrow">arrow.mp3</sound>
+	<sound name="projectileKing">fireball_king.mp3</sound>
+	<sound name="laughKing">laughKing.mp3</sound>
+	<sound name="gegnertreffer">gegnertreffer.mp3</sound>
+	<sound name="kingHit">stoenenKoenig.mp3</sound>
 </sounds>
